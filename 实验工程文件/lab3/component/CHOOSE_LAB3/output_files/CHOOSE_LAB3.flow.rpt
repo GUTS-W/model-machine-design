@@ -1,0 +1,124 @@
+Flow report for CHOOSE_LAB3
+Mon Nov 04 19:54:51 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++------------------------------------+--------------------------------------------------+
+; Flow Status                        ; Successful - Mon Nov 04 19:54:49 2024            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; CHOOSE_LAB3                                      ;
+; Top-level Entity Name              ; CHOOSE_LAB3                                      ;
+; Family                             ; Cyclone IV GX                                    ;
+; Total logic elements               ; 32 / 21,280 ( < 1 % )                            ;
+;     Total combinational functions  ; 32 / 21,280 ( < 1 % )                            ;
+;     Dedicated logic registers      ; 0 / 21,280 ( 0 % )                               ;
+; Total registers                    ; 0                                                ;
+; Total pins                         ; 67 / 167 ( 40 % )                                ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0 / 774,144 ( 0 % )                              ;
+; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                                   ;
+; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                                    ;
+; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                                    ;
+; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                                    ;
+; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                                    ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                    ;
+; Device                             ; EP4CGX22CF19C6                                   ;
+; Timing Models                      ; Final                                            ;
++------------------------------------+--------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/04/2024 19:54:40 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; CHOOSE_LAB3         ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 88623632238264.173072128004744 ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --          ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --          ; --         ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 512 MB              ; 00:00:01                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 1151 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 466 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 475 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:10                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; JF117-6          ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; JF117-6          ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; JF117-6          ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; JF117-6          ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off CHOOSE_LAB3 -c CHOOSE_LAB3
+quartus_fit --read_settings_files=off --write_settings_files=off CHOOSE_LAB3 -c CHOOSE_LAB3
+quartus_asm --read_settings_files=off --write_settings_files=off CHOOSE_LAB3 -c CHOOSE_LAB3
+quartus_sta CHOOSE_LAB3 -c CHOOSE_LAB3
+
+
+

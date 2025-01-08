@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="chufa_qsim">
+		<CBX_INST_ENTRY INSTANCE_NAME="|chufa|DIV2:inst1|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_c0q.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

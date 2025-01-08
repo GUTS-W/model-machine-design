@@ -1,0 +1,44 @@
+|FA
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|FA|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+

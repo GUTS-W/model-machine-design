@@ -1,0 +1,11 @@
+|MA
+MA <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+W2 => inst2.IN0
+T3 => inst2.IN1
+MOV2 => inst4.IN0
+MOV3 => inst4.IN1
+MOV1 => inst4.IN2
+W1 => inst.IN0
+T2 => inst.IN1
+
+

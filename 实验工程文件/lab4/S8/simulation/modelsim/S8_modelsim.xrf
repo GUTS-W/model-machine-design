@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, H:/T4/S8/S8.bdf
+source_file = 1, H:/T4/S8/db/S8.cbx.xml
+design_name = S8
+instance = comp, \S8~output\, S8~output, S8, 1
+instance = comp, \W2~input\, W2~input, S8, 1
+instance = comp, \DIV~input\, DIV~input, S8, 1
+instance = comp, \T1~input\, T1~input, S8, 1
+instance = comp, \inst~0\, inst~0, S8, 1

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab31119">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab31119|ALU_LAB3:inst10|chufa:inst7|DIV2:inst1|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_l1q.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab31119|MEM:inst9|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_abj1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab31119|MROM:inst31|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v8a1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

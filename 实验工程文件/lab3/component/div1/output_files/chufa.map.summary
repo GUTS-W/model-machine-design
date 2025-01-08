@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 19 12:00:15 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : chufa
+Top-level Entity Name : chufa
+Family : Cyclone IV E
+Total logic elements : 229
+    Total combinational functions : 229
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

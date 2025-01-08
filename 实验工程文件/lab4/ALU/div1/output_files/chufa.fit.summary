@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Nov 24 17:26:00 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : chufa
+Top-level Entity Name : chufa
+Family : Cyclone IV E
+Device : EP4CE6E22A7
+Timing Models : Final
+Total logic elements : 229 / 6,272 ( 4 % )
+    Total combinational functions : 229 / 6,272 ( 4 % )
+    Dedicated logic registers : 0 / 6,272 ( 0 % )
+Total registers : 0
+Total pins : 48 / 92 ( 52 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

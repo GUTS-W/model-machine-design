@@ -1,0 +1,14 @@
+|RB
+RB <= inst.DB_MAX_OUTPUT_PORT_TYPE
+W2 => inst.IN0
+T1 => inst.IN1
+ADD => inst1.IN0
+MUL => inst1.IN1
+SUB => inst1.IN2
+AND => inst1.IN3
+NOR => inst1.IN4
+OR => inst1.IN5
+XOR => inst1.IN6
+DIV => inst1.IN7
+
+

@@ -1,0 +1,19 @@
+|CN
+CN <= inst.DB_MAX_OUTPUT_PORT_TYPE
+W1 => inst1.IN0
+T3 => insRt.IN0
+W2 => inst3.IN0
+W2 => inst4.IN0
+W2 => inst2.IN0
+T1 => inst3.IN1
+T1 => inst6.IN0
+SUB_SELF => inst8.IN0
+ADD => inst8.IN1
+ADD_SELF => inst9.IN0
+SUB => inst9.IN1
+T2 => inst5.IN0
+MOV2 => inst7.IN0
+MOV3 => inst7.IN1
+MOV1 => inst7.IN2
+
+

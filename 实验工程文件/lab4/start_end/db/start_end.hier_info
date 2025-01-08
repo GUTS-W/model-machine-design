@@ -1,0 +1,9 @@
+|start_end
+CLK <= inst.DB_MAX_OUTPUT_PORT_TYPE
+C_clk => inst.IN0
+Open => inst4.ACLR
+Open => inst2.IN1
+S_clk => inst4.CLK
+G => inst3.IN0
+
+

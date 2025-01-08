@@ -1,0 +1,20 @@
+Fitter Status : Successful - Mon Nov 04 19:54:46 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : CHOOSE_LAB3
+Top-level Entity Name : CHOOSE_LAB3
+Family : Cyclone IV GX
+Device : EP4CGX22CF19C6
+Timing Models : Final
+Total logic elements : 32 / 21,280 ( < 1 % )
+    Total combinational functions : 32 / 21,280 ( < 1 % )
+    Dedicated logic registers : 0 / 21,280 ( 0 % )
+Total registers : 0
+Total pins : 67 / 167 ( 40 % )
+Total virtual pins : 0
+Total memory bits : 0 / 774,144 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 80 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 4 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 4 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 4 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 4 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

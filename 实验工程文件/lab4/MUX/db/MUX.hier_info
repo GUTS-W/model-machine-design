@@ -1,0 +1,43 @@
+|MUX
+Z0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R10 => inst16.IN0
+EN1 => inst16.IN1
+EN1 => inst17.IN1
+EN1 => inst18.IN1
+EN1 => inst19.IN1
+EN1 => inst20.IN1
+EN1 => inst21.IN1
+EN1 => inst22.IN1
+EN1 => inst23.IN1
+EN0 => inst8.IN0
+EN0 => inst9.IN0
+EN0 => inst10.IN0
+EN0 => inst11.IN0
+EN0 => inst12.IN0
+EN0 => inst13.IN0
+EN0 => inst14.IN0
+EN0 => inst15.IN0
+R00 => inst8.IN1
+Z1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+R11 => inst17.IN0
+R01 => inst9.IN1
+Z2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+R12 => inst18.IN0
+R02 => inst10.IN1
+Z3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+R13 => inst19.IN0
+R03 => inst11.IN1
+Z4 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+R14 => inst20.IN0
+R04 => inst12.IN1
+Z5 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+R15 => inst21.IN0
+R05 => inst13.IN1
+Z6 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+R16 => inst22.IN0
+R06 => inst14.IN1
+Z7 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+R17 => inst23.IN0
+R07 => inst15.IN1
+
+

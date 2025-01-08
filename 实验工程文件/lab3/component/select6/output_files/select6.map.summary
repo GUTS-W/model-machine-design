@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Sun Nov 17 19:53:42 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : select6
+Top-level Entity Name : select6
+Family : Cyclone IV GX
+Total logic elements : 48
+    Total combinational functions : 48
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 101
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

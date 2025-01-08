@@ -1,0 +1,433 @@
+Analysis & Synthesis report for ALU
+Sun Nov 24 17:37:40 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: 8bit_mul:inst3|74283:inst10
+ 12. Parameter Settings for User Entity Instance: 8bit_mul:inst3|74283:inst283
+ 13. Parameter Settings for User Entity Instance: div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                          ;
++------------------------------------+--------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Nov 24 17:37:40 2024            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; ALU                                              ;
+; Top-level Entity Name              ; ALU                                              ;
+; Family                             ; Cyclone IV E                                     ;
+; Total logic elements               ; 227                                              ;
+;     Total combinational functions  ; 227                                              ;
+;     Dedicated logic registers      ; 0                                                ;
+; Total registers                    ; 0                                                ;
+; Total pins                         ; 35                                               ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0                                                ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 0                                                ;
++------------------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE6E22C8        ;                    ;
+; Top-level entity name                                                      ; ALU                ; ALU                ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-20        ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
+; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File        ; D:/altera/T4/ALU/ALU.bdf                                              ;         ;
+; 74181.bdf                        ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/others/maxplus2/74181.bdf         ;         ;
+; 8bit_mul.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/altera/T4/ALU/8bit_mul.bdf                                         ;         ;
+; 74285.bdf                        ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/others/maxplus2/74285.bdf         ;         ;
+; 74283.tdf                        ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/others/maxplus2/74283.tdf         ;         ;
+; aglobal.inc                      ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal.inc         ;         ;
+; f74283.bdf                       ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/others/maxplus2/f74283.bdf        ;         ;
+; 74284.bdf                        ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/others/maxplus2/74284.bdf         ;         ;
+; shifter.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/altera/T4/ALU/shifter.bdf                                          ;         ;
+; div.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/altera/T4/ALU/div.bdf                                              ;         ;
+; ddd.vhd                          ; yes             ; Auto-Found Wizard-Generated File         ; D:/altera/T4/ALU/ddd.vhd                                              ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
+; db/lpm_divide_60q.tdf            ; yes             ; Auto-Generated Megafunction              ; D:/altera/T4/ALU/db/lpm_divide_60q.tdf                                ;         ;
+; db/sign_div_unsign_fkh.tdf       ; yes             ; Auto-Generated Megafunction              ; D:/altera/T4/ALU/db/sign_div_unsign_fkh.tdf                           ;         ;
+; db/alt_u_div_i4f.tdf             ; yes             ; Auto-Generated Megafunction              ; D:/altera/T4/ALU/db/alt_u_div_i4f.tdf                                 ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction              ; D:/altera/T4/ALU/db/add_sub_7pc.tdf                                   ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction              ; D:/altera/T4/ALU/db/add_sub_8pc.tdf                                   ;         ;
+; 74182.bdf                        ; yes             ; Megafunction                             ; d:/altera/13.0sp1/quartus/libraries/others/maxplus2/74182.bdf         ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 227      ;
+;                                             ;          ;
+; Total combinational functions               ; 227      ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 141      ;
+;     -- 3 input functions                    ; 68       ;
+;     -- <=2 input functions                  ; 18       ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 194      ;
+;     -- arithmetic mode                      ; 33       ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 35       ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+; Maximum fan-out node                        ; B1~input ;
+; Maximum fan-out                             ; 39       ;
+; Total fan-out                               ; 835      ;
+; Average fan-out                             ; 2.81     ;
++---------------------------------------------+----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                      ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |ALU                                         ; 227 (29)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |ALU                                                                                                                                     ; work         ;
+;    |74181:inst1|                             ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|74181:inst1                                                                                                                         ; work         ;
+;    |74181:inst|                              ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|74181:inst                                                                                                                          ; work         ;
+;    |74182:inst2|                             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|74182:inst2                                                                                                                         ; work         ;
+;    |8bit_mul:inst3|                          ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|8bit_mul:inst3                                                                                                                      ; work         ;
+;       |74283:inst10|                         ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|8bit_mul:inst3|74283:inst10                                                                                                         ; work         ;
+;          |f74283:sub|                        ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|8bit_mul:inst3|74283:inst10|f74283:sub                                                                                              ; work         ;
+;       |74283:inst283|                        ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|8bit_mul:inst3|74283:inst283                                                                                                        ; work         ;
+;          |f74283:sub|                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|8bit_mul:inst3|74283:inst283|f74283:sub                                                                                             ; work         ;
+;       |74284:inst|                           ; 34 (34)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|8bit_mul:inst3|74284:inst                                                                                                           ; work         ;
+;       |74285:inst4|                          ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|8bit_mul:inst3|74285:inst4                                                                                                          ; work         ;
+;       |74285:inst5|                          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|8bit_mul:inst3|74285:inst5                                                                                                          ; work         ;
+;       |74285:inst6|                          ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|8bit_mul:inst3|74285:inst6                                                                                                          ; work         ;
+;    |div:inst32|                              ; 75 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|div:inst32                                                                                                                          ; work         ;
+;       |ddd:inst|                             ; 75 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|div:inst32|ddd:inst                                                                                                                 ; work         ;
+;          |lpm_divide:LPM_DIVIDE_component|   ; 75 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component                                                                                 ; work         ;
+;             |lpm_divide_60q:auto_generated|  ; 75 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_60q:auto_generated                                                   ; work         ;
+;                |sign_div_unsign_fkh:divider| ; 75 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_60q:auto_generated|sign_div_unsign_fkh:divider                       ; work         ;
+;                   |alt_u_div_i4f:divider|    ; 75 (75)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_60q:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_i4f:divider ; work         ;
+;    |shifter:inst4|                           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|shifter:inst4                                                                                                                       ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                               ;
++--------+--------------+---------+--------------+--------------+--------------------------+--------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance          ; IP Include File          ;
++--------+--------------+---------+--------------+--------------+--------------------------+--------------------------+
+; Altera ; LPM_DIVIDE   ; N/A     ; N/A          ; N/A          ; |ALU|div:inst32|ddd:inst ; D:/altera/T4/ALU/ddd.vhd ;
++--------+--------------+---------+--------------+--------------+--------------------------+--------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ALU|inst83                ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |ALU|inst81                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 8bit_mul:inst3|74283:inst10 ;
++------------------------+--------------+----------------------------------+
+; Parameter Name         ; Value        ; Type                             ;
++------------------------+--------------+----------------------------------+
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                          ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                   ;
++------------------------+--------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 8bit_mul:inst3|74283:inst283 ;
++------------------------+--------------+-----------------------------------+
+; Parameter Name         ; Value        ; Type                              ;
++------------------------+--------------+-----------------------------------+
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                           ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                    ;
++------------------------+--------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component ;
++------------------------+----------------+--------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                   ;
++------------------------+----------------+--------------------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Signed Integer                                         ;
+; LPM_WIDTHD             ; 8              ; Signed Integer                                         ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                ;
+; CBXI_PARAMETER         ; lpm_divide_60q ; Untyped                                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                         ;
++------------------------+----------------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Sun Nov 24 17:37:37 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
+Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file alu.bdf
+    Info (12023): Found entity 1: ALU
+Info (12127): Elaborating entity "ALU" for the top level hierarchy
+Info (12128): Elaborating entity "74181" for hierarchy "74181:inst1"
+Info (12130): Elaborated megafunction instantiation "74181:inst1"
+Warning (12125): Using design file 8bit_mul.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: 8bit_mul
+Info (12128): Elaborating entity "8bit_mul" for hierarchy "8bit_mul:inst3"
+Info (12128): Elaborating entity "74285" for hierarchy "8bit_mul:inst3|74285:inst4"
+Info (12130): Elaborated megafunction instantiation "8bit_mul:inst3|74285:inst4"
+Info (12128): Elaborating entity "74283" for hierarchy "8bit_mul:inst3|74283:inst10"
+Info (12130): Elaborated megafunction instantiation "8bit_mul:inst3|74283:inst10"
+Info (12128): Elaborating entity "f74283" for hierarchy "8bit_mul:inst3|74283:inst10|f74283:sub"
+Info (12131): Elaborated megafunction instantiation "8bit_mul:inst3|74283:inst10|f74283:sub", which is child of megafunction instantiation "8bit_mul:inst3|74283:inst10"
+Info (12128): Elaborating entity "74283" for hierarchy "8bit_mul:inst3|74283:inst283"
+Info (12130): Elaborated megafunction instantiation "8bit_mul:inst3|74283:inst283"
+Info (12128): Elaborating entity "74284" for hierarchy "8bit_mul:inst3|74284:inst"
+Info (12130): Elaborated megafunction instantiation "8bit_mul:inst3|74284:inst"
+Warning (12125): Using design file shifter.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: shifter
+Info (12128): Elaborating entity "shifter" for hierarchy "shifter:inst4"
+Warning (12125): Using design file div.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: div
+Warning (12300): Found the following files while searching for definition of entity "div", but did not use these files because already using a different file containing the entity definition
+    Warning (12126): File: div1/DIV.vhd
+Info (12128): Elaborating entity "div" for hierarchy "div:inst32"
+Warning (12125): Using design file ddd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ddd-SYN
+    Info (12023): Found entity 1: ddd
+Info (12128): Elaborating entity "ddd" for hierarchy "div:inst32|ddd:inst"
+Info (12128): Elaborating entity "lpm_divide" for hierarchy "div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component"
+Info (12130): Elaborated megafunction instantiation "div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component"
+Info (12133): Instantiated megafunction "div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component" with the following parameter:
+    Info (12134): Parameter "lpm_drepresentation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_hint" = "LPM_REMAINDERPOSITIVE=TRUE"
+    Info (12134): Parameter "lpm_nrepresentation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_DIVIDE"
+    Info (12134): Parameter "lpm_widthd" = "8"
+    Info (12134): Parameter "lpm_widthn" = "8"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_60q.tdf
+    Info (12023): Found entity 1: lpm_divide_60q
+Info (12128): Elaborating entity "lpm_divide_60q" for hierarchy "div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_60q:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_fkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_fkh
+Info (12128): Elaborating entity "sign_div_unsign_fkh" for hierarchy "div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_60q:auto_generated|sign_div_unsign_fkh:divider"
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_i4f.tdf
+    Info (12023): Found entity 1: alt_u_div_i4f
+Info (12128): Elaborating entity "alt_u_div_i4f" for hierarchy "div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_60q:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_i4f:divider"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc
+Info (12128): Elaborating entity "add_sub_7pc" for hierarchy "div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_60q:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_i4f:divider|add_sub_7pc:add_sub_0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc
+Info (12128): Elaborating entity "add_sub_8pc" for hierarchy "div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_60q:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_i4f:divider|add_sub_8pc:add_sub_1"
+Info (12128): Elaborating entity "74182" for hierarchy "74182:inst2"
+Info (12130): Elaborated megafunction instantiation "74182:inst2"
+Info (13014): Ignored 72 buffer(s)
+    Info (13015): Ignored 8 CARRY buffer(s)
+    Info (13019): Ignored 64 SOFT buffer(s)
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 262 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 27 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 227 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4693 megabytes
+    Info: Processing ended: Sun Nov 24 17:37:40 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+

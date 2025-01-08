@@ -1,0 +1,5029 @@
+|ALU_LAB3
+f0 <= CHOOSE_LAB3:inst10.res_out1
+CXCHOSE1 => inst.IN0
+CXCHOSE1 => CHOOSE_LAB3:inst4.s_choose
+DIVchoose1 => inst8.IN0
+DIVchoose1 => CHOOSE_LAB3:inst2.s_choose
+MULchoose1 => inst8.IN1
+MULchoose1 => CHOOSE_LAB3:inst2.r_choose
+YWCHOOSE1 => inst8.IN2
+YWCHOOSE1 => CHOOSE_LAB3:inst2.l_choose
+ADDCHOOSE1 => inst.IN2
+ADDCHOOSE1 => CHOOSE_LAB3:inst4.r_choose
+b0 => 74181:alu4.B0N
+b0 => METRIX:mul_lab3.b0
+b0 => chufa:inst7.denom0
+a0 => 74181:alu4.A0N
+a0 => METRIX:mul_lab3.a0
+a0 => chufa:inst7.numerator0
+a0 => 74198:inst1.H
+a1 => 74181:alu4.A1N
+a1 => METRIX:mul_lab3.a1
+a1 => chufa:inst7.numerator1
+a1 => 74198:inst1.G
+b1 => 74181:alu4.B1N
+b1 => METRIX:mul_lab3.b1
+b1 => chufa:inst7.denom1
+a3 => 74181:alu4.A3N
+a3 => METRIX:mul_lab3.a3
+a3 => chufa:inst7.numerator3
+a3 => 74198:inst1.E
+b2 => 74181:alu4.B2N
+b2 => METRIX:mul_lab3.b2
+b2 => chufa:inst7.denom2
+a2 => 74181:alu4.A2N
+a2 => METRIX:mul_lab3.a2
+a2 => chufa:inst7.numerator2
+a2 => 74198:inst1.F
+M => 74181:alu4.M
+M => 74181:alu3.M
+M => 74181:alu2.M
+M => 74181:alu1.M
+CN => 74181:alu4.CN
+b3 => 74181:alu4.B3N
+b3 => METRIX:mul_lab3.b3
+b3 => chufa:inst7.denom3
+s2ADD => 74181:alu4.S2
+s2ADD => 74181:alu3.S2
+s2ADD => 74181:alu2.S2
+s2ADD => 74181:alu1.S2
+s1ADD => 74181:alu4.S1
+s1ADD => 74181:alu3.S1
+s1ADD => 74181:alu2.S1
+s1ADD => 74181:alu1.S1
+s0ADD => 74181:alu4.S0
+s0ADD => 74181:alu3.S0
+s0ADD => 74181:alu2.S0
+s0ADD => 74181:alu1.S0
+s3ADD => 74181:alu4.S3
+s3ADD => 74181:alu3.S3
+s3ADD => 74181:alu2.S3
+s3ADD => 74181:alu1.S3
+b4 => 74181:alu3.B0N
+b4 => METRIX:mul_lab3.b4
+b4 => chufa:inst7.denom4
+a4 => 74181:alu3.A0N
+a4 => METRIX:mul_lab3.a4
+a4 => chufa:inst7.numerator4
+a4 => 74198:inst1.D
+a5 => 74181:alu3.A1N
+a5 => METRIX:mul_lab3.a5
+a5 => chufa:inst7.numerator5
+a5 => 74198:inst1.C
+b5 => 74181:alu3.B1N
+b5 => METRIX:mul_lab3.b5
+b5 => chufa:inst7.denom5
+a7 => 74181:alu3.A3N
+a7 => METRIX:mul_lab3.a7
+a7 => chufa:inst7.numerator7
+a7 => 74198:inst1.A
+b6 => 74181:alu3.B2N
+b6 => METRIX:mul_lab3.b6
+b6 => chufa:inst7.denom6
+a6 => 74181:alu3.A2N
+a6 => METRIX:mul_lab3.a6
+a6 => chufa:inst7.numerator6
+a6 => 74198:inst1.B
+b7 => 74181:alu3.B3N
+b7 => METRIX:mul_lab3.b7
+b7 => chufa:inst7.denom7
+b8 => 74181:alu2.B0N
+a8 => 74181:alu2.A0N
+a8 => chufa:inst7.numerator8
+a9 => 74181:alu2.A1N
+a9 => chufa:inst7.numerator9
+b9 => 74181:alu2.B1N
+a11 => 74181:alu2.A3N
+a11 => chufa:inst7.numerator11
+b10 => 74181:alu2.B2N
+a10 => 74181:alu2.A2N
+a10 => chufa:inst7.numerator10
+b11 => 74181:alu2.B3N
+b12 => 74181:alu1.B0N
+a12 => 74181:alu1.A0N
+a12 => chufa:inst7.numerator12
+a13 => 74181:alu1.A1N
+a13 => chufa:inst7.numerator13
+b13 => 74181:alu1.B1N
+a15 => 74181:alu1.A3N
+a15 => chufa:inst7.numerator15
+b14 => 74181:alu1.B2N
+a14 => 74181:alu1.A2N
+a14 => chufa:inst7.numerator14
+b15 => 74181:alu1.B3N
+YWFUHAO => 74198:inst1.SRSI
+YWS0 => 74198:inst1.S0
+YWCLK => 74198:inst1.CLK
+YWS1 => 74198:inst1.S1
+sp_choose => CHOOSE_LAB3:inst10.l_choose
+f1 <= CHOOSE_LAB3:inst10.res_out2
+f2 <= CHOOSE_LAB3:inst10.res_out3
+f3 <= CHOOSE_LAB3:inst10.res_out4
+f4 <= CHOOSE_LAB3:inst10.res_out5
+f5 <= CHOOSE_LAB3:inst10.res_out6
+f6 <= CHOOSE_LAB3:inst10.res_out7
+f7 <= CHOOSE_LAB3:inst10.res_out8
+f8 <= CHOOSE_LAB3:inst10.res_out9
+f9 <= CHOOSE_LAB3:inst10.res_out10
+f10 <= CHOOSE_LAB3:inst10.res_out11
+f11 <= CHOOSE_LAB3:inst10.res_out12
+f12 <= CHOOSE_LAB3:inst10.res_out13
+f13 <= CHOOSE_LAB3:inst10.res_out14
+f14 <= CHOOSE_LAB3:inst10.res_out15
+f15 <= CHOOSE_LAB3:inst10.res_out16
+
+
+|ALU_LAB3|CHOOSE_LAB3:inst10
+res_out1 <= c_or1.DB_MAX_OUTPUT_PORT_TYPE
+s_choose => choose17.IN0
+s_choose => choose18.IN0
+s_choose => choose19.IN0
+s_choose => choose20.IN0
+s_choose => choose21.IN0
+s_choose => choose22.IN0
+s_choose => choose23.IN0
+s_choose => choose24.IN0
+s_choose => choose25.IN0
+s_choose => choose26.IN0
+s_choose => choose27.IN0
+s_choose => choose28.IN0
+s_choose => choose29.IN0
+s_choose => choose30.IN0
+s_choose => choose31.IN0
+s_choose => choose32.IN0
+s1 => choose17.IN1
+l_choose => choose33.IN0
+l_choose => choose34.IN0
+l_choose => choose35.IN0
+l_choose => choose36.IN0
+l_choose => choose37.IN0
+l_choose => choose38.IN0
+l_choose => choose39.IN0
+l_choose => choose40.IN0
+l_choose => choose41.IN0
+l_choose => choose42.IN0
+l_choose => choose43.IN0
+l_choose => choose44.IN0
+l_choose => choose45.IN0
+l_choose => choose46.IN0
+l_choose => choose47.IN0
+l_choose => choose48.IN0
+l1 => choose33.IN1
+r_choose => choose1.IN0
+r_choose => choose2.IN0
+r_choose => choose3.IN0
+r_choose => choose4.IN0
+r_choose => choose5.IN0
+r_choose => choose6.IN0
+r_choose => choose7.IN0
+r_choose => choose8.IN0
+r_choose => choose9.IN0
+r_choose => choose10.IN0
+r_choose => choose11.IN0
+r_choose => choose12.IN0
+r_choose => choose13.IN0
+r_choose => choose14.IN0
+r_choose => choose15.IN0
+r_choose => choose16.IN0
+r1 => choose1.IN1
+res_out2 <= c_or2.DB_MAX_OUTPUT_PORT_TYPE
+s2 => choose18.IN1
+l2 => choose34.IN1
+r2 => choose2.IN1
+res_out3 <= c_or3.DB_MAX_OUTPUT_PORT_TYPE
+s3 => choose19.IN1
+l3 => choose35.IN1
+r3 => choose3.IN1
+res_out4 <= c_or4.DB_MAX_OUTPUT_PORT_TYPE
+s4 => choose20.IN1
+l4 => choose36.IN1
+r4 => choose4.IN1
+res_out5 <= c_or5.DB_MAX_OUTPUT_PORT_TYPE
+s5 => choose21.IN1
+l5 => choose37.IN1
+r5 => choose5.IN1
+res_out6 <= c_or6.DB_MAX_OUTPUT_PORT_TYPE
+s6 => choose22.IN1
+l6 => choose38.IN1
+r6 => choose6.IN1
+res_out7 <= c_or7.DB_MAX_OUTPUT_PORT_TYPE
+s7 => choose23.IN1
+l7 => choose39.IN1
+r7 => choose7.IN1
+res_out8 <= c_or8.DB_MAX_OUTPUT_PORT_TYPE
+s8 => choose24.IN1
+l8 => choose40.IN1
+r8 => choose8.IN1
+res_out9 <= c_or9.DB_MAX_OUTPUT_PORT_TYPE
+s9 => choose25.IN1
+l9 => choose41.IN1
+r9 => choose9.IN1
+res_out10 <= c_or10.DB_MAX_OUTPUT_PORT_TYPE
+s10 => choose26.IN1
+l10 => choose42.IN1
+r10 => choose10.IN1
+res_out11 <= c_or11.DB_MAX_OUTPUT_PORT_TYPE
+s11 => choose27.IN1
+l11 => choose43.IN1
+r11 => choose11.IN1
+res_out12 <= c_or12.DB_MAX_OUTPUT_PORT_TYPE
+s12 => choose28.IN1
+l12 => choose44.IN1
+r12 => choose12.IN1
+res_out13 <= c_or13.DB_MAX_OUTPUT_PORT_TYPE
+s13 => choose29.IN1
+l13 => choose45.IN1
+r13 => choose13.IN1
+res_out14 <= c_or14.DB_MAX_OUTPUT_PORT_TYPE
+s14 => choose30.IN1
+l14 => choose46.IN1
+r14 => choose14.IN1
+res_out15 <= c_or15.DB_MAX_OUTPUT_PORT_TYPE
+s15 => choose31.IN1
+l15 => choose47.IN1
+r15 => choose15.IN1
+res_out16 <= c_or16.DB_MAX_OUTPUT_PORT_TYPE
+s16 => choose32.IN1
+l16 => choose48.IN1
+r16 => choose16.IN1
+
+
+|ALU_LAB3|CHOOSE_LAB3:inst4
+res_out1 <= c_or1.DB_MAX_OUTPUT_PORT_TYPE
+s_choose => choose17.IN0
+s_choose => choose18.IN0
+s_choose => choose19.IN0
+s_choose => choose20.IN0
+s_choose => choose21.IN0
+s_choose => choose22.IN0
+s_choose => choose23.IN0
+s_choose => choose24.IN0
+s_choose => choose25.IN0
+s_choose => choose26.IN0
+s_choose => choose27.IN0
+s_choose => choose28.IN0
+s_choose => choose29.IN0
+s_choose => choose30.IN0
+s_choose => choose31.IN0
+s_choose => choose32.IN0
+s1 => choose17.IN1
+l_choose => choose33.IN0
+l_choose => choose34.IN0
+l_choose => choose35.IN0
+l_choose => choose36.IN0
+l_choose => choose37.IN0
+l_choose => choose38.IN0
+l_choose => choose39.IN0
+l_choose => choose40.IN0
+l_choose => choose41.IN0
+l_choose => choose42.IN0
+l_choose => choose43.IN0
+l_choose => choose44.IN0
+l_choose => choose45.IN0
+l_choose => choose46.IN0
+l_choose => choose47.IN0
+l_choose => choose48.IN0
+l1 => choose33.IN1
+r_choose => choose1.IN0
+r_choose => choose2.IN0
+r_choose => choose3.IN0
+r_choose => choose4.IN0
+r_choose => choose5.IN0
+r_choose => choose6.IN0
+r_choose => choose7.IN0
+r_choose => choose8.IN0
+r_choose => choose9.IN0
+r_choose => choose10.IN0
+r_choose => choose11.IN0
+r_choose => choose12.IN0
+r_choose => choose13.IN0
+r_choose => choose14.IN0
+r_choose => choose15.IN0
+r_choose => choose16.IN0
+r1 => choose1.IN1
+res_out2 <= c_or2.DB_MAX_OUTPUT_PORT_TYPE
+s2 => choose18.IN1
+l2 => choose34.IN1
+r2 => choose2.IN1
+res_out3 <= c_or3.DB_MAX_OUTPUT_PORT_TYPE
+s3 => choose19.IN1
+l3 => choose35.IN1
+r3 => choose3.IN1
+res_out4 <= c_or4.DB_MAX_OUTPUT_PORT_TYPE
+s4 => choose20.IN1
+l4 => choose36.IN1
+r4 => choose4.IN1
+res_out5 <= c_or5.DB_MAX_OUTPUT_PORT_TYPE
+s5 => choose21.IN1
+l5 => choose37.IN1
+r5 => choose5.IN1
+res_out6 <= c_or6.DB_MAX_OUTPUT_PORT_TYPE
+s6 => choose22.IN1
+l6 => choose38.IN1
+r6 => choose6.IN1
+res_out7 <= c_or7.DB_MAX_OUTPUT_PORT_TYPE
+s7 => choose23.IN1
+l7 => choose39.IN1
+r7 => choose7.IN1
+res_out8 <= c_or8.DB_MAX_OUTPUT_PORT_TYPE
+s8 => choose24.IN1
+l8 => choose40.IN1
+r8 => choose8.IN1
+res_out9 <= c_or9.DB_MAX_OUTPUT_PORT_TYPE
+s9 => choose25.IN1
+l9 => choose41.IN1
+r9 => choose9.IN1
+res_out10 <= c_or10.DB_MAX_OUTPUT_PORT_TYPE
+s10 => choose26.IN1
+l10 => choose42.IN1
+r10 => choose10.IN1
+res_out11 <= c_or11.DB_MAX_OUTPUT_PORT_TYPE
+s11 => choose27.IN1
+l11 => choose43.IN1
+r11 => choose11.IN1
+res_out12 <= c_or12.DB_MAX_OUTPUT_PORT_TYPE
+s12 => choose28.IN1
+l12 => choose44.IN1
+r12 => choose12.IN1
+res_out13 <= c_or13.DB_MAX_OUTPUT_PORT_TYPE
+s13 => choose29.IN1
+l13 => choose45.IN1
+r13 => choose13.IN1
+res_out14 <= c_or14.DB_MAX_OUTPUT_PORT_TYPE
+s14 => choose30.IN1
+l14 => choose46.IN1
+r14 => choose14.IN1
+res_out15 <= c_or15.DB_MAX_OUTPUT_PORT_TYPE
+s15 => choose31.IN1
+l15 => choose47.IN1
+r15 => choose15.IN1
+res_out16 <= c_or16.DB_MAX_OUTPUT_PORT_TYPE
+s16 => choose32.IN1
+l16 => choose48.IN1
+r16 => choose16.IN1
+
+
+|ALU_LAB3|74181:alu4
+F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
+A1N => 14.IN0
+A1N => 13.IN2
+A1N => 44.IN0
+S3 => 14.IN1
+S3 => 9.IN1
+S3 => 24.IN1
+S3 => 19.IN1
+B1N => 14.IN2
+B1N => 28.IN0
+B1N => 11.IN1
+S2 => 13.IN1
+S2 => 8.IN1
+S2 => 23.IN1
+S2 => 18.IN1
+S0 => 11.IN0
+S0 => 6.IN0
+S0 => 21.IN0
+S0 => 16.IN0
+S1 => 12.IN1
+S1 => 7.IN1
+S1 => 22.IN1
+S1 => 17.IN1
+M => 98.IN0
+A0N => 9.IN0
+A0N => 8.IN2
+A0N => 43.IN0
+B0N => 9.IN2
+B0N => 27.IN0
+B0N => 6.IN1
+CN => 66.IN2
+CN => 73.IN0
+CN => 73.IN3
+CN => 69.IN0
+CN => 64.IN0
+CN => 61.IN4
+CN => 61.IN5
+AEQB <= 83.DB_MAX_OUTPUT_PORT_TYPE
+A3N => 24.IN0
+A3N => 23.IN2
+A3N => 51.IN0
+B3N => 24.IN2
+B3N => 25.IN0
+B3N => 21.IN1
+A2N => 19.IN0
+A2N => 18.IN2
+A2N => 45.IN0
+B2N => 19.IN2
+B2N => 31.IN0
+B2N => 16.IN1
+F2N <= 85.DB_MAX_OUTPUT_PORT_TYPE
+F3N <= 84.DB_MAX_OUTPUT_PORT_TYPE
+PN <= 60.DB_MAX_OUTPUT_PORT_TYPE
+CN4 <= 78.DB_MAX_OUTPUT_PORT_TYPE
+GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
+F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|74181:alu3
+F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
+A1N => 14.IN0
+A1N => 13.IN2
+A1N => 44.IN0
+S3 => 14.IN1
+S3 => 9.IN1
+S3 => 24.IN1
+S3 => 19.IN1
+B1N => 14.IN2
+B1N => 28.IN0
+B1N => 11.IN1
+S2 => 13.IN1
+S2 => 8.IN1
+S2 => 23.IN1
+S2 => 18.IN1
+S0 => 11.IN0
+S0 => 6.IN0
+S0 => 21.IN0
+S0 => 16.IN0
+S1 => 12.IN1
+S1 => 7.IN1
+S1 => 22.IN1
+S1 => 17.IN1
+M => 98.IN0
+A0N => 9.IN0
+A0N => 8.IN2
+A0N => 43.IN0
+B0N => 9.IN2
+B0N => 27.IN0
+B0N => 6.IN1
+CN => 66.IN2
+CN => 73.IN0
+CN => 73.IN3
+CN => 69.IN0
+CN => 64.IN0
+CN => 61.IN4
+CN => 61.IN5
+AEQB <= 83.DB_MAX_OUTPUT_PORT_TYPE
+A3N => 24.IN0
+A3N => 23.IN2
+A3N => 51.IN0
+B3N => 24.IN2
+B3N => 25.IN0
+B3N => 21.IN1
+A2N => 19.IN0
+A2N => 18.IN2
+A2N => 45.IN0
+B2N => 19.IN2
+B2N => 31.IN0
+B2N => 16.IN1
+F2N <= 85.DB_MAX_OUTPUT_PORT_TYPE
+F3N <= 84.DB_MAX_OUTPUT_PORT_TYPE
+PN <= 60.DB_MAX_OUTPUT_PORT_TYPE
+CN4 <= 78.DB_MAX_OUTPUT_PORT_TYPE
+GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
+F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|74181:alu2
+F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
+A1N => 14.IN0
+A1N => 13.IN2
+A1N => 44.IN0
+S3 => 14.IN1
+S3 => 9.IN1
+S3 => 24.IN1
+S3 => 19.IN1
+B1N => 14.IN2
+B1N => 28.IN0
+B1N => 11.IN1
+S2 => 13.IN1
+S2 => 8.IN1
+S2 => 23.IN1
+S2 => 18.IN1
+S0 => 11.IN0
+S0 => 6.IN0
+S0 => 21.IN0
+S0 => 16.IN0
+S1 => 12.IN1
+S1 => 7.IN1
+S1 => 22.IN1
+S1 => 17.IN1
+M => 98.IN0
+A0N => 9.IN0
+A0N => 8.IN2
+A0N => 43.IN0
+B0N => 9.IN2
+B0N => 27.IN0
+B0N => 6.IN1
+CN => 66.IN2
+CN => 73.IN0
+CN => 73.IN3
+CN => 69.IN0
+CN => 64.IN0
+CN => 61.IN4
+CN => 61.IN5
+AEQB <= 83.DB_MAX_OUTPUT_PORT_TYPE
+A3N => 24.IN0
+A3N => 23.IN2
+A3N => 51.IN0
+B3N => 24.IN2
+B3N => 25.IN0
+B3N => 21.IN1
+A2N => 19.IN0
+A2N => 18.IN2
+A2N => 45.IN0
+B2N => 19.IN2
+B2N => 31.IN0
+B2N => 16.IN1
+F2N <= 85.DB_MAX_OUTPUT_PORT_TYPE
+F3N <= 84.DB_MAX_OUTPUT_PORT_TYPE
+PN <= 60.DB_MAX_OUTPUT_PORT_TYPE
+CN4 <= 78.DB_MAX_OUTPUT_PORT_TYPE
+GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
+F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|74181:alu1
+F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
+A1N => 14.IN0
+A1N => 13.IN2
+A1N => 44.IN0
+S3 => 14.IN1
+S3 => 9.IN1
+S3 => 24.IN1
+S3 => 19.IN1
+B1N => 14.IN2
+B1N => 28.IN0
+B1N => 11.IN1
+S2 => 13.IN1
+S2 => 8.IN1
+S2 => 23.IN1
+S2 => 18.IN1
+S0 => 11.IN0
+S0 => 6.IN0
+S0 => 21.IN0
+S0 => 16.IN0
+S1 => 12.IN1
+S1 => 7.IN1
+S1 => 22.IN1
+S1 => 17.IN1
+M => 98.IN0
+A0N => 9.IN0
+A0N => 8.IN2
+A0N => 43.IN0
+B0N => 9.IN2
+B0N => 27.IN0
+B0N => 6.IN1
+CN => 66.IN2
+CN => 73.IN0
+CN => 73.IN3
+CN => 69.IN0
+CN => 64.IN0
+CN => 61.IN4
+CN => 61.IN5
+AEQB <= 83.DB_MAX_OUTPUT_PORT_TYPE
+A3N => 24.IN0
+A3N => 23.IN2
+A3N => 51.IN0
+B3N => 24.IN2
+B3N => 25.IN0
+B3N => 21.IN1
+A2N => 19.IN0
+A2N => 18.IN2
+A2N => 45.IN0
+B2N => 19.IN2
+B2N => 31.IN0
+B2N => 16.IN1
+F2N <= 85.DB_MAX_OUTPUT_PORT_TYPE
+F3N <= 84.DB_MAX_OUTPUT_PORT_TYPE
+PN <= 60.DB_MAX_OUTPUT_PORT_TYPE
+CN4 <= 78.DB_MAX_OUTPUT_PORT_TYPE
+GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
+F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|CHOOSE_LAB3:inst2
+res_out1 <= c_or1.DB_MAX_OUTPUT_PORT_TYPE
+s_choose => choose17.IN0
+s_choose => choose18.IN0
+s_choose => choose19.IN0
+s_choose => choose20.IN0
+s_choose => choose21.IN0
+s_choose => choose22.IN0
+s_choose => choose23.IN0
+s_choose => choose24.IN0
+s_choose => choose25.IN0
+s_choose => choose26.IN0
+s_choose => choose27.IN0
+s_choose => choose28.IN0
+s_choose => choose29.IN0
+s_choose => choose30.IN0
+s_choose => choose31.IN0
+s_choose => choose32.IN0
+s1 => choose17.IN1
+l_choose => choose33.IN0
+l_choose => choose34.IN0
+l_choose => choose35.IN0
+l_choose => choose36.IN0
+l_choose => choose37.IN0
+l_choose => choose38.IN0
+l_choose => choose39.IN0
+l_choose => choose40.IN0
+l_choose => choose41.IN0
+l_choose => choose42.IN0
+l_choose => choose43.IN0
+l_choose => choose44.IN0
+l_choose => choose45.IN0
+l_choose => choose46.IN0
+l_choose => choose47.IN0
+l_choose => choose48.IN0
+l1 => choose33.IN1
+r_choose => choose1.IN0
+r_choose => choose2.IN0
+r_choose => choose3.IN0
+r_choose => choose4.IN0
+r_choose => choose5.IN0
+r_choose => choose6.IN0
+r_choose => choose7.IN0
+r_choose => choose8.IN0
+r_choose => choose9.IN0
+r_choose => choose10.IN0
+r_choose => choose11.IN0
+r_choose => choose12.IN0
+r_choose => choose13.IN0
+r_choose => choose14.IN0
+r_choose => choose15.IN0
+r_choose => choose16.IN0
+r1 => choose1.IN1
+res_out2 <= c_or2.DB_MAX_OUTPUT_PORT_TYPE
+s2 => choose18.IN1
+l2 => choose34.IN1
+r2 => choose2.IN1
+res_out3 <= c_or3.DB_MAX_OUTPUT_PORT_TYPE
+s3 => choose19.IN1
+l3 => choose35.IN1
+r3 => choose3.IN1
+res_out4 <= c_or4.DB_MAX_OUTPUT_PORT_TYPE
+s4 => choose20.IN1
+l4 => choose36.IN1
+r4 => choose4.IN1
+res_out5 <= c_or5.DB_MAX_OUTPUT_PORT_TYPE
+s5 => choose21.IN1
+l5 => choose37.IN1
+r5 => choose5.IN1
+res_out6 <= c_or6.DB_MAX_OUTPUT_PORT_TYPE
+s6 => choose22.IN1
+l6 => choose38.IN1
+r6 => choose6.IN1
+res_out7 <= c_or7.DB_MAX_OUTPUT_PORT_TYPE
+s7 => choose23.IN1
+l7 => choose39.IN1
+r7 => choose7.IN1
+res_out8 <= c_or8.DB_MAX_OUTPUT_PORT_TYPE
+s8 => choose24.IN1
+l8 => choose40.IN1
+r8 => choose8.IN1
+res_out9 <= c_or9.DB_MAX_OUTPUT_PORT_TYPE
+s9 => choose25.IN1
+l9 => choose41.IN1
+r9 => choose9.IN1
+res_out10 <= c_or10.DB_MAX_OUTPUT_PORT_TYPE
+s10 => choose26.IN1
+l10 => choose42.IN1
+r10 => choose10.IN1
+res_out11 <= c_or11.DB_MAX_OUTPUT_PORT_TYPE
+s11 => choose27.IN1
+l11 => choose43.IN1
+r11 => choose11.IN1
+res_out12 <= c_or12.DB_MAX_OUTPUT_PORT_TYPE
+s12 => choose28.IN1
+l12 => choose44.IN1
+r12 => choose12.IN1
+res_out13 <= c_or13.DB_MAX_OUTPUT_PORT_TYPE
+s13 => choose29.IN1
+l13 => choose45.IN1
+r13 => choose13.IN1
+res_out14 <= c_or14.DB_MAX_OUTPUT_PORT_TYPE
+s14 => choose30.IN1
+l14 => choose46.IN1
+r14 => choose14.IN1
+res_out15 <= c_or15.DB_MAX_OUTPUT_PORT_TYPE
+s15 => choose31.IN1
+l15 => choose47.IN1
+r15 => choose15.IN1
+res_out16 <= c_or16.DB_MAX_OUTPUT_PORT_TYPE
+s16 => choose32.IN1
+l16 => choose48.IN1
+r16 => choose16.IN1
+
+
+|ALU_LAB3|METRIX:mul_lab3
+p0 <= cell:inst.PART1
+a0 => cell:inst.A0
+b0 => cell:inst.B0
+p1 <= cell:inst9.PART1
+a1 => cell:inst1.A0
+b1 => cell:inst9.B0
+p2 <= cell:inst33.PART1
+a2 => cell:inst2.A0
+b2 => cell:inst33.B0
+p3 <= cell:inst23.PART1
+a3 => cell:inst3.A0
+b3 => cell:inst23.B0
+p4 <= cell:inst34.PART1
+a4 => cell:inst4.A0
+b4 => cell:inst34.B0
+p5 <= cell:inst40.PART1
+a5 => cell:inst5.A0
+b5 => cell:inst40.B0
+p6 <= cell:inst48.PART1
+a6 => cell:inst6.A0
+b6 => cell:inst48.B0
+p7 <= cell:inst56.PART1
+a7 => cell:inst7.A0
+b7 => cell:inst56.B0
+p8 <= cell:inst57.PART1
+p9 <= cell:inst58.PART1
+p10 <= cell:inst59.PART1
+p11 <= cell:inst60.PART1
+p12 <= cell:inst61.PART1
+p13 <= cell:inst62.PART1
+p14 <= cell:inst63.PART1
+p15 <= cell:inst63.C1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst9
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst9|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst9|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst1
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst1|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst1|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst33
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst33|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst33|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst8
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst8|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst8|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst2
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst2|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst2|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst23
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst23|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst23|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst16
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst16|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst16|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst10
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst10|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst10|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst3
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst3|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst3|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst34
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst34|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst34|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst24
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst24|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst24|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst17
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst17|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst17|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst11
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst11|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst11|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst4
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst4|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst4|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst40
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst40|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst40|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst31
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst31|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst31|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst25
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst25|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst25|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst18
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst18|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst18|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst12
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst12|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst12|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst5
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst5|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst5|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst48
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst48|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst48|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst41
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst41|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst41|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst32
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst32|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst32|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst26
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst26|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst26|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst19
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst19|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst19|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst13
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst13|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst13|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst6
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst6|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst6|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst56
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst56|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst56|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst49
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst49|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst49|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst42
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst42|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst42|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst35
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst35|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst35|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst27
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst27|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst27|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst20
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst20|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst20|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst14
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst14|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst14|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst7
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst7|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst7|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst57
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst57|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst57|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst50
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst50|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst50|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst43
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst43|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst43|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst36
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst36|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst36|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst28
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst28|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst28|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst21
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst21|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst21|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst15
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst15|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst15|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst58
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst58|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst58|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst51
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst51|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst51|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst44
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst44|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst44|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst37
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst37|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst37|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst29
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst29|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst29|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst22
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst22|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst22|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst59
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst59|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst59|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst52
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst52|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst52|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst45
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst45|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst45|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst38
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst38|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst38|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst30
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst30|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst30|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst60
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst60|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst60|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst53
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst53|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst53|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst46
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst46|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst46|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst39
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst39|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst39|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst61
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst61|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst61|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst54
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst54|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst54|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst47
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst47|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst47|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst62
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst62|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst62|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst55
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst55|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst55|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst63
+B1 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => B1.DATAIN
+B0 => inst1.IN0
+A1 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => A1.DATAIN
+A0 => inst1.IN1
+PART1 <= FA:inst.s1
+C0 => FA:inst.c0
+PART0 => FA:inst.a1
+C1 <= FA:inst.c1
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst63|FA:inst
+s1 <= 7482:inst.SUM1
+b1 => 7482:inst.B1
+c0 => 7482:inst.C0
+a1 => 7482:inst.A1
+c1 <= 7482:inst.SUM2
+
+
+|ALU_LAB3|METRIX:mul_lab3|cell:inst63|FA:inst|7482:inst
+SUM1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 3.IN0
+A1 => 15.IN0
+A1 => 20.IN1
+A1 => 38.IN1
+A1 => 39.IN1
+B1 => 3.IN1
+B1 => 11.IN0
+B1 => 20.IN0
+B1 => 38.IN0
+B1 => 39.IN4
+B1 => 39.IN5
+C0 => 8.IN1
+C0 => 17.IN2
+C0 => 18.IN1
+C0 => 19.IN0
+C0 => 13.IN0
+C0 => 30.IN0
+C0 => 31.IN0
+C0 => 32.IN3
+C0 => 33.IN0
+SUM2 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 14.IN0
+A2 => 19.IN2
+A2 => 21.IN1
+A2 => 29.IN0
+A2 => 30.IN1
+B2 => 16.IN0
+B2 => 19.IN1
+B2 => 22.IN0
+B2 => 29.IN1
+B2 => 31.IN1
+C2 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|chufa:inst7
+business0 <= DIV2:inst1.quotient[0]
+denom7 => DIV2:inst1.denom[7]
+denom6 => DIV2:inst1.denom[6]
+denom5 => DIV2:inst1.denom[5]
+denom4 => DIV2:inst1.denom[4]
+denom3 => DIV2:inst1.denom[3]
+denom2 => DIV2:inst1.denom[2]
+denom1 => DIV2:inst1.denom[1]
+denom0 => DIV2:inst1.denom[0]
+numerator15 => DIV2:inst1.numer[15]
+numerator14 => DIV2:inst1.numer[14]
+numerator13 => DIV2:inst1.numer[13]
+numerator12 => DIV2:inst1.numer[12]
+numerator11 => DIV2:inst1.numer[11]
+numerator10 => DIV2:inst1.numer[10]
+numerator9 => DIV2:inst1.numer[9]
+numerator8 => DIV2:inst1.numer[8]
+numerator7 => DIV2:inst1.numer[7]
+numerator6 => DIV2:inst1.numer[6]
+numerator5 => DIV2:inst1.numer[5]
+numerator4 => DIV2:inst1.numer[4]
+numerator3 => DIV2:inst1.numer[3]
+numerator2 => DIV2:inst1.numer[2]
+numerator1 => DIV2:inst1.numer[1]
+numerator0 => DIV2:inst1.numer[0]
+business1 <= DIV2:inst1.quotient[1]
+business15 <= DIV2:inst1.quotient[15]
+business14 <= DIV2:inst1.quotient[14]
+business13 <= DIV2:inst1.quotient[13]
+business12 <= DIV2:inst1.quotient[12]
+business11 <= DIV2:inst1.quotient[11]
+business10 <= DIV2:inst1.quotient[10]
+business9 <= DIV2:inst1.quotient[9]
+business8 <= DIV2:inst1.quotient[8]
+business7 <= DIV2:inst1.quotient[7]
+business6 <= DIV2:inst1.quotient[6]
+business5 <= DIV2:inst1.quotient[5]
+business4 <= DIV2:inst1.quotient[4]
+business3 <= DIV2:inst1.quotient[3]
+business2 <= DIV2:inst1.quotient[2]
+remain7 <= DIV2:inst1.remain[7]
+remain6 <= DIV2:inst1.remain[6]
+remain5 <= DIV2:inst1.remain[5]
+remain4 <= DIV2:inst1.remain[4]
+remain3 <= DIV2:inst1.remain[3]
+remain2 <= DIV2:inst1.remain[2]
+remain1 <= DIV2:inst1.remain[1]
+remain0 <= DIV2:inst1.remain[0]
+
+
+|ALU_LAB3|chufa:inst7|DIV2:inst1
+denom[0] => lpm_divide:LPM_DIVIDE_component.denom[0]
+denom[1] => lpm_divide:LPM_DIVIDE_component.denom[1]
+denom[2] => lpm_divide:LPM_DIVIDE_component.denom[2]
+denom[3] => lpm_divide:LPM_DIVIDE_component.denom[3]
+denom[4] => lpm_divide:LPM_DIVIDE_component.denom[4]
+denom[5] => lpm_divide:LPM_DIVIDE_component.denom[5]
+denom[6] => lpm_divide:LPM_DIVIDE_component.denom[6]
+denom[7] => lpm_divide:LPM_DIVIDE_component.denom[7]
+numer[0] => lpm_divide:LPM_DIVIDE_component.numer[0]
+numer[1] => lpm_divide:LPM_DIVIDE_component.numer[1]
+numer[2] => lpm_divide:LPM_DIVIDE_component.numer[2]
+numer[3] => lpm_divide:LPM_DIVIDE_component.numer[3]
+numer[4] => lpm_divide:LPM_DIVIDE_component.numer[4]
+numer[5] => lpm_divide:LPM_DIVIDE_component.numer[5]
+numer[6] => lpm_divide:LPM_DIVIDE_component.numer[6]
+numer[7] => lpm_divide:LPM_DIVIDE_component.numer[7]
+numer[8] => lpm_divide:LPM_DIVIDE_component.numer[8]
+numer[9] => lpm_divide:LPM_DIVIDE_component.numer[9]
+numer[10] => lpm_divide:LPM_DIVIDE_component.numer[10]
+numer[11] => lpm_divide:LPM_DIVIDE_component.numer[11]
+numer[12] => lpm_divide:LPM_DIVIDE_component.numer[12]
+numer[13] => lpm_divide:LPM_DIVIDE_component.numer[13]
+numer[14] => lpm_divide:LPM_DIVIDE_component.numer[14]
+numer[15] => lpm_divide:LPM_DIVIDE_component.numer[15]
+quotient[0] <= lpm_divide:LPM_DIVIDE_component.quotient[0]
+quotient[1] <= lpm_divide:LPM_DIVIDE_component.quotient[1]
+quotient[2] <= lpm_divide:LPM_DIVIDE_component.quotient[2]
+quotient[3] <= lpm_divide:LPM_DIVIDE_component.quotient[3]
+quotient[4] <= lpm_divide:LPM_DIVIDE_component.quotient[4]
+quotient[5] <= lpm_divide:LPM_DIVIDE_component.quotient[5]
+quotient[6] <= lpm_divide:LPM_DIVIDE_component.quotient[6]
+quotient[7] <= lpm_divide:LPM_DIVIDE_component.quotient[7]
+quotient[8] <= lpm_divide:LPM_DIVIDE_component.quotient[8]
+quotient[9] <= lpm_divide:LPM_DIVIDE_component.quotient[9]
+quotient[10] <= lpm_divide:LPM_DIVIDE_component.quotient[10]
+quotient[11] <= lpm_divide:LPM_DIVIDE_component.quotient[11]
+quotient[12] <= lpm_divide:LPM_DIVIDE_component.quotient[12]
+quotient[13] <= lpm_divide:LPM_DIVIDE_component.quotient[13]
+quotient[14] <= lpm_divide:LPM_DIVIDE_component.quotient[14]
+quotient[15] <= lpm_divide:LPM_DIVIDE_component.quotient[15]
+remain[0] <= lpm_divide:LPM_DIVIDE_component.remain[0]
+remain[1] <= lpm_divide:LPM_DIVIDE_component.remain[1]
+remain[2] <= lpm_divide:LPM_DIVIDE_component.remain[2]
+remain[3] <= lpm_divide:LPM_DIVIDE_component.remain[3]
+remain[4] <= lpm_divide:LPM_DIVIDE_component.remain[4]
+remain[5] <= lpm_divide:LPM_DIVIDE_component.remain[5]
+remain[6] <= lpm_divide:LPM_DIVIDE_component.remain[6]
+remain[7] <= lpm_divide:LPM_DIVIDE_component.remain[7]
+
+
+|ALU_LAB3|chufa:inst7|DIV2:inst1|lpm_divide:LPM_DIVIDE_component
+numer[0] => lpm_divide_l1q:auto_generated.numer[0]
+numer[1] => lpm_divide_l1q:auto_generated.numer[1]
+numer[2] => lpm_divide_l1q:auto_generated.numer[2]
+numer[3] => lpm_divide_l1q:auto_generated.numer[3]
+numer[4] => lpm_divide_l1q:auto_generated.numer[4]
+numer[5] => lpm_divide_l1q:auto_generated.numer[5]
+numer[6] => lpm_divide_l1q:auto_generated.numer[6]
+numer[7] => lpm_divide_l1q:auto_generated.numer[7]
+numer[8] => lpm_divide_l1q:auto_generated.numer[8]
+numer[9] => lpm_divide_l1q:auto_generated.numer[9]
+numer[10] => lpm_divide_l1q:auto_generated.numer[10]
+numer[11] => lpm_divide_l1q:auto_generated.numer[11]
+numer[12] => lpm_divide_l1q:auto_generated.numer[12]
+numer[13] => lpm_divide_l1q:auto_generated.numer[13]
+numer[14] => lpm_divide_l1q:auto_generated.numer[14]
+numer[15] => lpm_divide_l1q:auto_generated.numer[15]
+denom[0] => lpm_divide_l1q:auto_generated.denom[0]
+denom[1] => lpm_divide_l1q:auto_generated.denom[1]
+denom[2] => lpm_divide_l1q:auto_generated.denom[2]
+denom[3] => lpm_divide_l1q:auto_generated.denom[3]
+denom[4] => lpm_divide_l1q:auto_generated.denom[4]
+denom[5] => lpm_divide_l1q:auto_generated.denom[5]
+denom[6] => lpm_divide_l1q:auto_generated.denom[6]
+denom[7] => lpm_divide_l1q:auto_generated.denom[7]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+quotient[0] <= lpm_divide_l1q:auto_generated.quotient[0]
+quotient[1] <= lpm_divide_l1q:auto_generated.quotient[1]
+quotient[2] <= lpm_divide_l1q:auto_generated.quotient[2]
+quotient[3] <= lpm_divide_l1q:auto_generated.quotient[3]
+quotient[4] <= lpm_divide_l1q:auto_generated.quotient[4]
+quotient[5] <= lpm_divide_l1q:auto_generated.quotient[5]
+quotient[6] <= lpm_divide_l1q:auto_generated.quotient[6]
+quotient[7] <= lpm_divide_l1q:auto_generated.quotient[7]
+quotient[8] <= lpm_divide_l1q:auto_generated.quotient[8]
+quotient[9] <= lpm_divide_l1q:auto_generated.quotient[9]
+quotient[10] <= lpm_divide_l1q:auto_generated.quotient[10]
+quotient[11] <= lpm_divide_l1q:auto_generated.quotient[11]
+quotient[12] <= lpm_divide_l1q:auto_generated.quotient[12]
+quotient[13] <= lpm_divide_l1q:auto_generated.quotient[13]
+quotient[14] <= lpm_divide_l1q:auto_generated.quotient[14]
+quotient[15] <= lpm_divide_l1q:auto_generated.quotient[15]
+remain[0] <= lpm_divide_l1q:auto_generated.remain[0]
+remain[1] <= lpm_divide_l1q:auto_generated.remain[1]
+remain[2] <= lpm_divide_l1q:auto_generated.remain[2]
+remain[3] <= lpm_divide_l1q:auto_generated.remain[3]
+remain[4] <= lpm_divide_l1q:auto_generated.remain[4]
+remain[5] <= lpm_divide_l1q:auto_generated.remain[5]
+remain[6] <= lpm_divide_l1q:auto_generated.remain[6]
+remain[7] <= lpm_divide_l1q:auto_generated.remain[7]
+
+
+|ALU_LAB3|chufa:inst7|DIV2:inst1|lpm_divide:LPM_DIVIDE_component|lpm_divide_l1q:auto_generated
+denom[0] => sign_div_unsign_ulh:divider.denominator[0]
+denom[1] => sign_div_unsign_ulh:divider.denominator[1]
+denom[2] => sign_div_unsign_ulh:divider.denominator[2]
+denom[3] => sign_div_unsign_ulh:divider.denominator[3]
+denom[4] => sign_div_unsign_ulh:divider.denominator[4]
+denom[5] => sign_div_unsign_ulh:divider.denominator[5]
+denom[6] => sign_div_unsign_ulh:divider.denominator[6]
+denom[7] => sign_div_unsign_ulh:divider.denominator[7]
+numer[0] => sign_div_unsign_ulh:divider.numerator[0]
+numer[1] => sign_div_unsign_ulh:divider.numerator[1]
+numer[2] => sign_div_unsign_ulh:divider.numerator[2]
+numer[3] => sign_div_unsign_ulh:divider.numerator[3]
+numer[4] => sign_div_unsign_ulh:divider.numerator[4]
+numer[5] => sign_div_unsign_ulh:divider.numerator[5]
+numer[6] => sign_div_unsign_ulh:divider.numerator[6]
+numer[7] => sign_div_unsign_ulh:divider.numerator[7]
+numer[8] => sign_div_unsign_ulh:divider.numerator[8]
+numer[9] => sign_div_unsign_ulh:divider.numerator[9]
+numer[10] => sign_div_unsign_ulh:divider.numerator[10]
+numer[11] => sign_div_unsign_ulh:divider.numerator[11]
+numer[12] => sign_div_unsign_ulh:divider.numerator[12]
+numer[13] => sign_div_unsign_ulh:divider.numerator[13]
+numer[14] => sign_div_unsign_ulh:divider.numerator[14]
+numer[15] => sign_div_unsign_ulh:divider.numerator[15]
+quotient[0] <= sign_div_unsign_ulh:divider.quotient[0]
+quotient[1] <= sign_div_unsign_ulh:divider.quotient[1]
+quotient[2] <= sign_div_unsign_ulh:divider.quotient[2]
+quotient[3] <= sign_div_unsign_ulh:divider.quotient[3]
+quotient[4] <= sign_div_unsign_ulh:divider.quotient[4]
+quotient[5] <= sign_div_unsign_ulh:divider.quotient[5]
+quotient[6] <= sign_div_unsign_ulh:divider.quotient[6]
+quotient[7] <= sign_div_unsign_ulh:divider.quotient[7]
+quotient[8] <= sign_div_unsign_ulh:divider.quotient[8]
+quotient[9] <= sign_div_unsign_ulh:divider.quotient[9]
+quotient[10] <= sign_div_unsign_ulh:divider.quotient[10]
+quotient[11] <= sign_div_unsign_ulh:divider.quotient[11]
+quotient[12] <= sign_div_unsign_ulh:divider.quotient[12]
+quotient[13] <= sign_div_unsign_ulh:divider.quotient[13]
+quotient[14] <= sign_div_unsign_ulh:divider.quotient[14]
+quotient[15] <= sign_div_unsign_ulh:divider.quotient[15]
+remain[0] <= sign_div_unsign_ulh:divider.remainder[0]
+remain[1] <= sign_div_unsign_ulh:divider.remainder[1]
+remain[2] <= sign_div_unsign_ulh:divider.remainder[2]
+remain[3] <= sign_div_unsign_ulh:divider.remainder[3]
+remain[4] <= sign_div_unsign_ulh:divider.remainder[4]
+remain[5] <= sign_div_unsign_ulh:divider.remainder[5]
+remain[6] <= sign_div_unsign_ulh:divider.remainder[6]
+remain[7] <= sign_div_unsign_ulh:divider.remainder[7]
+
+
+|ALU_LAB3|chufa:inst7|DIV2:inst1|lpm_divide:LPM_DIVIDE_component|lpm_divide_l1q:auto_generated|sign_div_unsign_ulh:divider
+denominator[0] => alt_u_div_g7f:divider.denominator[0]
+denominator[1] => alt_u_div_g7f:divider.denominator[1]
+denominator[2] => alt_u_div_g7f:divider.denominator[2]
+denominator[3] => alt_u_div_g7f:divider.denominator[3]
+denominator[4] => alt_u_div_g7f:divider.denominator[4]
+denominator[5] => alt_u_div_g7f:divider.denominator[5]
+denominator[6] => alt_u_div_g7f:divider.denominator[6]
+denominator[7] => alt_u_div_g7f:divider.denominator[7]
+numerator[0] => alt_u_div_g7f:divider.numerator[0]
+numerator[1] => alt_u_div_g7f:divider.numerator[1]
+numerator[2] => alt_u_div_g7f:divider.numerator[2]
+numerator[3] => alt_u_div_g7f:divider.numerator[3]
+numerator[4] => alt_u_div_g7f:divider.numerator[4]
+numerator[5] => alt_u_div_g7f:divider.numerator[5]
+numerator[6] => alt_u_div_g7f:divider.numerator[6]
+numerator[7] => alt_u_div_g7f:divider.numerator[7]
+numerator[8] => alt_u_div_g7f:divider.numerator[8]
+numerator[9] => alt_u_div_g7f:divider.numerator[9]
+numerator[10] => alt_u_div_g7f:divider.numerator[10]
+numerator[11] => alt_u_div_g7f:divider.numerator[11]
+numerator[12] => alt_u_div_g7f:divider.numerator[12]
+numerator[13] => alt_u_div_g7f:divider.numerator[13]
+numerator[14] => alt_u_div_g7f:divider.numerator[14]
+numerator[15] => alt_u_div_g7f:divider.numerator[15]
+quotient[0] <= protect_quotient[0].DB_MAX_OUTPUT_PORT_TYPE
+quotient[1] <= protect_quotient[1].DB_MAX_OUTPUT_PORT_TYPE
+quotient[2] <= protect_quotient[2].DB_MAX_OUTPUT_PORT_TYPE
+quotient[3] <= protect_quotient[3].DB_MAX_OUTPUT_PORT_TYPE
+quotient[4] <= protect_quotient[4].DB_MAX_OUTPUT_PORT_TYPE
+quotient[5] <= protect_quotient[5].DB_MAX_OUTPUT_PORT_TYPE
+quotient[6] <= protect_quotient[6].DB_MAX_OUTPUT_PORT_TYPE
+quotient[7] <= protect_quotient[7].DB_MAX_OUTPUT_PORT_TYPE
+quotient[8] <= protect_quotient[8].DB_MAX_OUTPUT_PORT_TYPE
+quotient[9] <= protect_quotient[9].DB_MAX_OUTPUT_PORT_TYPE
+quotient[10] <= protect_quotient[10].DB_MAX_OUTPUT_PORT_TYPE
+quotient[11] <= protect_quotient[11].DB_MAX_OUTPUT_PORT_TYPE
+quotient[12] <= protect_quotient[12].DB_MAX_OUTPUT_PORT_TYPE
+quotient[13] <= protect_quotient[13].DB_MAX_OUTPUT_PORT_TYPE
+quotient[14] <= protect_quotient[14].DB_MAX_OUTPUT_PORT_TYPE
+quotient[15] <= protect_quotient[15].DB_MAX_OUTPUT_PORT_TYPE
+remainder[0] <= protect_remainder[0].DB_MAX_OUTPUT_PORT_TYPE
+remainder[1] <= protect_remainder[1].DB_MAX_OUTPUT_PORT_TYPE
+remainder[2] <= protect_remainder[2].DB_MAX_OUTPUT_PORT_TYPE
+remainder[3] <= protect_remainder[3].DB_MAX_OUTPUT_PORT_TYPE
+remainder[4] <= protect_remainder[4].DB_MAX_OUTPUT_PORT_TYPE
+remainder[5] <= protect_remainder[5].DB_MAX_OUTPUT_PORT_TYPE
+remainder[6] <= protect_remainder[6].DB_MAX_OUTPUT_PORT_TYPE
+remainder[7] <= protect_remainder[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|chufa:inst7|DIV2:inst1|lpm_divide:LPM_DIVIDE_component|lpm_divide_l1q:auto_generated|sign_div_unsign_ulh:divider|alt_u_div_g7f:divider
+denominator[0] => add_sub_7pc:add_sub_0.datab[0]
+denominator[0] => add_sub_8pc:add_sub_1.datab[0]
+denominator[0] => op_7.IN8
+denominator[0] => op_8.IN10
+denominator[0] => op_9.IN12
+denominator[0] => op_10.IN14
+denominator[0] => op_11.IN16
+denominator[0] => op_12.IN18
+denominator[0] => op_13.IN20
+denominator[0] => op_14.IN20
+denominator[0] => op_1.IN20
+denominator[0] => op_2.IN20
+denominator[0] => op_3.IN20
+denominator[0] => op_4.IN20
+denominator[0] => op_5.IN20
+denominator[0] => op_6.IN20
+denominator[1] => sel[0].IN1
+denominator[1] => add_sub_8pc:add_sub_1.datab[1]
+denominator[1] => sel[8].IN1
+denominator[1] => sel[16].IN1
+denominator[1] => op_7.IN6
+denominator[1] => sel[24].IN1
+denominator[1] => op_8.IN8
+denominator[1] => sel[32].IN1
+denominator[1] => op_9.IN10
+denominator[1] => sel[40].IN1
+denominator[1] => op_10.IN12
+denominator[1] => sel[48].IN1
+denominator[1] => op_11.IN14
+denominator[1] => sel[56].IN1
+denominator[1] => op_12.IN16
+denominator[1] => sel[64].IN1
+denominator[1] => op_13.IN18
+denominator[1] => sel[72].IN1
+denominator[1] => op_14.IN18
+denominator[1] => sel[80].IN1
+denominator[1] => op_1.IN18
+denominator[1] => sel[88].IN1
+denominator[1] => op_2.IN18
+denominator[1] => sel[96].IN1
+denominator[1] => op_3.IN18
+denominator[1] => sel[104].IN1
+denominator[1] => op_4.IN18
+denominator[1] => sel[112].IN1
+denominator[1] => op_5.IN18
+denominator[1] => sel[120].IN1
+denominator[1] => op_6.IN18
+denominator[1] => sel[128].IN1
+denominator[2] => sel[1].IN1
+denominator[2] => sel[9].IN1
+denominator[2] => sel[17].IN1
+denominator[2] => op_7.IN4
+denominator[2] => sel[25].IN1
+denominator[2] => op_8.IN6
+denominator[2] => sel[33].IN1
+denominator[2] => op_9.IN8
+denominator[2] => sel[41].IN1
+denominator[2] => op_10.IN10
+denominator[2] => sel[49].IN1
+denominator[2] => op_11.IN12
+denominator[2] => sel[57].IN1
+denominator[2] => op_12.IN14
+denominator[2] => sel[65].IN1
+denominator[2] => op_13.IN16
+denominator[2] => sel[73].IN1
+denominator[2] => op_14.IN16
+denominator[2] => sel[81].IN1
+denominator[2] => op_1.IN16
+denominator[2] => sel[89].IN1
+denominator[2] => op_2.IN16
+denominator[2] => sel[97].IN1
+denominator[2] => op_3.IN16
+denominator[2] => sel[105].IN1
+denominator[2] => op_4.IN16
+denominator[2] => sel[113].IN1
+denominator[2] => op_5.IN16
+denominator[2] => sel[121].IN1
+denominator[2] => op_6.IN16
+denominator[2] => sel[129].IN1
+denominator[3] => sel[2].IN1
+denominator[3] => sel[10].IN1
+denominator[3] => sel[18].IN1
+denominator[3] => sel[26].IN1
+denominator[3] => op_8.IN4
+denominator[3] => sel[34].IN1
+denominator[3] => op_9.IN6
+denominator[3] => sel[42].IN1
+denominator[3] => op_10.IN8
+denominator[3] => sel[50].IN1
+denominator[3] => op_11.IN10
+denominator[3] => sel[58].IN1
+denominator[3] => op_12.IN12
+denominator[3] => sel[66].IN1
+denominator[3] => op_13.IN14
+denominator[3] => sel[74].IN1
+denominator[3] => op_14.IN14
+denominator[3] => sel[82].IN1
+denominator[3] => op_1.IN14
+denominator[3] => sel[90].IN1
+denominator[3] => op_2.IN14
+denominator[3] => sel[98].IN1
+denominator[3] => op_3.IN14
+denominator[3] => sel[106].IN1
+denominator[3] => op_4.IN14
+denominator[3] => sel[114].IN1
+denominator[3] => op_5.IN14
+denominator[3] => sel[122].IN1
+denominator[3] => op_6.IN14
+denominator[3] => sel[130].IN1
+denominator[4] => sel[3].IN1
+denominator[4] => sel[11].IN1
+denominator[4] => sel[19].IN1
+denominator[4] => sel[27].IN1
+denominator[4] => sel[35].IN1
+denominator[4] => op_9.IN4
+denominator[4] => sel[43].IN1
+denominator[4] => op_10.IN6
+denominator[4] => sel[51].IN1
+denominator[4] => op_11.IN8
+denominator[4] => sel[59].IN1
+denominator[4] => op_12.IN10
+denominator[4] => sel[67].IN1
+denominator[4] => op_13.IN12
+denominator[4] => sel[75].IN1
+denominator[4] => op_14.IN12
+denominator[4] => sel[83].IN1
+denominator[4] => op_1.IN12
+denominator[4] => sel[91].IN1
+denominator[4] => op_2.IN12
+denominator[4] => sel[99].IN1
+denominator[4] => op_3.IN12
+denominator[4] => sel[107].IN1
+denominator[4] => op_4.IN12
+denominator[4] => sel[115].IN1
+denominator[4] => op_5.IN12
+denominator[4] => sel[123].IN1
+denominator[4] => op_6.IN12
+denominator[4] => sel[131].IN1
+denominator[5] => sel[4].IN1
+denominator[5] => sel[12].IN1
+denominator[5] => sel[20].IN1
+denominator[5] => sel[28].IN1
+denominator[5] => sel[36].IN1
+denominator[5] => sel[44].IN1
+denominator[5] => op_10.IN4
+denominator[5] => sel[52].IN1
+denominator[5] => op_11.IN6
+denominator[5] => sel[60].IN1
+denominator[5] => op_12.IN8
+denominator[5] => sel[68].IN1
+denominator[5] => op_13.IN10
+denominator[5] => sel[76].IN1
+denominator[5] => op_14.IN10
+denominator[5] => sel[84].IN1
+denominator[5] => op_1.IN10
+denominator[5] => sel[92].IN1
+denominator[5] => op_2.IN10
+denominator[5] => sel[100].IN1
+denominator[5] => op_3.IN10
+denominator[5] => sel[108].IN1
+denominator[5] => op_4.IN10
+denominator[5] => sel[116].IN1
+denominator[5] => op_5.IN10
+denominator[5] => sel[124].IN1
+denominator[5] => op_6.IN10
+denominator[5] => sel[132].IN1
+denominator[6] => sel[5].IN1
+denominator[6] => sel[13].IN1
+denominator[6] => sel[21].IN1
+denominator[6] => sel[29].IN1
+denominator[6] => sel[37].IN1
+denominator[6] => sel[45].IN1
+denominator[6] => sel[53].IN1
+denominator[6] => op_11.IN4
+denominator[6] => sel[61].IN1
+denominator[6] => op_12.IN6
+denominator[6] => sel[69].IN1
+denominator[6] => op_13.IN8
+denominator[6] => sel[77].IN1
+denominator[6] => op_14.IN8
+denominator[6] => sel[85].IN1
+denominator[6] => op_1.IN8
+denominator[6] => sel[93].IN1
+denominator[6] => op_2.IN8
+denominator[6] => sel[101].IN1
+denominator[6] => op_3.IN8
+denominator[6] => sel[109].IN1
+denominator[6] => op_4.IN8
+denominator[6] => sel[117].IN1
+denominator[6] => op_5.IN8
+denominator[6] => sel[125].IN1
+denominator[6] => op_6.IN8
+denominator[6] => sel[133].IN1
+denominator[7] => sel[6].IN1
+denominator[7] => sel[14].IN1
+denominator[7] => sel[22].IN1
+denominator[7] => sel[30].IN1
+denominator[7] => sel[38].IN1
+denominator[7] => sel[46].IN1
+denominator[7] => sel[54].IN1
+denominator[7] => sel[62].IN1
+denominator[7] => op_12.IN4
+denominator[7] => sel[70].IN1
+denominator[7] => op_13.IN6
+denominator[7] => sel[78].IN1
+denominator[7] => op_14.IN6
+denominator[7] => sel[86].IN1
+denominator[7] => op_1.IN6
+denominator[7] => sel[94].IN1
+denominator[7] => op_2.IN6
+denominator[7] => sel[102].IN1
+denominator[7] => op_3.IN6
+denominator[7] => sel[110].IN1
+denominator[7] => op_4.IN6
+denominator[7] => sel[118].IN1
+denominator[7] => op_5.IN6
+denominator[7] => sel[126].IN1
+denominator[7] => op_6.IN6
+denominator[7] => sel[134].IN1
+numerator[0] => StageOut[135].IN0
+numerator[0] => op_6.IN19
+numerator[1] => StageOut[126].IN0
+numerator[1] => op_5.IN19
+numerator[2] => StageOut[117].IN0
+numerator[2] => op_4.IN19
+numerator[3] => StageOut[108].IN0
+numerator[3] => op_3.IN19
+numerator[4] => StageOut[99].IN0
+numerator[4] => op_2.IN19
+numerator[5] => StageOut[90].IN0
+numerator[5] => op_1.IN19
+numerator[6] => StageOut[81].IN0
+numerator[6] => op_14.IN19
+numerator[7] => StageOut[72].IN0
+numerator[7] => op_13.IN19
+numerator[8] => StageOut[63].IN0
+numerator[8] => op_12.IN17
+numerator[9] => StageOut[54].IN0
+numerator[9] => op_11.IN15
+numerator[10] => StageOut[45].IN0
+numerator[10] => op_10.IN13
+numerator[11] => StageOut[36].IN0
+numerator[11] => op_9.IN11
+numerator[12] => StageOut[27].IN0
+numerator[12] => op_8.IN9
+numerator[13] => StageOut[18].IN0
+numerator[13] => op_7.IN7
+numerator[14] => add_sub_8pc:add_sub_1.dataa[0]
+numerator[14] => StageOut[9].IN0
+numerator[15] => add_sub_7pc:add_sub_0.dataa[0]
+numerator[15] => StageOut[0].IN0
+quotient[0] <= quotient_tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+quotient[1] <= quotient_tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+quotient[2] <= quotient_tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+quotient[3] <= quotient_tmp[3].DB_MAX_OUTPUT_PORT_TYPE
+quotient[4] <= quotient_tmp[4].DB_MAX_OUTPUT_PORT_TYPE
+quotient[5] <= quotient_tmp[5].DB_MAX_OUTPUT_PORT_TYPE
+quotient[6] <= quotient_tmp[6].DB_MAX_OUTPUT_PORT_TYPE
+quotient[7] <= quotient_tmp[7].DB_MAX_OUTPUT_PORT_TYPE
+quotient[8] <= quotient_tmp[8].DB_MAX_OUTPUT_PORT_TYPE
+quotient[9] <= quotient_tmp[9].DB_MAX_OUTPUT_PORT_TYPE
+quotient[10] <= quotient_tmp[10].DB_MAX_OUTPUT_PORT_TYPE
+quotient[11] <= quotient_tmp[11].DB_MAX_OUTPUT_PORT_TYPE
+quotient[12] <= quotient_tmp[12].DB_MAX_OUTPUT_PORT_TYPE
+quotient[13] <= quotient_tmp[13].DB_MAX_OUTPUT_PORT_TYPE
+quotient[14] <= quotient_tmp[14].DB_MAX_OUTPUT_PORT_TYPE
+quotient[15] <= quotient_tmp[15].DB_MAX_OUTPUT_PORT_TYPE
+remainder[0] <= StageOut[135].DB_MAX_OUTPUT_PORT_TYPE
+remainder[1] <= StageOut[136].DB_MAX_OUTPUT_PORT_TYPE
+remainder[2] <= StageOut[137].DB_MAX_OUTPUT_PORT_TYPE
+remainder[3] <= StageOut[138].DB_MAX_OUTPUT_PORT_TYPE
+remainder[4] <= StageOut[139].DB_MAX_OUTPUT_PORT_TYPE
+remainder[5] <= StageOut[140].DB_MAX_OUTPUT_PORT_TYPE
+remainder[6] <= StageOut[141].DB_MAX_OUTPUT_PORT_TYPE
+remainder[7] <= StageOut[142].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|chufa:inst7|DIV2:inst1|lpm_divide:LPM_DIVIDE_component|lpm_divide_l1q:auto_generated|sign_div_unsign_ulh:divider|alt_u_div_g7f:divider|add_sub_7pc:add_sub_0
+cout <= carry_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => carry_eqn[0].IN0
+dataa[0] => _.IN0
+dataa[0] => sum_eqn[0].IN0
+datab[0] => datab_node[0].IN0
+result[0] <= sum_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|chufa:inst7|DIV2:inst1|lpm_divide:LPM_DIVIDE_component|lpm_divide_l1q:auto_generated|sign_div_unsign_ulh:divider|alt_u_div_g7f:divider|add_sub_8pc:add_sub_1
+cout <= carry_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => carry_eqn[0].IN0
+dataa[0] => _.IN0
+dataa[0] => sum_eqn[0].IN0
+dataa[1] => carry_eqn[1].IN0
+dataa[1] => _.IN0
+dataa[1] => sum_eqn[1].IN0
+datab[0] => datab_node[0].IN0
+datab[1] => datab_node[1].IN0
+result[0] <= sum_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= sum_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_LAB3|74198:inst1
+QH <= 120.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 120.ACLR
+CLRN => 119.ACLR
+CLRN => 118.ACLR
+CLRN => 117.ACLR
+CLRN => 116.ACLR
+CLRN => 115.ACLR
+CLRN => 114.ACLR
+CLRN => 113.ACLR
+CLK => 120.CLK
+CLK => 119.CLK
+CLK => 118.CLK
+CLK => 117.CLK
+CLK => 116.CLK
+CLK => 115.CLK
+CLK => 114.CLK
+CLK => 113.CLK
+S1 => 160.IN0
+S1 => 84.IN1
+S1 => 83.IN0
+S1 => 88.IN1
+S1 => 87.IN0
+S1 => 92.IN1
+S1 => 91.IN0
+S1 => 96.IN1
+S1 => 95.IN0
+S1 => 100.IN1
+S1 => 99.IN0
+S1 => 104.IN1
+S1 => 103.IN0
+S1 => 108.IN1
+S1 => 107.IN0
+S1 => 112.IN1
+S1 => 111.IN0
+S0 => 159.IN0
+S0 => 110.IN1
+S0 => 106.IN1
+S0 => 102.IN1
+S0 => 98.IN1
+S0 => 94.IN1
+S0 => 90.IN1
+S0 => 86.IN1
+S0 => 82.IN1
+S0 => 84.IN0
+S0 => 88.IN0
+S0 => 92.IN0
+S0 => 96.IN0
+S0 => 100.IN0
+S0 => 104.IN0
+S0 => 108.IN0
+S0 => 112.IN0
+SRSI => 82.IN2
+A => 84.IN2
+B => 88.IN2
+C => 92.IN2
+D => 96.IN2
+E => 100.IN2
+F => 104.IN2
+G => 108.IN2
+H => 112.IN2
+SLSI => 111.IN2
+QG <= 119.DB_MAX_OUTPUT_PORT_TYPE
+QF <= 118.DB_MAX_OUTPUT_PORT_TYPE
+QE <= 117.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 116.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 115.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 114.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 113.DB_MAX_OUTPUT_PORT_TYPE
+
+

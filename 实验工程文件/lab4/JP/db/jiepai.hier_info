@@ -1,0 +1,33 @@
+|jiepai
+T1 <= 2_4decoder:inst.Q1
+CLK => mod4conter:inst1.CLK
+CLR => mod4conter:inst1.CLR
+CLR => inst2.ACLR
+T2 <= 2_4decoder:inst.Q2
+T3 <= 2_4decoder:inst.Q3
+T4 <= 2_4decoder:inst.Q0
+W1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+W2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|jiepai|2_4decoder:inst
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst1.IN0
+A => inst3.IN0
+B => inst5.IN0
+B => inst2.IN1
+B => inst3.IN1
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|jiepai|mod4conter:inst1
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst1.ACLR
+CLR => inst.ACLR
+CLK => inst.CLK
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

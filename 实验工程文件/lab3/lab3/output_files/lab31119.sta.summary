@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 125C Model Setup 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a6~porta_address_reg0'
+Slack : -45.636
+TNS   : -2630.523
+
+Type  : Slow 1200mV 125C Model Setup 'T_CLK'
+Slack : -6.284
+TNS   : -81.051
+
+Type  : Slow 1200mV 125C Model Setup 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a15~porta_address_reg0'
+Slack : -4.918
+TNS   : -37.082
+
+Type  : Slow 1200mV 125C Model Hold 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a6~porta_address_reg0'
+Slack : -2.535
+TNS   : -3.761
+
+Type  : Slow 1200mV 125C Model Hold 'T_CLK'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Hold 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a15~porta_address_reg0'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'T_CLK'
+Slack : -3.000
+TNS   : -51.633
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a6~porta_address_reg0'
+Slack : -2.799
+TNS   : -127.357
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a15~porta_address_reg0'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV -40C Model Setup 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a6~porta_address_reg0'
+Slack : -38.752
+TNS   : -2265.459
+
+Type  : Slow 1200mV -40C Model Setup 'T_CLK'
+Slack : -5.423
+TNS   : -68.856
+
+Type  : Slow 1200mV -40C Model Setup 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a15~porta_address_reg0'
+Slack : -4.222
+TNS   : -31.485
+
+Type  : Slow 1200mV -40C Model Hold 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a6~porta_address_reg0'
+Slack : -2.216
+TNS   : -3.651
+
+Type  : Slow 1200mV -40C Model Hold 'T_CLK'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a15~porta_address_reg0'
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'T_CLK'
+Slack : -3.000
+TNS   : -47.559
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a6~porta_address_reg0'
+Slack : -2.649
+TNS   : -110.747
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a15~porta_address_reg0'
+Slack : -1.285
+TNS   : -10.280
+
+Type  : Fast 1200mV -40C Model Setup 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a6~porta_address_reg0'
+Slack : -20.139
+TNS   : -1164.060
+
+Type  : Fast 1200mV -40C Model Setup 'T_CLK'
+Slack : -2.584
+TNS   : -29.826
+
+Type  : Fast 1200mV -40C Model Setup 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a15~porta_address_reg0'
+Slack : -1.628
+TNS   : -11.649
+
+Type  : Fast 1200mV -40C Model Hold 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a6~porta_address_reg0'
+Slack : -1.245
+TNS   : -2.029
+
+Type  : Fast 1200mV -40C Model Hold 'T_CLK'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a15~porta_address_reg0'
+Slack : 0.260
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'T_CLK'
+Slack : -3.000
+TNS   : -27.911
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a6~porta_address_reg0'
+Slack : -1.000
+TNS   : -83.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'MROM:inst31|altsyncram:altsyncram_component|altsyncram_v8a1:auto_generated|ram_block1a15~porta_address_reg0'
+Slack : -1.000
+TNS   : -8.000
+
+------------------------------------------------------------

@@ -1,0 +1,1882 @@
+TimeQuest Timing Analyzer report for select6
+Sun Nov 17 19:53:50 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Progagation Delay
+ 34. Minimum Progagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 38. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 39. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 40. Clock Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths
+ 44. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                       ;
++--------------------+--------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
+; Revision Name      ; select6                                                            ;
+; Device Family      ; Cyclone IV GX                                                      ;
+; Device Name        ; EP4CGX22CF19C6                                                     ;
+; Timing Models      ; Final                                                              ;
+; Delay Model        ; Combined                                                           ;
+; Rise/Fall Delays   ; Enabled                                                            ;
++--------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 10          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 10          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-10        ; < 0.1%      ;
+;     Processors 11-16       ;   0.0%      ;
++----------------------------+-------------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; h1         ; gout1       ; 12.841 ;    ;    ; 13.341 ;
+; h2         ; gout2       ; 9.930  ;    ;    ; 10.464 ;
+; h3         ; gout3       ; 12.551 ;    ;    ; 13.050 ;
+; h4         ; gout4       ; 9.432  ;    ;    ; 9.850  ;
+; h5         ; gout5       ; 11.320 ;    ;    ; 11.771 ;
+; h6         ; gout6       ; 9.846  ;    ;    ; 10.311 ;
+; h7         ; gout7       ; 9.913  ;    ;    ; 10.315 ;
+; h8         ; g88         ; 8.483  ;    ;    ; 8.826  ;
+; h9         ; gout99      ; 9.831  ;    ;    ; 10.208 ;
+; h10        ; gout10      ; 9.076  ;    ;    ; 9.413  ;
+; h11        ; gout11      ; 9.988  ;    ;    ; 10.440 ;
+; h12        ; gout12      ; 10.026 ;    ;    ; 10.456 ;
+; h13        ; gout13      ; 9.264  ;    ;    ; 9.672  ;
+; h14        ; gout14      ; 10.465 ;    ;    ; 10.866 ;
+; h15        ; gout15      ; 9.182  ;    ;    ; 9.559  ;
+; h16        ; gout16      ; 10.278 ;    ;    ; 10.705 ;
+; h_choose   ; g88         ; 5.815  ;    ;    ; 5.905  ;
+; h_choose   ; gout1       ; 11.225 ;    ;    ; 11.253 ;
+; h_choose   ; gout2       ; 8.587  ;    ;    ; 8.615  ;
+; h_choose   ; gout3       ; 11.353 ;    ;    ; 11.397 ;
+; h_choose   ; gout4       ; 8.479  ;    ;    ; 8.456  ;
+; h_choose   ; gout5       ; 9.973  ;    ;    ; 9.963  ;
+; h_choose   ; gout6       ; 8.642  ;    ;    ; 8.672  ;
+; h_choose   ; gout7       ; 8.711  ;    ;    ; 8.683  ;
+; h_choose   ; gout10      ; 7.997  ;    ;    ; 7.907  ;
+; h_choose   ; gout11      ; 8.701  ;    ;    ; 8.722  ;
+; h_choose   ; gout12      ; 8.443  ;    ;    ; 8.403  ;
+; h_choose   ; gout13      ; 8.232  ;    ;    ; 8.192  ;
+; h_choose   ; gout14      ; 9.140  ;    ;    ; 9.109  ;
+; h_choose   ; gout15      ; 8.251  ;    ;    ; 8.182  ;
+; h_choose   ; gout16      ; 8.657  ;    ;    ; 8.615  ;
+; h_choose   ; gout99      ; 8.796  ;    ;    ; 8.758  ;
+; l1         ; gout1       ; 12.453 ;    ;    ; 12.914 ;
+; l2         ; gout2       ; 9.536  ;    ;    ; 9.983  ;
+; l3         ; gout3       ; 12.433 ;    ;    ; 12.885 ;
+; l4         ; gout4       ; 9.981  ;    ;    ; 10.479 ;
+; l5         ; gout5       ; 10.858 ;    ;    ; 11.280 ;
+; l6         ; gout6       ; 10.384 ;    ;    ; 10.926 ;
+; l7         ; gout7       ; 9.995  ;    ;    ; 10.461 ;
+; l8         ; g88         ; 8.851  ;    ;    ; 9.273  ;
+; l9         ; gout99      ; 9.712  ;    ;    ; 10.103 ;
+; l10        ; gout10      ; 9.018  ;    ;    ; 9.350  ;
+; l11        ; gout11      ; 9.895  ;    ;    ; 10.375 ;
+; l12        ; gout12      ; 9.879  ;    ;    ; 10.304 ;
+; l13        ; gout13      ; 9.283  ;    ;    ; 9.710  ;
+; l14        ; gout14      ; 10.283 ;    ;    ; 10.657 ;
+; l15        ; gout15      ; 9.354  ;    ;    ; 9.732  ;
+; l16        ; gout16      ; 9.639  ;    ;    ; 10.021 ;
+; l_choose   ; g88         ; 6.045  ;    ;    ; 6.170  ;
+; l_choose   ; gout1       ; 11.550 ;    ;    ; 11.522 ;
+; l_choose   ; gout2       ; 8.766  ;    ;    ; 8.739  ;
+; l_choose   ; gout3       ; 11.301 ;    ;    ; 11.256 ;
+; l_choose   ; gout4       ; 8.723  ;    ;    ; 8.643  ;
+; l_choose   ; gout5       ; 10.144 ;    ;    ; 10.080 ;
+; l_choose   ; gout6       ; 9.000  ;    ;    ; 8.993  ;
+; l_choose   ; gout7       ; 9.072  ;    ;    ; 9.007  ;
+; l_choose   ; gout10      ; 8.166  ;    ;    ; 8.022  ;
+; l_choose   ; gout11      ; 8.875  ;    ;    ; 8.841  ;
+; l_choose   ; gout12      ; 8.759  ;    ;    ; 8.664  ;
+; l_choose   ; gout13      ; 8.475  ;    ;    ; 8.378  ;
+; l_choose   ; gout14      ; 9.318  ;    ;    ; 9.232  ;
+; l_choose   ; gout15      ; 8.501  ;    ;    ; 8.374  ;
+; l_choose   ; gout16      ; 8.979  ;    ;    ; 8.882  ;
+; l_choose   ; gout99      ; 8.974  ;    ;    ; 8.881  ;
+; n1         ; gout1       ; 10.234 ;    ;    ; 10.646 ;
+; n2         ; gout2       ; 7.533  ;    ;    ; 7.830  ;
+; n3         ; gout3       ; 9.016  ;    ;    ; 9.352  ;
+; n4         ; gout4       ; 7.926  ;    ;    ; 8.225  ;
+; n5         ; gout5       ; 7.660  ;    ;    ; 7.958  ;
+; n6         ; gout6       ; 7.467  ;    ;    ; 7.760  ;
+; n7         ; gout7       ; 8.236  ;    ;    ; 8.617  ;
+; n8         ; g88         ; 7.958  ;    ;    ; 8.240  ;
+; n9         ; gout99      ; 8.162  ;    ;    ; 8.548  ;
+; n10        ; gout10      ; 7.242  ;    ;    ; 7.612  ;
+; n11        ; gout11      ; 8.068  ;    ;    ; 8.400  ;
+; n12        ; gout12      ; 6.119  ;    ;    ; 6.096  ;
+; n13        ; gout13      ; 7.826  ;    ;    ; 8.227  ;
+; n14        ; gout14      ; 8.077  ;    ;    ; 8.398  ;
+; n15        ; gout15      ; 7.420  ;    ;    ; 7.766  ;
+; n16        ; gout16      ; 8.287  ;    ;    ; 8.638  ;
+; n_choose2  ; g88         ; 7.844  ;    ;    ; 8.199  ;
+; n_choose2  ; gout1       ; 11.207 ;    ;    ; 11.730 ;
+; n_choose2  ; gout2       ; 7.603  ;    ;    ; 7.965  ;
+; n_choose2  ; gout3       ; 8.854  ;    ;    ; 9.254  ;
+; n_choose2  ; gout4       ; 8.719  ;    ;    ; 9.188  ;
+; n_choose2  ; gout5       ; 7.598  ;    ;    ; 7.963  ;
+; n_choose2  ; gout6       ; 7.836  ;    ;    ; 8.191  ;
+; n_choose2  ; gout7       ; 8.676  ;    ;    ; 9.113  ;
+; n_choose2  ; gout10      ; 8.147  ;    ;    ; 8.572  ;
+; n_choose2  ; gout11      ; 9.247  ;    ;    ; 9.744  ;
+; n_choose2  ; gout12      ; 8.177  ;    ;    ; 8.617  ;
+; n_choose2  ; gout13      ; 8.145  ;    ;    ; 8.579  ;
+; n_choose2  ; gout14      ; 9.246  ;    ;    ; 9.736  ;
+; n_choose2  ; gout15      ; 7.904  ;    ;    ; 8.332  ;
+; n_choose2  ; gout16      ; 8.931  ;    ;    ; 9.408  ;
+; n_choose2  ; gout99      ; 8.965  ;    ;    ; 9.442  ;
+; y1         ; gout1       ; 10.999 ;    ;    ; 11.491 ;
+; y2         ; gout2       ; 7.852  ;    ;    ; 8.210  ;
+; y3         ; gout3       ; 9.036  ;    ;    ; 9.419  ;
+; y4         ; gout4       ; 8.777  ;    ;    ; 9.198  ;
+; y5         ; gout5       ; 8.733  ;    ;    ; 9.178  ;
+; y6         ; gout6       ; 8.231  ;    ;    ; 8.550  ;
+; y7         ; gout7       ; 8.789  ;    ;    ; 9.196  ;
+; y8         ; g88         ; 8.114  ;    ;    ; 8.430  ;
+; y9         ; gout99      ; 8.412  ;    ;    ; 8.782  ;
+; y10        ; gout10      ; 7.628  ;    ;    ; 8.019  ;
+; y11        ; gout11      ; 8.712  ;    ;    ; 9.113  ;
+; y12        ; gout12      ; 6.567  ;    ;    ; 6.607  ;
+; y13        ; gout13      ; 7.904  ;    ;    ; 8.297  ;
+; y14        ; gout14      ; 8.824  ;    ;    ; 9.239  ;
+; y15        ; gout15      ; 7.936  ;    ;    ; 8.328  ;
+; y16        ; gout16      ; 8.371  ;    ;    ; 8.744  ;
+; y_choose   ; g88         ; 8.426  ;    ;    ; 8.847  ;
+; y_choose   ; gout1       ; 11.852 ;    ;    ; 12.452 ;
+; y_choose   ; gout2       ; 8.328  ;    ;    ; 8.773  ;
+; y_choose   ; gout3       ; 9.581  ;    ;    ; 10.044 ;
+; y_choose   ; gout4       ; 9.230  ;    ;    ; 9.776  ;
+; y_choose   ; gout5       ; 8.322  ;    ;    ; 8.771  ;
+; y_choose   ; gout6       ; 8.564  ;    ;    ; 9.006  ;
+; y_choose   ; gout7       ; 9.281  ;    ;    ; 9.728  ;
+; y_choose   ; gout10      ; 9.005  ;    ;    ; 9.482  ;
+; y_choose   ; gout11      ; 9.899  ;    ;    ; 10.475 ;
+; y_choose   ; gout12      ; 9.146  ;    ;    ; 9.615  ;
+; y_choose   ; gout13      ; 8.747  ;    ;    ; 9.190  ;
+; y_choose   ; gout14      ; 9.858  ;    ;    ; 10.427 ;
+; y_choose   ; gout15      ; 9.015  ;    ;    ; 9.472  ;
+; y_choose   ; gout16      ; 9.443  ;    ;    ; 9.992  ;
+; y_choose   ; gout99      ; 9.477  ;    ;    ; 10.028 ;
+; z1         ; gout1       ; 10.424 ;    ;    ; 10.806 ;
+; z2         ; gout2       ; 7.571  ;    ;    ; 7.903  ;
+; z3         ; gout3       ; 8.845  ;    ;    ; 9.193  ;
+; z4         ; gout4       ; 8.497  ;    ;    ; 8.951  ;
+; z5         ; gout5       ; 7.876  ;    ;    ; 8.225  ;
+; z6         ; gout6       ; 8.748  ;    ;    ; 9.100  ;
+; z7         ; gout7       ; 7.925  ;    ;    ; 8.280  ;
+; z8         ; g88         ; 7.953  ;    ;    ; 8.317  ;
+; z9         ; gout99      ; 8.196  ;    ;    ; 8.547  ;
+; z10        ; gout10      ; 8.738  ;    ;    ; 9.196  ;
+; z11        ; gout11      ; 8.231  ;    ;    ; 8.591  ;
+; z12        ; gout12      ; 8.141  ;    ;    ; 8.545  ;
+; z13        ; gout13      ; 7.423  ;    ;    ; 7.781  ;
+; z14        ; gout14      ; 8.894  ;    ;    ; 9.280  ;
+; z15        ; gout15      ; 8.005  ;    ;    ; 8.384  ;
+; z16        ; gout16      ; 7.908  ;    ;    ; 8.263  ;
+; z_choose   ; g88         ; 8.567  ;    ;    ; 8.999  ;
+; z_choose   ; gout1       ; 11.636 ;    ;    ; 12.174 ;
+; z_choose   ; gout2       ; 8.433  ;    ;    ; 8.867  ;
+; z_choose   ; gout3       ; 9.685  ;    ;    ; 10.138 ;
+; z_choose   ; gout4       ; 9.274  ;    ;    ; 9.812  ;
+; z_choose   ; gout5       ; 8.426  ;    ;    ; 8.864  ;
+; z_choose   ; gout6       ; 8.707  ;    ;    ; 9.160  ;
+; z_choose   ; gout7       ; 9.447  ;    ;    ; 9.908  ;
+; z_choose   ; gout10      ; 9.210  ;    ;    ; 9.725  ;
+; z_choose   ; gout11      ; 9.673  ;    ;    ; 10.186 ;
+; z_choose   ; gout12      ; 9.314  ;    ;    ; 9.797  ;
+; z_choose   ; gout13      ; 8.919  ;    ;    ; 9.376  ;
+; z_choose   ; gout14      ; 9.674  ;    ;    ; 10.197 ;
+; z_choose   ; gout15      ; 9.188  ;    ;    ; 9.660  ;
+; z_choose   ; gout16      ; 9.455  ;    ;    ; 9.974  ;
+; z_choose   ; gout99      ; 9.491  ;    ;    ; 10.013 ;
++------------+-------------+--------+----+----+--------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; h1         ; gout1       ; 12.294 ;    ;    ; 12.737 ;
+; h2         ; gout2       ; 9.577  ;    ;    ; 10.095 ;
+; h3         ; gout3       ; 12.029 ;    ;    ; 12.496 ;
+; h4         ; gout4       ; 9.103  ;    ;    ; 9.508  ;
+; h5         ; gout5       ; 10.914 ;    ;    ; 11.351 ;
+; h6         ; gout6       ; 9.501  ;    ;    ; 9.950  ;
+; h7         ; gout7       ; 9.550  ;    ;    ; 9.908  ;
+; h8         ; g88         ; 8.132  ;    ;    ; 8.418  ;
+; h9         ; gout99      ; 9.488  ;    ;    ; 9.853  ;
+; h10        ; gout10      ; 8.762  ;    ;    ; 9.086  ;
+; h11        ; gout11      ; 9.592  ;    ;    ; 10.017 ;
+; h12        ; gout12      ; 9.587  ;    ;    ; 9.948  ;
+; h13        ; gout13      ; 8.927  ;    ;    ; 9.291  ;
+; h14        ; gout14      ; 10.094 ;    ;    ; 10.483 ;
+; h15        ; gout15      ; 8.814  ;    ;    ; 9.169  ;
+; h16        ; gout16      ; 9.880  ;    ;    ; 10.264 ;
+; h_choose   ; g88         ; 5.592  ;    ;    ; 5.651  ;
+; h_choose   ; gout1       ; 10.784 ;    ;    ; 10.802 ;
+; h_choose   ; gout2       ; 8.263  ;    ;    ; 8.266  ;
+; h_choose   ; gout3       ; 10.889 ;    ;    ; 10.916 ;
+; h_choose   ; gout4       ; 8.179  ;    ;    ; 8.151  ;
+; h_choose   ; gout5       ; 9.593  ;    ;    ; 9.560  ;
+; h_choose   ; gout6       ; 8.353  ;    ;    ; 8.385  ;
+; h_choose   ; gout7       ; 8.403  ;    ;    ; 8.349  ;
+; h_choose   ; gout10      ; 7.696  ;    ;    ; 7.585  ;
+; h_choose   ; gout11      ; 8.326  ;    ;    ; 8.311  ;
+; h_choose   ; gout12      ; 8.109  ;    ;    ; 8.047  ;
+; h_choose   ; gout13      ; 7.928  ;    ;    ; 7.852  ;
+; h_choose   ; gout14      ; 8.794  ;    ;    ; 8.740  ;
+; h_choose   ; gout15      ; 7.913  ;    ;    ; 7.829  ;
+; h_choose   ; gout16      ; 8.366  ;    ;    ; 8.329  ;
+; h_choose   ; gout99      ; 8.464  ;    ;    ; 8.404  ;
+; l1         ; gout1       ; 11.958 ;    ;    ; 12.390 ;
+; l2         ; gout2       ; 9.206  ;    ;    ; 9.636  ;
+; l3         ; gout3       ; 11.970 ;    ;    ; 12.395 ;
+; l4         ; gout4       ; 9.628  ;    ;    ; 10.111 ;
+; l5         ; gout5       ; 10.470 ;    ;    ; 10.879 ;
+; l6         ; gout6       ; 9.968  ;    ;    ; 10.484 ;
+; l7         ; gout7       ; 9.578  ;    ;    ; 9.990  ;
+; l8         ; g88         ; 8.497  ;    ;    ; 8.875  ;
+; l9         ; gout99      ; 9.372  ;    ;    ; 9.750  ;
+; l10        ; gout10      ; 8.709  ;    ;    ; 9.027  ;
+; l11        ; gout11      ; 9.499  ;    ;    ; 9.953  ;
+; l12        ; gout12      ; 9.481  ;    ;    ; 9.865  ;
+; l13        ; gout13      ; 8.942  ;    ;    ; 9.326  ;
+; l14        ; gout14      ; 9.920  ;    ;    ; 10.282 ;
+; l15        ; gout15      ; 8.981  ;    ;    ; 9.335  ;
+; l16        ; gout16      ; 9.302  ;    ;    ; 9.671  ;
+; l_choose   ; g88         ; 5.777  ;    ;    ; 5.842  ;
+; l_choose   ; gout1       ; 11.085 ;    ;    ; 11.033 ;
+; l_choose   ; gout2       ; 8.457  ;    ;    ; 8.420  ;
+; l_choose   ; gout3       ; 10.888 ;    ;    ; 10.838 ;
+; l_choose   ; gout4       ; 8.394  ;    ;    ; 8.298  ;
+; l_choose   ; gout5       ; 9.779  ;    ;    ; 9.706  ;
+; l_choose   ; gout6       ; 8.647  ;    ;    ; 8.637  ;
+; l_choose   ; gout7       ; 8.700  ;    ;    ; 8.604  ;
+; l_choose   ; gout10      ; 7.881  ;    ;    ; 7.730  ;
+; l_choose   ; gout11      ; 8.515  ;    ;    ; 8.460  ;
+; l_choose   ; gout12      ; 8.400  ;    ;    ; 8.269  ;
+; l_choose   ; gout13      ; 8.141  ;    ;    ; 7.997  ;
+; l_choose   ; gout14      ; 8.987  ;    ;    ; 8.893  ;
+; l_choose   ; gout15      ; 8.133  ;    ;    ; 7.981  ;
+; l_choose   ; gout16      ; 8.663  ;    ;    ; 8.557  ;
+; l_choose   ; gout99      ; 8.658  ;    ;    ; 8.557  ;
+; n1         ; gout1       ; 9.876  ;    ;    ; 10.273 ;
+; n2         ; gout2       ; 7.282  ;    ;    ; 7.571  ;
+; n3         ; gout3       ; 8.735  ;    ;    ; 9.061  ;
+; n4         ; gout4       ; 7.658  ;    ;    ; 7.950  ;
+; n5         ; gout5       ; 7.403  ;    ;    ; 7.692  ;
+; n6         ; gout6       ; 7.219  ;    ;    ; 7.504  ;
+; n7         ; gout7       ; 7.959  ;    ;    ; 8.326  ;
+; n8         ; g88         ; 7.691  ;    ;    ; 7.965  ;
+; n9         ; gout99      ; 7.885  ;    ;    ; 8.260  ;
+; n10        ; gout10      ; 7.005  ;    ;    ; 7.360  ;
+; n11        ; gout11      ; 7.796  ;    ;    ; 8.119  ;
+; n12        ; gout12      ; 5.929  ;    ;    ; 5.912  ;
+; n13        ; gout13      ; 7.565  ;    ;    ; 7.950  ;
+; n14        ; gout14      ; 7.804  ;    ;    ; 8.115  ;
+; n15        ; gout15      ; 7.175  ;    ;    ; 7.509  ;
+; n16        ; gout16      ; 8.006  ;    ;    ; 8.346  ;
+; n_choose2  ; g88         ; 7.581  ;    ;    ; 7.924  ;
+; n_choose2  ; gout1       ; 10.811 ;    ;    ; 11.313 ;
+; n_choose2  ; gout2       ; 7.348  ;    ;    ; 7.699  ;
+; n_choose2  ; gout3       ; 8.579  ;    ;    ; 8.967  ;
+; n_choose2  ; gout4       ; 8.421  ;    ;    ; 8.874  ;
+; n_choose2  ; gout5       ; 7.343  ;    ;    ; 7.696  ;
+; n_choose2  ; gout6       ; 7.573  ;    ;    ; 7.916  ;
+; n_choose2  ; gout7       ; 8.376  ;    ;    ; 8.800  ;
+; n_choose2  ; gout10      ; 7.867  ;    ;    ; 8.280  ;
+; n_choose2  ; gout11      ; 8.927  ;    ;    ; 9.408  ;
+; n_choose2  ; gout12      ; 7.896  ;    ;    ; 8.323  ;
+; n_choose2  ; gout13      ; 7.866  ;    ;    ; 8.287  ;
+; n_choose2  ; gout14      ; 8.926  ;    ;    ; 9.398  ;
+; n_choose2  ; gout15      ; 7.636  ;    ;    ; 8.050  ;
+; n_choose2  ; gout16      ; 8.625  ;    ;    ; 9.084  ;
+; n_choose2  ; gout99      ; 8.657  ;    ;    ; 9.118  ;
+; y1         ; gout1       ; 10.512 ;    ;    ; 10.966 ;
+; y2         ; gout2       ; 7.503  ;    ;    ; 7.796  ;
+; y3         ; gout3       ; 8.668  ;    ;    ; 9.006  ;
+; y4         ; gout4       ; 8.427  ;    ;    ; 8.802  ;
+; y5         ; gout5       ; 8.348  ;    ;    ; 8.722  ;
+; y6         ; gout6       ; 7.903  ;    ;    ; 8.184  ;
+; y7         ; gout7       ; 8.455  ;    ;    ; 8.822  ;
+; y8         ; g88         ; 7.838  ;    ;    ; 8.145  ;
+; y9         ; gout99      ; 8.043  ;    ;    ; 8.349  ;
+; y10        ; gout10      ; 7.359  ;    ;    ; 7.703  ;
+; y11        ; gout11      ; 8.313  ;    ;    ; 8.684  ;
+; y12        ; gout12      ; 6.322  ;    ;    ; 6.342  ;
+; y13        ; gout13      ; 7.604  ;    ;    ; 7.957  ;
+; y14        ; gout14      ; 8.471  ;    ;    ; 8.841  ;
+; y15        ; gout15      ; 7.585  ;    ;    ; 7.928  ;
+; y16        ; gout16      ; 8.000  ;    ;    ; 8.308  ;
+; y_choose   ; g88         ; 8.138  ;    ;    ; 8.546  ;
+; y_choose   ; gout1       ; 11.330 ;    ;    ; 11.890 ;
+; y_choose   ; gout2       ; 7.992  ;    ;    ; 8.394  ;
+; y_choose   ; gout3       ; 9.226  ;    ;    ; 9.666  ;
+; y_choose   ; gout4       ; 8.862  ;    ;    ; 9.358  ;
+; y_choose   ; gout5       ; 7.987  ;    ;    ; 8.391  ;
+; y_choose   ; gout6       ; 8.223  ;    ;    ; 8.622  ;
+; y_choose   ; gout7       ; 8.956  ;    ;    ; 9.390  ;
+; y_choose   ; gout10      ; 8.677  ;    ;    ; 9.109  ;
+; y_choose   ; gout11      ; 9.453  ;    ;    ; 9.993  ;
+; y_choose   ; gout12      ; 8.823  ;    ;    ; 9.279  ;
+; y_choose   ; gout13      ; 8.443  ;    ;    ; 8.872  ;
+; y_choose   ; gout14      ; 9.450  ;    ;    ; 9.953  ;
+; y_choose   ; gout15      ; 8.650  ;    ;    ; 9.083  ;
+; y_choose   ; gout16      ; 9.064  ;    ;    ; 9.565  ;
+; y_choose   ; gout99      ; 9.099  ;    ;    ; 9.603  ;
+; z1         ; gout1       ; 10.010 ;    ;    ; 10.365 ;
+; z2         ; gout2       ; 7.266  ;    ;    ; 7.558  ;
+; z3         ; gout3       ; 8.523  ;    ;    ; 8.849  ;
+; z4         ; gout4       ; 8.107  ;    ;    ; 8.509  ;
+; z5         ; gout5       ; 7.562  ;    ;    ; 7.869  ;
+; z6         ; gout6       ; 8.348  ;    ;    ; 8.656  ;
+; z7         ; gout7       ; 7.660  ;    ;    ; 8.001  ;
+; z8         ; g88         ; 7.634  ;    ;    ; 7.981  ;
+; z9         ; gout99      ; 7.871  ;    ;    ; 8.182  ;
+; z10        ; gout10      ; 8.376  ;    ;    ; 8.779  ;
+; z11        ; gout11      ; 7.902  ;    ;    ; 8.239  ;
+; z12        ; gout12      ; 7.865  ;    ;    ; 8.254  ;
+; z13        ; gout13      ; 7.178  ;    ;    ; 7.521  ;
+; z14        ; gout14      ; 8.501  ;    ;    ; 8.816  ;
+; z15        ; gout15      ; 7.688  ;    ;    ; 8.041  ;
+; z16        ; gout16      ; 7.592  ;    ;    ; 7.906  ;
+; z_choose   ; g88         ; 8.225  ;    ;    ; 8.635  ;
+; z_choose   ; gout1       ; 11.173 ;    ;    ; 11.679 ;
+; z_choose   ; gout2       ; 8.079  ;    ;    ; 8.459  ;
+; z_choose   ; gout3       ; 9.313  ;    ;    ; 9.731  ;
+; z_choose   ; gout4       ; 8.855  ;    ;    ; 9.336  ;
+; z_choose   ; gout5       ; 8.074  ;    ;    ; 8.456  ;
+; z_choose   ; gout6       ; 8.312  ;    ;    ; 8.714  ;
+; z_choose   ; gout7       ; 9.102  ;    ;    ; 9.537  ;
+; z_choose   ; gout10      ; 8.826  ;    ;    ; 9.285  ;
+; z_choose   ; gout11      ; 9.287  ;    ;    ; 9.772  ;
+; z_choose   ; gout12      ; 8.971  ;    ;    ; 9.429  ;
+; z_choose   ; gout13      ; 8.595  ;    ;    ; 9.026  ;
+; z_choose   ; gout14      ; 9.285  ;    ;    ; 9.761  ;
+; z_choose   ; gout15      ; 8.803  ;    ;    ; 9.239  ;
+; z_choose   ; gout16      ; 9.061  ;    ;    ; 9.523  ;
+; z_choose   ; gout99      ; 9.099  ;    ;    ; 9.564  ;
++------------+-------------+--------+----+----+--------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; h1         ; gout1       ; 11.575 ;    ;    ; 11.828 ;
+; h2         ; gout2       ; 8.894  ;    ;    ; 9.233  ;
+; h3         ; gout3       ; 11.204 ;    ;    ; 11.524 ;
+; h4         ; gout4       ; 8.440  ;    ;    ; 8.680  ;
+; h5         ; gout5       ; 10.148 ;    ;    ; 10.411 ;
+; h6         ; gout6       ; 8.833  ;    ;    ; 9.082  ;
+; h7         ; gout7       ; 8.883  ;    ;    ; 9.085  ;
+; h8         ; g88         ; 7.567  ;    ;    ; 7.742  ;
+; h9         ; gout99      ; 8.831  ;    ;    ; 9.001  ;
+; h10        ; gout10      ; 8.111  ;    ;    ; 8.272  ;
+; h11        ; gout11      ; 8.967  ;    ;    ; 9.199  ;
+; h12        ; gout12      ; 8.964  ;    ;    ; 9.212  ;
+; h13        ; gout13      ; 8.271  ;    ;    ; 8.509  ;
+; h14        ; gout14      ; 9.408  ;    ;    ; 9.594  ;
+; h15        ; gout15      ; 8.203  ;    ;    ; 8.399  ;
+; h16        ; gout16      ; 9.232  ;    ;    ; 9.448  ;
+; h_choose   ; g88         ; 5.263  ;    ;    ; 5.286  ;
+; h_choose   ; gout1       ; 10.216 ;    ;    ; 10.141 ;
+; h_choose   ; gout2       ; 7.773  ;    ;    ; 7.756  ;
+; h_choose   ; gout3       ; 10.227 ;    ;    ; 10.226 ;
+; h_choose   ; gout4       ; 7.682  ;    ;    ; 7.614  ;
+; h_choose   ; gout5       ; 9.033  ;    ;    ; 8.970  ;
+; h_choose   ; gout6       ; 7.843  ;    ;    ; 7.807  ;
+; h_choose   ; gout7       ; 7.890  ;    ;    ; 7.813  ;
+; h_choose   ; gout10      ; 7.232  ;    ;    ; 7.107  ;
+; h_choose   ; gout11      ; 7.890  ;    ;    ; 7.840  ;
+; h_choose   ; gout12      ; 7.633  ;    ;    ; 7.555  ;
+; h_choose   ; gout13      ; 7.434  ;    ;    ; 7.358  ;
+; h_choose   ; gout14      ; 8.312  ;    ;    ; 8.199  ;
+; h_choose   ; gout15      ; 7.462  ;    ;    ; 7.351  ;
+; h_choose   ; gout16      ; 7.867  ;    ;    ; 7.763  ;
+; h_choose   ; gout99      ; 7.995  ;    ;    ; 7.883  ;
+; l1         ; gout1       ; 11.229 ;    ;    ; 11.438 ;
+; l2         ; gout2       ; 8.534  ;    ;    ; 8.793  ;
+; l3         ; gout3       ; 11.106 ;    ;    ; 11.377 ;
+; l4         ; gout4       ; 8.947  ;    ;    ; 9.252  ;
+; l5         ; gout5       ; 9.728  ;    ;    ; 9.961  ;
+; l6         ; gout6       ; 9.320  ;    ;    ; 9.633  ;
+; l7         ; gout7       ; 8.933  ;    ;    ; 9.215  ;
+; l8         ; g88         ; 7.911  ;    ;    ; 8.151  ;
+; l9         ; gout99      ; 8.721  ;    ;    ; 8.905  ;
+; l10        ; gout10      ; 8.063  ;    ;    ; 8.218  ;
+; l11        ; gout11      ; 8.877  ;    ;    ; 9.131  ;
+; l12        ; gout12      ; 8.834  ;    ;    ; 9.080  ;
+; l13        ; gout13      ; 8.283  ;    ;    ; 8.536  ;
+; l14        ; gout14      ; 9.246  ;    ;    ; 9.397  ;
+; l15        ; gout15      ; 8.363  ;    ;    ; 8.555  ;
+; l16        ; gout16      ; 8.647  ;    ;    ; 8.832  ;
+; l_choose   ; g88         ; 5.470  ;    ;    ; 5.519  ;
+; l_choose   ; gout1       ; 10.521 ;    ;    ; 10.394 ;
+; l_choose   ; gout2       ; 7.950  ;    ;    ; 7.882  ;
+; l_choose   ; gout3       ; 10.203 ;    ;    ; 10.118 ;
+; l_choose   ; gout4       ; 7.918  ;    ;    ; 7.799  ;
+; l_choose   ; gout5       ; 9.200  ;    ;    ; 9.089  ;
+; l_choose   ; gout6       ; 8.174  ;    ;    ; 8.107  ;
+; l_choose   ; gout7       ; 8.224  ;    ;    ; 8.116  ;
+; l_choose   ; gout10      ; 7.398  ;    ;    ; 7.225  ;
+; l_choose   ; gout11      ; 8.061  ;    ;    ; 7.962  ;
+; l_choose   ; gout12      ; 7.928  ;    ;    ; 7.799  ;
+; l_choose   ; gout13      ; 7.668  ;    ;    ; 7.542  ;
+; l_choose   ; gout14      ; 8.487  ;    ;    ; 8.324  ;
+; l_choose   ; gout15      ; 7.703  ;    ;    ; 7.542  ;
+; l_choose   ; gout16      ; 8.169  ;    ;    ; 8.013  ;
+; l_choose   ; gout99      ; 8.171  ;    ;    ; 8.009  ;
+; n1         ; gout1       ; 9.152  ;    ;    ; 9.409  ;
+; n2         ; gout2       ; 6.673  ;    ;    ; 6.865  ;
+; n3         ; gout3       ; 7.974  ;    ;    ; 8.191  ;
+; n4         ; gout4       ; 7.046  ;    ;    ; 7.224  ;
+; n5         ; gout5       ; 6.801  ;    ;    ; 6.969  ;
+; n6         ; gout6       ; 6.629  ;    ;    ; 6.795  ;
+; n7         ; gout7       ; 7.333  ;    ;    ; 7.571  ;
+; n8         ; g88         ; 7.082  ;    ;    ; 7.227  ;
+; n9         ; gout99      ; 7.278  ;    ;    ; 7.503  ;
+; n10        ; gout10      ; 6.421  ;    ;    ; 6.666  ;
+; n11        ; gout11      ; 7.179  ;    ;    ; 7.375  ;
+; n12        ; gout12      ; 5.508  ;    ;    ; 5.485  ;
+; n13        ; gout13      ; 6.958  ;    ;    ; 7.221  ;
+; n14        ; gout14      ; 7.193  ;    ;    ; 7.371  ;
+; n15        ; gout15      ; 6.579  ;    ;    ; 6.800  ;
+; n16        ; gout16      ; 7.389  ;    ;    ; 7.585  ;
+; n_choose2  ; g88         ; 6.990  ;    ;    ; 7.188  ;
+; n_choose2  ; gout1       ; 10.061 ;    ;    ; 10.379 ;
+; n_choose2  ; gout2       ; 6.751  ;    ;    ; 6.980  ;
+; n_choose2  ; gout3       ; 7.825  ;    ;    ; 8.100  ;
+; n_choose2  ; gout4       ; 7.790  ;    ;    ; 8.083  ;
+; n_choose2  ; gout5       ; 6.747  ;    ;    ; 6.975  ;
+; n_choose2  ; gout6       ; 6.973  ;    ;    ; 7.181  ;
+; n_choose2  ; gout7       ; 7.736  ;    ;    ; 8.007  ;
+; n_choose2  ; gout10      ; 7.253  ;    ;    ; 7.516  ;
+; n_choose2  ; gout11      ; 8.280  ;    ;    ; 8.572  ;
+; n_choose2  ; gout12      ; 7.286  ;    ;    ; 7.559  ;
+; n_choose2  ; gout13      ; 7.251  ;    ;    ; 7.521  ;
+; n_choose2  ; gout14      ; 8.285  ;    ;    ; 8.573  ;
+; n_choose2  ; gout15      ; 7.037  ;    ;    ; 7.302  ;
+; n_choose2  ; gout16      ; 7.986  ;    ;    ; 8.279  ;
+; n_choose2  ; gout99      ; 8.022  ;    ;    ; 8.309  ;
+; y1         ; gout1       ; 9.851  ;    ;    ; 10.154 ;
+; y2         ; gout2       ; 6.967  ;    ;    ; 7.194  ;
+; y3         ; gout3       ; 7.978  ;    ;    ; 8.240  ;
+; y4         ; gout4       ; 7.839  ;    ;    ; 8.080  ;
+; y5         ; gout5       ; 7.778  ;    ;    ; 8.058  ;
+; y6         ; gout6       ; 7.331  ;    ;    ; 7.499  ;
+; y7         ; gout7       ; 7.835  ;    ;    ; 8.086  ;
+; y8         ; g88         ; 7.241  ;    ;    ; 7.397  ;
+; y9         ; gout99      ; 7.494  ;    ;    ; 7.711  ;
+; y10        ; gout10      ; 6.767  ;    ;    ; 7.018  ;
+; y11        ; gout11      ; 7.763  ;    ;    ; 7.997  ;
+; y12        ; gout12      ; 5.921  ;    ;    ; 5.932  ;
+; y13        ; gout13      ; 7.020  ;    ;    ; 7.270  ;
+; y14        ; gout14      ; 7.882  ;    ;    ; 8.122  ;
+; y15        ; gout15      ; 7.043  ;    ;    ; 7.293  ;
+; y16        ; gout16      ; 7.453  ;    ;    ; 7.672  ;
+; y_choose   ; g88         ; 7.527  ;    ;    ; 7.778  ;
+; y_choose   ; gout1       ; 10.641 ;    ;    ; 11.016 ;
+; y_choose   ; gout2       ; 7.417  ;    ;    ; 7.704  ;
+; y_choose   ; gout3       ; 8.493  ;    ;    ; 8.811  ;
+; y_choose   ; gout4       ; 8.253  ;    ;    ; 8.608  ;
+; y_choose   ; gout5       ; 7.412  ;    ;    ; 7.701  ;
+; y_choose   ; gout6       ; 7.642  ;    ;    ; 7.914  ;
+; y_choose   ; gout7       ; 8.287  ;    ;    ; 8.558  ;
+; y_choose   ; gout10      ; 8.031  ;    ;    ; 8.327  ;
+; y_choose   ; gout11      ; 8.867  ;    ;    ; 9.218  ;
+; y_choose   ; gout12      ; 8.161  ;    ;    ; 8.455  ;
+; y_choose   ; gout13      ; 7.798  ;    ;    ; 8.066  ;
+; y_choose   ; gout14      ; 8.839  ;    ;    ; 9.181  ;
+; y_choose   ; gout15      ; 8.041  ;    ;    ; 8.318  ;
+; y_choose   ; gout16      ; 8.450  ;    ;    ; 8.801  ;
+; y_choose   ; gout99      ; 8.486  ;    ;    ; 8.833  ;
+; z1         ; gout1       ; 9.328  ;    ;    ; 9.542  ;
+; z2         ; gout2       ; 6.704  ;    ;    ; 6.919  ;
+; z3         ; gout3       ; 7.806  ;    ;    ; 8.047  ;
+; z4         ; gout4       ; 7.572  ;    ;    ; 7.857  ;
+; z5         ; gout5       ; 6.998  ;    ;    ; 7.211  ;
+; z6         ; gout6       ; 7.792  ;    ;    ; 7.985  ;
+; z7         ; gout7       ; 7.037  ;    ;    ; 7.266  ;
+; z8         ; g88         ; 7.077  ;    ;    ; 7.293  ;
+; z9         ; gout99      ; 7.299  ;    ;    ; 7.504  ;
+; z10        ; gout10      ; 7.783  ;    ;    ; 8.073  ;
+; z11        ; gout11      ; 7.334  ;    ;    ; 7.535  ;
+; z12        ; gout12      ; 7.245  ;    ;    ; 7.506  ;
+; z13        ; gout13      ; 6.578  ;    ;    ; 6.808  ;
+; z14        ; gout14      ; 7.944  ;    ;    ; 8.152  ;
+; z15        ; gout15      ; 7.112  ;    ;    ; 7.353  ;
+; z16        ; gout16      ; 7.031  ;    ;    ; 7.248  ;
+; z_choose   ; g88         ; 7.643  ;    ;    ; 7.907  ;
+; z_choose   ; gout1       ; 10.450 ;    ;    ; 10.772 ;
+; z_choose   ; gout2       ; 7.505  ;    ;    ; 7.781  ;
+; z_choose   ; gout3       ; 8.580  ;    ;    ; 8.888  ;
+; z_choose   ; gout4       ; 8.289  ;    ;    ; 8.631  ;
+; z_choose   ; gout5       ; 7.499  ;    ;    ; 7.777  ;
+; z_choose   ; gout6       ; 7.760  ;    ;    ; 8.046  ;
+; z_choose   ; gout7       ; 8.440  ;    ;    ; 8.707  ;
+; z_choose   ; gout10      ; 8.217  ;    ;    ; 8.533  ;
+; z_choose   ; gout11      ; 8.666  ;    ;    ; 8.963  ;
+; z_choose   ; gout12      ; 8.317  ;    ;    ; 8.606  ;
+; z_choose   ; gout13      ; 7.958  ;    ;    ; 8.222  ;
+; z_choose   ; gout14      ; 8.673  ;    ;    ; 8.981  ;
+; z_choose   ; gout15      ; 8.202  ;    ;    ; 8.474  ;
+; z_choose   ; gout16      ; 8.461  ;    ;    ; 8.775  ;
+; z_choose   ; gout99      ; 8.500  ;    ;    ; 8.810  ;
++------------+-------------+--------+----+----+--------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; h1         ; gout1       ; 11.080 ;    ;    ; 11.288 ;
+; h2         ; gout2       ; 8.577  ;    ;    ; 8.905  ;
+; h3         ; gout3       ; 10.736 ;    ;    ; 11.031 ;
+; h4         ; gout4       ; 8.144  ;    ;    ; 8.378  ;
+; h5         ; gout5       ; 9.783  ;    ;    ; 10.038 ;
+; h6         ; gout6       ; 8.522  ;    ;    ; 8.764  ;
+; h7         ; gout7       ; 8.559  ;    ;    ; 8.730  ;
+; h8         ; g88         ; 7.253  ;    ;    ; 7.384  ;
+; h9         ; gout99      ; 8.519  ;    ;    ; 8.686  ;
+; h10        ; gout10      ; 7.829  ;    ;    ; 7.989  ;
+; h11        ; gout11      ; 8.609  ;    ;    ; 8.824  ;
+; h12        ; gout12      ; 8.573  ;    ;    ; 8.763  ;
+; h13        ; gout13      ; 7.970  ;    ;    ; 8.177  ;
+; h14        ; gout14      ; 9.072  ;    ;    ; 9.254  ;
+; h15        ; gout15      ; 7.876  ;    ;    ; 8.057  ;
+; h16        ; gout16      ; 8.872  ;    ;    ; 9.055  ;
+; h_choose   ; g88         ; 5.060  ;    ;    ; 5.058  ;
+; h_choose   ; gout1       ; 9.811  ;    ;    ; 9.732  ;
+; h_choose   ; gout2       ; 7.478  ;    ;    ; 7.437  ;
+; h_choose   ; gout3       ; 9.806  ;    ;    ; 9.791  ;
+; h_choose   ; gout4       ; 7.407  ;    ;    ; 7.337  ;
+; h_choose   ; gout5       ; 8.686  ;    ;    ; 8.603  ;
+; h_choose   ; gout6       ; 7.578  ;    ;    ; 7.546  ;
+; h_choose   ; gout7       ; 7.611  ;    ;    ; 7.514  ;
+; h_choose   ; gout10      ; 6.960  ;    ;    ; 6.819  ;
+; h_choose   ; gout11      ; 7.549  ;    ;    ; 7.467  ;
+; h_choose   ; gout12      ; 7.332  ;    ;    ; 7.235  ;
+; h_choose   ; gout13      ; 7.156  ;    ;    ; 7.054  ;
+; h_choose   ; gout14      ; 7.995  ;    ;    ; 7.863  ;
+; h_choose   ; gout15      ; 7.154  ;    ;    ; 7.034  ;
+; h_choose   ; gout16      ; 7.599  ;    ;    ; 7.502  ;
+; h_choose   ; gout99      ; 7.691  ;    ;    ; 7.561  ;
+; l1         ; gout1       ; 10.780 ;    ;    ; 10.973 ;
+; l2         ; gout2       ; 8.235  ;    ;    ; 8.486  ;
+; l3         ; gout3       ; 10.687 ;    ;    ; 10.942 ;
+; l4         ; gout4       ; 8.629  ;    ;    ; 8.926  ;
+; l5         ; gout5       ; 9.379  ;    ;    ; 9.606  ;
+; l6         ; gout6       ; 8.948  ;    ;    ; 9.241  ;
+; l7         ; gout7       ; 8.564  ;    ;    ; 8.800  ;
+; l8         ; g88         ; 7.594  ;    ;    ; 7.799  ;
+; l9         ; gout99      ; 8.414  ;    ;    ; 8.594  ;
+; l10        ; gout10      ; 7.786  ;    ;    ; 7.940  ;
+; l11        ; gout11      ; 8.522  ;    ;    ; 8.759  ;
+; l12        ; gout12      ; 8.481  ;    ;    ; 8.695  ;
+; l13        ; gout13      ; 7.979  ;    ;    ; 8.200  ;
+; l14        ; gout14      ; 8.918  ;    ;    ; 9.067  ;
+; l15        ; gout15      ; 8.028  ;    ;    ; 8.205  ;
+; l16        ; gout16      ; 8.342  ;    ;    ; 8.523  ;
+; l_choose   ; g88         ; 5.226  ;    ;    ; 5.222  ;
+; l_choose   ; gout1       ; 10.092 ;    ;    ; 9.952  ;
+; l_choose   ; gout2       ; 7.666  ;    ;    ; 7.593  ;
+; l_choose   ; gout3       ; 9.826  ;    ;    ; 9.740  ;
+; l_choose   ; gout4       ; 7.617  ;    ;    ; 7.487  ;
+; l_choose   ; gout5       ; 8.866  ;    ;    ; 8.752  ;
+; l_choose   ; gout6       ; 7.852  ;    ;    ; 7.783  ;
+; l_choose   ; gout7       ; 7.888  ;    ;    ; 7.754  ;
+; l_choose   ; gout10      ; 7.138  ;    ;    ; 6.967  ;
+; l_choose   ; gout11      ; 7.732  ;    ;    ; 7.618  ;
+; l_choose   ; gout12      ; 7.603  ;    ;    ; 7.447  ;
+; l_choose   ; gout13      ; 7.365  ;    ;    ; 7.202  ;
+; l_choose   ; gout14      ; 8.182  ;    ;    ; 8.018  ;
+; l_choose   ; gout15      ; 7.370  ;    ;    ; 7.188  ;
+; l_choose   ; gout16      ; 7.876  ;    ;    ; 7.719  ;
+; l_choose   ; gout99      ; 7.878  ;    ;    ; 7.716  ;
+; n1         ; gout1       ; 8.830  ;    ;    ; 9.078  ;
+; n2         ; gout2       ; 6.451  ;    ;    ; 6.636  ;
+; n3         ; gout3       ; 7.722  ;    ;    ; 7.936  ;
+; n4         ; gout4       ; 6.807  ;    ;    ; 6.981  ;
+; n5         ; gout5       ; 6.572  ;    ;    ; 6.735  ;
+; n6         ; gout6       ; 6.408  ;    ;    ; 6.570  ;
+; n7         ; gout7       ; 7.088  ;    ;    ; 7.318  ;
+; n8         ; g88         ; 6.843  ;    ;    ; 6.985  ;
+; n9         ; gout99      ; 7.030  ;    ;    ; 7.248  ;
+; n10        ; gout10      ; 6.211  ;    ;    ; 6.449  ;
+; n11        ; gout11      ; 6.936  ;    ;    ; 7.127  ;
+; n12        ; gout12      ; 5.339  ;    ;    ; 5.319  ;
+; n13        ; gout13      ; 6.726  ;    ;    ; 6.980  ;
+; n14        ; gout14      ; 6.948  ;    ;    ; 7.122  ;
+; n15        ; gout15      ; 6.362  ;    ;    ; 6.576  ;
+; n16        ; gout16      ; 7.137  ;    ;    ; 7.327  ;
+; n_choose2  ; g88         ; 6.755  ;    ;    ; 6.948  ;
+; n_choose2  ; gout1       ; 9.703  ;    ;    ; 10.010 ;
+; n_choose2  ; gout2       ; 6.525  ;    ;    ; 6.745  ;
+; n_choose2  ; gout3       ; 7.580  ;    ;    ; 7.850  ;
+; n_choose2  ; gout4       ; 7.522  ;    ;    ; 7.806  ;
+; n_choose2  ; gout5       ; 6.521  ;    ;    ; 6.741  ;
+; n_choose2  ; gout6       ; 6.738  ;    ;    ; 6.941  ;
+; n_choose2  ; gout7       ; 7.472  ;    ;    ; 7.735  ;
+; n_choose2  ; gout10      ; 7.006  ;    ;    ; 7.262  ;
+; n_choose2  ; gout11      ; 7.992  ;    ;    ; 8.276  ;
+; n_choose2  ; gout12      ; 7.038  ;    ;    ; 7.304  ;
+; n_choose2  ; gout13      ; 7.005  ;    ;    ; 7.268  ;
+; n_choose2  ; gout14      ; 7.996  ;    ;    ; 8.276  ;
+; n_choose2  ; gout15      ; 6.800  ;    ;    ; 7.058  ;
+; n_choose2  ; gout16      ; 7.710  ;    ;    ; 7.995  ;
+; n_choose2  ; gout99      ; 7.744  ;    ;    ; 8.023  ;
+; y1         ; gout1       ; 9.416  ;    ;    ; 9.688  ;
+; y2         ; gout2       ; 6.657  ;    ;    ; 6.828  ;
+; y3         ; gout3       ; 7.651  ;    ;    ; 7.876  ;
+; y4         ; gout4       ; 7.525  ;    ;    ; 7.732  ;
+; y5         ; gout5       ; 7.435  ;    ;    ; 7.657  ;
+; y6         ; gout6       ; 7.037  ;    ;    ; 7.175  ;
+; y7         ; gout7       ; 7.538  ;    ;    ; 7.762  ;
+; y8         ; g88         ; 6.994  ;    ;    ; 7.147  ;
+; y9         ; gout99      ; 7.163  ;    ;    ; 7.327  ;
+; y10        ; gout10      ; 6.524  ;    ;    ; 6.745  ;
+; y11        ; gout11      ; 7.410  ;    ;    ; 7.617  ;
+; y12        ; gout12      ; 5.702  ;    ;    ; 5.696  ;
+; y13        ; gout13      ; 6.753  ;    ;    ; 6.976  ;
+; y14        ; gout14      ; 7.565  ;    ;    ; 7.771  ;
+; y15        ; gout15      ; 6.732  ;    ;    ; 6.945  ;
+; y16        ; gout16      ; 7.122  ;    ;    ; 7.286  ;
+; y_choose   ; g88         ; 7.270  ;    ;    ; 7.512  ;
+; y_choose   ; gout1       ; 10.172 ;    ;    ; 10.516 ;
+; y_choose   ; gout2       ; 7.118  ;    ;    ; 7.368  ;
+; y_choose   ; gout3       ; 8.176  ;    ;    ; 8.476  ;
+; y_choose   ; gout4       ; 7.923  ;    ;    ; 8.239  ;
+; y_choose   ; gout5       ; 7.115  ;    ;    ; 7.365  ;
+; y_choose   ; gout6       ; 7.337  ;    ;    ; 7.573  ;
+; y_choose   ; gout7       ; 8.000  ;    ;    ; 8.264  ;
+; y_choose   ; gout10      ; 7.737  ;    ;    ; 8.000  ;
+; y_choose   ; gout11      ; 8.469  ;    ;    ; 8.791  ;
+; y_choose   ; gout12      ; 7.876  ;    ;    ; 8.161  ;
+; y_choose   ; gout13      ; 7.530  ;    ;    ; 7.791  ;
+; y_choose   ; gout14      ; 8.471  ;    ;    ; 8.764  ;
+; y_choose   ; gout15      ; 7.718  ;    ;    ; 7.978  ;
+; y_choose   ; gout16      ; 8.109  ;    ;    ; 8.422  ;
+; y_choose   ; gout99      ; 8.145  ;    ;    ; 8.454  ;
+; z1         ; gout1       ; 8.954  ;    ;    ; 9.153  ;
+; z2         ; gout2       ; 6.435  ;    ;    ; 6.615  ;
+; z3         ; gout3       ; 7.519  ;    ;    ; 7.744  ;
+; z4         ; gout4       ; 7.225  ;    ;    ; 7.466  ;
+; z5         ; gout5       ; 6.719  ;    ;    ; 6.898  ;
+; z6         ; gout6       ; 7.435  ;    ;    ; 7.589  ;
+; z7         ; gout7       ; 6.802  ;    ;    ; 7.026  ;
+; z8         ; g88         ; 6.793  ;    ;    ; 6.996  ;
+; z9         ; gout99      ; 7.007  ;    ;    ; 7.180  ;
+; z10        ; gout10      ; 7.457  ;    ;    ; 7.707  ;
+; z11        ; gout11      ; 7.040  ;    ;    ; 7.227  ;
+; z12        ; gout12      ; 6.999  ;    ;    ; 7.254  ;
+; z13        ; gout13      ; 6.361  ;    ;    ; 6.586  ;
+; z14        ; gout14      ; 7.592  ;    ;    ; 7.741  ;
+; z15        ; gout15      ; 6.830  ;    ;    ; 7.055  ;
+; z16        ; gout16      ; 6.749  ;    ;    ; 6.933  ;
+; z_choose   ; g88         ; 7.339  ;    ;    ; 7.585  ;
+; z_choose   ; gout1       ; 10.033 ;    ;    ; 10.333 ;
+; z_choose   ; gout2       ; 7.189  ;    ;    ; 7.420  ;
+; z_choose   ; gout3       ; 8.246  ;    ;    ; 8.528  ;
+; z_choose   ; gout4       ; 7.916  ;    ;    ; 8.209  ;
+; z_choose   ; gout5       ; 7.185  ;    ;    ; 7.417  ;
+; z_choose   ; gout6       ; 7.408  ;    ;    ; 7.649  ;
+; z_choose   ; gout7       ; 8.134  ;    ;    ; 8.385  ;
+; z_choose   ; gout10      ; 7.874  ;    ;    ; 8.146  ;
+; z_choose   ; gout11      ; 8.320  ;    ;    ; 8.598  ;
+; z_choose   ; gout12      ; 8.012  ;    ;    ; 8.285  ;
+; z_choose   ; gout13      ; 7.670  ;    ;    ; 7.919  ;
+; z_choose   ; gout14      ; 8.324  ;    ;    ; 8.595  ;
+; z_choose   ; gout15      ; 7.859  ;    ;    ; 8.106  ;
+; z_choose   ; gout16      ; 8.107  ;    ;    ; 8.376  ;
+; z_choose   ; gout99      ; 8.145  ;    ;    ; 8.411  ;
++------------+-------------+--------+----+----+--------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; h1         ; gout1       ; 7.427 ;    ;    ; 8.445 ;
+; h2         ; gout2       ; 5.715 ;    ;    ; 6.560 ;
+; h3         ; gout3       ; 7.354 ;    ;    ; 8.280 ;
+; h4         ; gout4       ; 5.445 ;    ;    ; 6.219 ;
+; h5         ; gout5       ; 6.484 ;    ;    ; 7.400 ;
+; h6         ; gout6       ; 5.665 ;    ;    ; 6.485 ;
+; h7         ; gout7       ; 5.768 ;    ;    ; 6.499 ;
+; h8         ; g88         ; 4.884 ;    ;    ; 5.543 ;
+; h9         ; gout99      ; 5.651 ;    ;    ; 6.423 ;
+; h10        ; gout10      ; 5.248 ;    ;    ; 5.905 ;
+; h11        ; gout11      ; 5.761 ;    ;    ; 6.557 ;
+; h12        ; gout12      ; 5.835 ;    ;    ; 6.573 ;
+; h13        ; gout13      ; 5.400 ;    ;    ; 6.099 ;
+; h14        ; gout14      ; 6.022 ;    ;    ; 6.853 ;
+; h15        ; gout15      ; 5.331 ;    ;    ; 6.005 ;
+; h16        ; gout16      ; 5.913 ;    ;    ; 6.746 ;
+; h_choose   ; g88         ; 3.381 ;    ;    ; 3.783 ;
+; h_choose   ; gout1       ; 6.590 ;    ;    ; 7.177 ;
+; h_choose   ; gout2       ; 5.042 ;    ;    ; 5.445 ;
+; h_choose   ; gout3       ; 6.763 ;    ;    ; 7.281 ;
+; h_choose   ; gout4       ; 4.991 ;    ;    ; 5.371 ;
+; h_choose   ; gout5       ; 5.813 ;    ;    ; 6.301 ;
+; h_choose   ; gout6       ; 5.071 ;    ;    ; 5.495 ;
+; h_choose   ; gout7       ; 5.172 ;    ;    ; 5.509 ;
+; h_choose   ; gout10      ; 4.755 ;    ;    ; 5.016 ;
+; h_choose   ; gout11      ; 5.128 ;    ;    ; 5.524 ;
+; h_choose   ; gout12      ; 5.000 ;    ;    ; 5.320 ;
+; h_choose   ; gout13      ; 4.879 ;    ;    ; 5.177 ;
+; h_choose   ; gout14      ; 5.362 ;    ;    ; 5.781 ;
+; h_choose   ; gout15      ; 4.900 ;    ;    ; 5.175 ;
+; h_choose   ; gout16      ; 5.080 ;    ;    ; 5.481 ;
+; h_choose   ; gout99      ; 5.167 ;    ;    ; 5.562 ;
+; l1         ; gout1       ; 7.187 ;    ;    ; 8.175 ;
+; l2         ; gout2       ; 5.468 ;    ;    ; 6.254 ;
+; l3         ; gout3       ; 7.269 ;    ;    ; 8.161 ;
+; l4         ; gout4       ; 5.766 ;    ;    ; 6.604 ;
+; l5         ; gout5       ; 6.211 ;    ;    ; 7.091 ;
+; l6         ; gout6       ; 5.979 ;    ;    ; 6.847 ;
+; l7         ; gout7       ; 5.808 ;    ;    ; 6.568 ;
+; l8         ; g88         ; 5.113 ;    ;    ; 5.835 ;
+; l9         ; gout99      ; 5.599 ;    ;    ; 6.385 ;
+; l10        ; gout10      ; 5.246 ;    ;    ; 5.896 ;
+; l11        ; gout11      ; 5.711 ;    ;    ; 6.531 ;
+; l12        ; gout12      ; 5.752 ;    ;    ; 6.503 ;
+; l13        ; gout13      ; 5.388 ;    ;    ; 6.089 ;
+; l14        ; gout14      ; 5.916 ;    ;    ; 6.728 ;
+; l15        ; gout15      ; 5.415 ;    ;    ; 6.085 ;
+; l16        ; gout16      ; 5.539 ;    ;    ; 6.317 ;
+; l_choose   ; g88         ; 3.516 ;    ;    ; 3.930 ;
+; l_choose   ; gout1       ; 6.829 ;    ;    ; 7.365 ;
+; l_choose   ; gout2       ; 5.195 ;    ;    ; 5.552 ;
+; l_choose   ; gout3       ; 6.781 ;    ;    ; 7.239 ;
+; l_choose   ; gout4       ; 5.177 ;    ;    ; 5.509 ;
+; l_choose   ; gout5       ; 5.956 ;    ;    ; 6.401 ;
+; l_choose   ; gout6       ; 5.326 ;    ;    ; 5.708 ;
+; l_choose   ; gout7       ; 5.430 ;    ;    ; 5.725 ;
+; l_choose   ; gout10      ; 4.896 ;    ;    ; 5.115 ;
+; l_choose   ; gout11      ; 5.275 ;    ;    ; 5.626 ;
+; l_choose   ; gout12      ; 5.229 ;    ;    ; 5.500 ;
+; l_choose   ; gout13      ; 5.064 ;    ;    ; 5.313 ;
+; l_choose   ; gout14      ; 5.513 ;    ;    ; 5.887 ;
+; l_choose   ; gout15      ; 5.093 ;    ;    ; 5.318 ;
+; l_choose   ; gout16      ; 5.317 ;    ;    ; 5.666 ;
+; l_choose   ; gout99      ; 5.318 ;    ;    ; 5.668 ;
+; n1         ; gout1       ; 5.918 ;    ;    ; 6.754 ;
+; n2         ; gout2       ; 4.366 ;    ;    ; 4.960 ;
+; n3         ; gout3       ; 5.313 ;    ;    ; 5.950 ;
+; n4         ; gout4       ; 4.594 ;    ;    ; 5.226 ;
+; n5         ; gout5       ; 4.423 ;    ;    ; 5.021 ;
+; n6         ; gout6       ; 4.322 ;    ;    ; 4.911 ;
+; n7         ; gout7       ; 4.849 ;    ;    ; 5.465 ;
+; n8         ; g88         ; 4.595 ;    ;    ; 5.212 ;
+; n9         ; gout99      ; 4.735 ;    ;    ; 5.417 ;
+; n10        ; gout10      ; 4.271 ;    ;    ; 4.828 ;
+; n11        ; gout11      ; 4.681 ;    ;    ; 5.323 ;
+; n12        ; gout12      ; 3.701 ;    ;    ; 3.944 ;
+; n13        ; gout13      ; 4.605 ;    ;    ; 5.214 ;
+; n14        ; gout14      ; 4.682 ;    ;    ; 5.324 ;
+; n15        ; gout15      ; 4.350 ;    ;    ; 4.906 ;
+; n16        ; gout16      ; 4.780 ;    ;    ; 5.456 ;
+; n_choose2  ; g88         ; 4.539 ;    ;    ; 5.202 ;
+; n_choose2  ; gout1       ; 6.513 ;    ;    ; 7.457 ;
+; n_choose2  ; gout2       ; 4.392 ;    ;    ; 5.047 ;
+; n_choose2  ; gout3       ; 5.233 ;    ;    ; 5.908 ;
+; n_choose2  ; gout4       ; 5.068 ;    ;    ; 5.827 ;
+; n_choose2  ; gout5       ; 4.389 ;    ;    ; 5.044 ;
+; n_choose2  ; gout6       ; 4.528 ;    ;    ; 5.194 ;
+; n_choose2  ; gout7       ; 5.107 ;    ;    ; 5.776 ;
+; n_choose2  ; gout10      ; 4.791 ;    ;    ; 5.423 ;
+; n_choose2  ; gout11      ; 5.370 ;    ;    ; 6.167 ;
+; n_choose2  ; gout12      ; 4.820 ;    ;    ; 5.474 ;
+; n_choose2  ; gout13      ; 4.788 ;    ;    ; 5.422 ;
+; n_choose2  ; gout14      ; 5.376 ;    ;    ; 6.176 ;
+; n_choose2  ; gout15      ; 4.659 ;    ;    ; 5.290 ;
+; n_choose2  ; gout16      ; 5.191 ;    ;    ; 5.967 ;
+; n_choose2  ; gout99      ; 5.213 ;    ;    ; 5.992 ;
+; y1         ; gout1       ; 6.360 ;    ;    ; 7.244 ;
+; y2         ; gout2       ; 4.527 ;    ;    ; 5.149 ;
+; y3         ; gout3       ; 5.321 ;    ;    ; 5.947 ;
+; y4         ; gout4       ; 5.062 ;    ;    ; 5.779 ;
+; y5         ; gout5       ; 5.039 ;    ;    ; 5.749 ;
+; y6         ; gout6       ; 4.735 ;    ;    ; 5.372 ;
+; y7         ; gout7       ; 5.156 ;    ;    ; 5.815 ;
+; y8         ; g88         ; 4.682 ;    ;    ; 5.310 ;
+; y9         ; gout99      ; 4.868 ;    ;    ; 5.529 ;
+; y10        ; gout10      ; 4.461 ;    ;    ; 5.037 ;
+; y11        ; gout11      ; 5.019 ;    ;    ; 5.705 ;
+; y12        ; gout12      ; 3.936 ;    ;    ; 4.223 ;
+; y13        ; gout13      ; 4.624 ;    ;    ; 5.221 ;
+; y14        ; gout14      ; 5.108 ;    ;    ; 5.827 ;
+; y15        ; gout15      ; 4.631 ;    ;    ; 5.217 ;
+; y16        ; gout16      ; 4.824 ;    ;    ; 5.490 ;
+; y_choose   ; g88         ; 4.886 ;    ;    ; 5.583 ;
+; y_choose   ; gout1       ; 6.879 ;    ;    ; 7.866 ;
+; y_choose   ; gout2       ; 4.817 ;    ;    ; 5.518 ;
+; y_choose   ; gout3       ; 5.661 ;    ;    ; 6.368 ;
+; y_choose   ; gout4       ; 5.362 ;    ;    ; 6.165 ;
+; y_choose   ; gout5       ; 4.815 ;    ;    ; 5.517 ;
+; y_choose   ; gout6       ; 4.958 ;    ;    ; 5.671 ;
+; y_choose   ; gout7       ; 5.431 ;    ;    ; 6.141 ;
+; y_choose   ; gout10      ; 5.255 ;    ;    ; 5.948 ;
+; y_choose   ; gout11      ; 5.743 ;    ;    ; 6.585 ;
+; y_choose   ; gout12      ; 5.341 ;    ;    ; 6.046 ;
+; y_choose   ; gout13      ; 5.107 ;    ;    ; 5.783 ;
+; y_choose   ; gout14      ; 5.724 ;    ;    ; 6.576 ;
+; y_choose   ; gout15      ; 5.263 ;    ;    ; 5.941 ;
+; y_choose   ; gout16      ; 5.482 ;    ;    ; 6.301 ;
+; y_choose   ; gout99      ; 5.504 ;    ;    ; 6.326 ;
+; z1         ; gout1       ; 6.029 ;    ;    ; 6.834 ;
+; z2         ; gout2       ; 4.352 ;    ;    ; 4.960 ;
+; z3         ; gout3       ; 5.231 ;    ;    ; 5.836 ;
+; z4         ; gout4       ; 4.906 ;    ;    ; 5.622 ;
+; z5         ; gout5       ; 4.554 ;    ;    ; 5.180 ;
+; z6         ; gout6       ; 5.002 ;    ;    ; 5.687 ;
+; z7         ; gout7       ; 4.647 ;    ;    ; 5.243 ;
+; z8         ; g88         ; 4.592 ;    ;    ; 5.226 ;
+; z9         ; gout99      ; 4.739 ;    ;    ; 5.393 ;
+; z10        ; gout10      ; 5.091 ;    ;    ; 5.762 ;
+; z11        ; gout11      ; 4.764 ;    ;    ; 5.407 ;
+; z12        ; gout12      ; 4.779 ;    ;    ; 5.398 ;
+; z13        ; gout13      ; 4.337 ;    ;    ; 4.903 ;
+; z14        ; gout14      ; 5.129 ;    ;    ; 5.827 ;
+; z15        ; gout15      ; 4.691 ;    ;    ; 5.281 ;
+; z16        ; gout16      ; 4.582 ;    ;    ; 5.215 ;
+; z_choose   ; g88         ; 4.944 ;    ;    ; 5.661 ;
+; z_choose   ; gout1       ; 6.766 ;    ;    ; 7.700 ;
+; z_choose   ; gout2       ; 4.855 ;    ;    ; 5.567 ;
+; z_choose   ; gout3       ; 5.698 ;    ;    ; 6.417 ;
+; z_choose   ; gout4       ; 5.392 ;    ;    ; 6.176 ;
+; z_choose   ; gout5       ; 4.851 ;    ;    ; 5.565 ;
+; z_choose   ; gout6       ; 5.018 ;    ;    ; 5.752 ;
+; z_choose   ; gout7       ; 5.522 ;    ;    ; 6.240 ;
+; z_choose   ; gout10      ; 5.370 ;    ;    ; 6.081 ;
+; z_choose   ; gout11      ; 5.620 ;    ;    ; 6.408 ;
+; z_choose   ; gout12      ; 5.434 ;    ;    ; 6.147 ;
+; z_choose   ; gout13      ; 5.204 ;    ;    ; 5.888 ;
+; z_choose   ; gout14      ; 5.625 ;    ;    ; 6.432 ;
+; z_choose   ; gout15      ; 5.360 ;    ;    ; 6.047 ;
+; z_choose   ; gout16      ; 5.494 ;    ;    ; 6.286 ;
+; z_choose   ; gout99      ; 5.519 ;    ;    ; 6.314 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; h1         ; gout1       ; 7.108 ;    ;    ; 8.083 ;
+; h2         ; gout2       ; 5.511 ;    ;    ; 6.337 ;
+; h3         ; gout3       ; 7.051 ;    ;    ; 7.950 ;
+; h4         ; gout4       ; 5.252 ;    ;    ; 6.012 ;
+; h5         ; gout5       ; 6.253 ;    ;    ; 7.147 ;
+; h6         ; gout6       ; 5.466 ;    ;    ; 6.268 ;
+; h7         ; gout7       ; 5.560 ;    ;    ; 6.259 ;
+; h8         ; g88         ; 4.682 ;    ;    ; 5.297 ;
+; h9         ; gout99      ; 5.454 ;    ;    ; 6.210 ;
+; h10        ; gout10      ; 5.066 ;    ;    ; 5.710 ;
+; h11        ; gout11      ; 5.530 ;    ;    ; 6.305 ;
+; h12        ; gout12      ; 5.581 ;    ;    ; 6.276 ;
+; h13        ; gout13      ; 5.207 ;    ;    ; 5.874 ;
+; h14        ; gout14      ; 5.809 ;    ;    ; 6.622 ;
+; h15        ; gout15      ; 5.117 ;    ;    ; 5.775 ;
+; h16        ; gout16      ; 5.682 ;    ;    ; 6.484 ;
+; h_choose   ; g88         ; 3.250 ;    ;    ; 3.631 ;
+; h_choose   ; gout1       ; 6.329 ;    ;    ; 6.904 ;
+; h_choose   ; gout2       ; 4.851 ;    ;    ; 5.238 ;
+; h_choose   ; gout3       ; 6.490 ;    ;    ; 6.995 ;
+; h_choose   ; gout4       ; 4.814 ;    ;    ; 5.187 ;
+; h_choose   ; gout5       ; 5.592 ;    ;    ; 6.060 ;
+; h_choose   ; gout6       ; 4.901 ;    ;    ; 5.322 ;
+; h_choose   ; gout7       ; 4.992 ;    ;    ; 5.313 ;
+; h_choose   ; gout10      ; 4.576 ;    ;    ; 4.827 ;
+; h_choose   ; gout11      ; 4.906 ;    ;    ; 5.282 ;
+; h_choose   ; gout12      ; 4.805 ;    ;    ; 5.111 ;
+; h_choose   ; gout13      ; 4.704 ;    ;    ; 4.976 ;
+; h_choose   ; gout14      ; 5.158 ;    ;    ; 5.562 ;
+; h_choose   ; gout15      ; 4.701 ;    ;    ; 4.968 ;
+; h_choose   ; gout16      ; 4.909 ;    ;    ; 5.308 ;
+; h_choose   ; gout99      ; 4.972 ;    ;    ; 5.352 ;
+; l1         ; gout1       ; 6.897 ;    ;    ; 7.858 ;
+; l2         ; gout2       ; 5.275 ;    ;    ; 6.043 ;
+; l3         ; gout3       ; 6.999 ;    ;    ; 7.866 ;
+; l4         ; gout4       ; 5.562 ;    ;    ; 6.382 ;
+; l5         ; gout5       ; 5.988 ;    ;    ; 6.848 ;
+; l6         ; gout6       ; 5.739 ;    ;    ; 6.586 ;
+; l7         ; gout7       ; 5.568 ;    ;    ; 6.293 ;
+; l8         ; g88         ; 4.908 ;    ;    ; 5.597 ;
+; l9         ; gout99      ; 5.402 ;    ;    ; 6.173 ;
+; l10        ; gout10      ; 5.065 ;    ;    ; 5.702 ;
+; l11        ; gout11      ; 5.480 ;    ;    ; 6.279 ;
+; l12        ; gout12      ; 5.521 ;    ;    ; 6.242 ;
+; l13        ; gout13      ; 5.195 ;    ;    ; 5.864 ;
+; l14        ; gout14      ; 5.705 ;    ;    ; 6.501 ;
+; l15        ; gout15      ; 5.199 ;    ;    ; 5.852 ;
+; l16        ; gout16      ; 5.342 ;    ;    ; 6.106 ;
+; l_choose   ; g88         ; 3.359 ;    ;    ; 3.737 ;
+; l_choose   ; gout1       ; 6.553 ;    ;    ; 7.064 ;
+; l_choose   ; gout2       ; 5.012 ;    ;    ; 5.355 ;
+; l_choose   ; gout3       ; 6.535 ;    ;    ; 6.986 ;
+; l_choose   ; gout4       ; 4.981 ;    ;    ; 5.299 ;
+; l_choose   ; gout5       ; 5.743 ;    ;    ; 6.171 ;
+; l_choose   ; gout6       ; 5.116 ;    ;    ; 5.496 ;
+; l_choose   ; gout7       ; 5.212 ;    ;    ; 5.490 ;
+; l_choose   ; gout10      ; 4.726 ;    ;    ; 4.938 ;
+; l_choose   ; gout11      ; 5.061 ;    ;    ; 5.396 ;
+; l_choose   ; gout12      ; 5.018 ;    ;    ; 5.264 ;
+; l_choose   ; gout13      ; 4.869 ;    ;    ; 5.088 ;
+; l_choose   ; gout14      ; 5.317 ;    ;    ; 5.678 ;
+; l_choose   ; gout15      ; 4.874 ;    ;    ; 5.084 ;
+; l_choose   ; gout16      ; 5.129 ;    ;    ; 5.466 ;
+; l_choose   ; gout99      ; 5.131 ;    ;    ; 5.469 ;
+; n1         ; gout1       ; 5.707 ;    ;    ; 6.525 ;
+; n2         ; gout2       ; 4.219 ;    ;    ; 4.804 ;
+; n3         ; gout3       ; 5.149 ;    ;    ; 5.776 ;
+; n4         ; gout4       ; 4.436 ;    ;    ; 5.058 ;
+; n5         ; gout5       ; 4.271 ;    ;    ; 4.860 ;
+; n6         ; gout6       ; 4.176 ;    ;    ; 4.757 ;
+; n7         ; gout7       ; 4.685 ;    ;    ; 5.290 ;
+; n8         ; g88         ; 4.438 ;    ;    ; 5.045 ;
+; n9         ; gout99      ; 4.572 ;    ;    ; 5.242 ;
+; n10        ; gout10      ; 4.130 ;    ;    ; 4.676 ;
+; n11        ; gout11      ; 4.521 ;    ;    ; 5.153 ;
+; n12        ; gout12      ; 3.586 ;    ;    ; 3.832 ;
+; n13        ; gout13      ; 4.450 ;    ;    ; 5.047 ;
+; n14        ; gout14      ; 4.520 ;    ;    ; 5.152 ;
+; n15        ; gout15      ; 4.205 ;    ;    ; 4.751 ;
+; n16        ; gout16      ; 4.615 ;    ;    ; 5.278 ;
+; n_choose2  ; g88         ; 4.384 ;    ;    ; 5.036 ;
+; n_choose2  ; gout1       ; 6.278 ;    ;    ; 7.200 ;
+; n_choose2  ; gout2       ; 4.242 ;    ;    ; 4.886 ;
+; n_choose2  ; gout3       ; 5.072 ;    ;    ; 5.736 ;
+; n_choose2  ; gout4       ; 4.890 ;    ;    ; 5.636 ;
+; n_choose2  ; gout5       ; 4.239 ;    ;    ; 4.883 ;
+; n_choose2  ; gout6       ; 4.372 ;    ;    ; 5.028 ;
+; n_choose2  ; gout7       ; 4.931 ;    ;    ; 5.588 ;
+; n_choose2  ; gout10      ; 4.627 ;    ;    ; 5.246 ;
+; n_choose2  ; gout11      ; 5.180 ;    ;    ; 5.962 ;
+; n_choose2  ; gout12      ; 4.654 ;    ;    ; 5.296 ;
+; n_choose2  ; gout13      ; 4.625 ;    ;    ; 5.247 ;
+; n_choose2  ; gout14      ; 5.185 ;    ;    ; 5.970 ;
+; n_choose2  ; gout15      ; 4.500 ;    ;    ; 5.120 ;
+; n_choose2  ; gout16      ; 5.009 ;    ;    ; 5.769 ;
+; n_choose2  ; gout99      ; 5.031 ;    ;    ; 5.795 ;
+; y1         ; gout1       ; 6.075 ;    ;    ; 6.934 ;
+; y2         ; gout2       ; 4.325 ;    ;    ; 4.903 ;
+; y3         ; gout3       ; 5.109 ;    ;    ; 5.705 ;
+; y4         ; gout4       ; 4.856 ;    ;    ; 5.543 ;
+; y5         ; gout5       ; 4.815 ;    ;    ; 5.477 ;
+; y6         ; gout6       ; 4.542 ;    ;    ; 5.156 ;
+; y7         ; gout7       ; 4.960 ;    ;    ; 5.591 ;
+; y8         ; g88         ; 4.521 ;    ;    ; 5.140 ;
+; y9         ; gout99      ; 4.653 ;    ;    ; 5.272 ;
+; y10        ; gout10      ; 4.304 ;    ;    ; 4.852 ;
+; y11        ; gout11      ; 4.787 ;    ;    ; 5.457 ;
+; y12        ; gout12      ; 3.792 ;    ;    ; 4.064 ;
+; y13        ; gout13      ; 4.448 ;    ;    ; 5.018 ;
+; y14        ; gout14      ; 4.901 ;    ;    ; 5.588 ;
+; y15        ; gout15      ; 4.426 ;    ;    ; 4.982 ;
+; y16        ; gout16      ; 4.609 ;    ;    ; 5.229 ;
+; y_choose   ; g88         ; 4.718 ;    ;    ; 5.402 ;
+; y_choose   ; gout1       ; 6.574 ;    ;    ; 7.531 ;
+; y_choose   ; gout2       ; 4.623 ;    ;    ; 5.292 ;
+; y_choose   ; gout3       ; 5.456 ;    ;    ; 6.146 ;
+; y_choose   ; gout4       ; 5.146 ;    ;    ; 5.914 ;
+; y_choose   ; gout5       ; 4.621 ;    ;    ; 5.291 ;
+; y_choose   ; gout6       ; 4.758 ;    ;    ; 5.443 ;
+; y_choose   ; gout7       ; 5.243 ;    ;    ; 5.940 ;
+; y_choose   ; gout10      ; 5.067 ;    ;    ; 5.728 ;
+; y_choose   ; gout11      ; 5.483 ;    ;    ; 6.302 ;
+; y_choose   ; gout12      ; 5.156 ;    ;    ; 5.846 ;
+; y_choose   ; gout13      ; 4.932 ;    ;    ; 5.595 ;
+; y_choose   ; gout14      ; 5.486 ;    ;    ; 6.288 ;
+; y_choose   ; gout15      ; 5.052 ;    ;    ; 5.714 ;
+; y_choose   ; gout16      ; 5.262 ;    ;    ; 6.044 ;
+; y_choose   ; gout99      ; 5.284 ;    ;    ; 6.073 ;
+; z1         ; gout1       ; 5.785 ;    ;    ; 6.571 ;
+; z2         ; gout2       ; 4.175 ;    ;    ; 4.755 ;
+; z3         ; gout3       ; 5.043 ;    ;    ; 5.636 ;
+; z4         ; gout4       ; 4.678 ;    ;    ; 5.362 ;
+; z5         ; gout5       ; 4.370 ;    ;    ; 4.968 ;
+; z6         ; gout6       ; 4.770 ;    ;    ; 5.427 ;
+; z7         ; gout7       ; 4.489 ;    ;    ; 5.077 ;
+; z8         ; g88         ; 4.406 ;    ;    ; 5.029 ;
+; z9         ; gout99      ; 4.549 ;    ;    ; 5.177 ;
+; z10        ; gout10      ; 4.881 ;    ;    ; 5.518 ;
+; z11        ; gout11      ; 4.571 ;    ;    ; 5.201 ;
+; z12        ; gout12      ; 4.617 ;    ;    ; 5.223 ;
+; z13        ; gout13      ; 4.192 ;    ;    ; 4.749 ;
+; z14        ; gout14      ; 4.901 ;    ;    ; 5.553 ;
+; z15        ; gout15      ; 4.504 ;    ;    ; 5.080 ;
+; z16        ; gout16      ; 4.397 ;    ;    ; 5.001 ;
+; z_choose   ; g88         ; 4.745 ;    ;    ; 5.448 ;
+; z_choose   ; gout1       ; 6.494 ;    ;    ; 7.403 ;
+; z_choose   ; gout2       ; 4.652 ;    ;    ; 5.324 ;
+; z_choose   ; gout3       ; 5.484 ;    ;    ; 6.178 ;
+; z_choose   ; gout4       ; 5.146 ;    ;    ; 5.895 ;
+; z_choose   ; gout5       ; 4.649 ;    ;    ; 5.322 ;
+; z_choose   ; gout6       ; 4.787 ;    ;    ; 5.491 ;
+; z_choose   ; gout7       ; 5.323 ;    ;    ; 6.019 ;
+; z_choose   ; gout10      ; 5.149 ;    ;    ; 5.826 ;
+; z_choose   ; gout11      ; 5.393 ;    ;    ; 6.162 ;
+; z_choose   ; gout12      ; 5.238 ;    ;    ; 5.927 ;
+; z_choose   ; gout13      ; 5.018 ;    ;    ; 5.681 ;
+; z_choose   ; gout14      ; 5.398 ;    ;    ; 6.169 ;
+; z_choose   ; gout15      ; 5.138 ;    ;    ; 5.801 ;
+; z_choose   ; gout16      ; 5.266 ;    ;    ; 6.014 ;
+; z_choose   ; gout99      ; 5.291 ;    ;    ; 6.046 ;
++------------+-------------+-------+----+----+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++------------------------------------------------------+
+; Progagation Delay                                    ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; h1         ; gout1       ; 12.841 ;    ;    ; 13.341 ;
+; h2         ; gout2       ; 9.930  ;    ;    ; 10.464 ;
+; h3         ; gout3       ; 12.551 ;    ;    ; 13.050 ;
+; h4         ; gout4       ; 9.432  ;    ;    ; 9.850  ;
+; h5         ; gout5       ; 11.320 ;    ;    ; 11.771 ;
+; h6         ; gout6       ; 9.846  ;    ;    ; 10.311 ;
+; h7         ; gout7       ; 9.913  ;    ;    ; 10.315 ;
+; h8         ; g88         ; 8.483  ;    ;    ; 8.826  ;
+; h9         ; gout99      ; 9.831  ;    ;    ; 10.208 ;
+; h10        ; gout10      ; 9.076  ;    ;    ; 9.413  ;
+; h11        ; gout11      ; 9.988  ;    ;    ; 10.440 ;
+; h12        ; gout12      ; 10.026 ;    ;    ; 10.456 ;
+; h13        ; gout13      ; 9.264  ;    ;    ; 9.672  ;
+; h14        ; gout14      ; 10.465 ;    ;    ; 10.866 ;
+; h15        ; gout15      ; 9.182  ;    ;    ; 9.559  ;
+; h16        ; gout16      ; 10.278 ;    ;    ; 10.705 ;
+; h_choose   ; g88         ; 5.815  ;    ;    ; 5.905  ;
+; h_choose   ; gout1       ; 11.225 ;    ;    ; 11.253 ;
+; h_choose   ; gout2       ; 8.587  ;    ;    ; 8.615  ;
+; h_choose   ; gout3       ; 11.353 ;    ;    ; 11.397 ;
+; h_choose   ; gout4       ; 8.479  ;    ;    ; 8.456  ;
+; h_choose   ; gout5       ; 9.973  ;    ;    ; 9.963  ;
+; h_choose   ; gout6       ; 8.642  ;    ;    ; 8.672  ;
+; h_choose   ; gout7       ; 8.711  ;    ;    ; 8.683  ;
+; h_choose   ; gout10      ; 7.997  ;    ;    ; 7.907  ;
+; h_choose   ; gout11      ; 8.701  ;    ;    ; 8.722  ;
+; h_choose   ; gout12      ; 8.443  ;    ;    ; 8.403  ;
+; h_choose   ; gout13      ; 8.232  ;    ;    ; 8.192  ;
+; h_choose   ; gout14      ; 9.140  ;    ;    ; 9.109  ;
+; h_choose   ; gout15      ; 8.251  ;    ;    ; 8.182  ;
+; h_choose   ; gout16      ; 8.657  ;    ;    ; 8.615  ;
+; h_choose   ; gout99      ; 8.796  ;    ;    ; 8.758  ;
+; l1         ; gout1       ; 12.453 ;    ;    ; 12.914 ;
+; l2         ; gout2       ; 9.536  ;    ;    ; 9.983  ;
+; l3         ; gout3       ; 12.433 ;    ;    ; 12.885 ;
+; l4         ; gout4       ; 9.981  ;    ;    ; 10.479 ;
+; l5         ; gout5       ; 10.858 ;    ;    ; 11.280 ;
+; l6         ; gout6       ; 10.384 ;    ;    ; 10.926 ;
+; l7         ; gout7       ; 9.995  ;    ;    ; 10.461 ;
+; l8         ; g88         ; 8.851  ;    ;    ; 9.273  ;
+; l9         ; gout99      ; 9.712  ;    ;    ; 10.103 ;
+; l10        ; gout10      ; 9.018  ;    ;    ; 9.350  ;
+; l11        ; gout11      ; 9.895  ;    ;    ; 10.375 ;
+; l12        ; gout12      ; 9.879  ;    ;    ; 10.304 ;
+; l13        ; gout13      ; 9.283  ;    ;    ; 9.710  ;
+; l14        ; gout14      ; 10.283 ;    ;    ; 10.657 ;
+; l15        ; gout15      ; 9.354  ;    ;    ; 9.732  ;
+; l16        ; gout16      ; 9.639  ;    ;    ; 10.021 ;
+; l_choose   ; g88         ; 6.045  ;    ;    ; 6.170  ;
+; l_choose   ; gout1       ; 11.550 ;    ;    ; 11.522 ;
+; l_choose   ; gout2       ; 8.766  ;    ;    ; 8.739  ;
+; l_choose   ; gout3       ; 11.301 ;    ;    ; 11.256 ;
+; l_choose   ; gout4       ; 8.723  ;    ;    ; 8.643  ;
+; l_choose   ; gout5       ; 10.144 ;    ;    ; 10.080 ;
+; l_choose   ; gout6       ; 9.000  ;    ;    ; 8.993  ;
+; l_choose   ; gout7       ; 9.072  ;    ;    ; 9.007  ;
+; l_choose   ; gout10      ; 8.166  ;    ;    ; 8.022  ;
+; l_choose   ; gout11      ; 8.875  ;    ;    ; 8.841  ;
+; l_choose   ; gout12      ; 8.759  ;    ;    ; 8.664  ;
+; l_choose   ; gout13      ; 8.475  ;    ;    ; 8.378  ;
+; l_choose   ; gout14      ; 9.318  ;    ;    ; 9.232  ;
+; l_choose   ; gout15      ; 8.501  ;    ;    ; 8.374  ;
+; l_choose   ; gout16      ; 8.979  ;    ;    ; 8.882  ;
+; l_choose   ; gout99      ; 8.974  ;    ;    ; 8.881  ;
+; n1         ; gout1       ; 10.234 ;    ;    ; 10.646 ;
+; n2         ; gout2       ; 7.533  ;    ;    ; 7.830  ;
+; n3         ; gout3       ; 9.016  ;    ;    ; 9.352  ;
+; n4         ; gout4       ; 7.926  ;    ;    ; 8.225  ;
+; n5         ; gout5       ; 7.660  ;    ;    ; 7.958  ;
+; n6         ; gout6       ; 7.467  ;    ;    ; 7.760  ;
+; n7         ; gout7       ; 8.236  ;    ;    ; 8.617  ;
+; n8         ; g88         ; 7.958  ;    ;    ; 8.240  ;
+; n9         ; gout99      ; 8.162  ;    ;    ; 8.548  ;
+; n10        ; gout10      ; 7.242  ;    ;    ; 7.612  ;
+; n11        ; gout11      ; 8.068  ;    ;    ; 8.400  ;
+; n12        ; gout12      ; 6.119  ;    ;    ; 6.096  ;
+; n13        ; gout13      ; 7.826  ;    ;    ; 8.227  ;
+; n14        ; gout14      ; 8.077  ;    ;    ; 8.398  ;
+; n15        ; gout15      ; 7.420  ;    ;    ; 7.766  ;
+; n16        ; gout16      ; 8.287  ;    ;    ; 8.638  ;
+; n_choose2  ; g88         ; 7.844  ;    ;    ; 8.199  ;
+; n_choose2  ; gout1       ; 11.207 ;    ;    ; 11.730 ;
+; n_choose2  ; gout2       ; 7.603  ;    ;    ; 7.965  ;
+; n_choose2  ; gout3       ; 8.854  ;    ;    ; 9.254  ;
+; n_choose2  ; gout4       ; 8.719  ;    ;    ; 9.188  ;
+; n_choose2  ; gout5       ; 7.598  ;    ;    ; 7.963  ;
+; n_choose2  ; gout6       ; 7.836  ;    ;    ; 8.191  ;
+; n_choose2  ; gout7       ; 8.676  ;    ;    ; 9.113  ;
+; n_choose2  ; gout10      ; 8.147  ;    ;    ; 8.572  ;
+; n_choose2  ; gout11      ; 9.247  ;    ;    ; 9.744  ;
+; n_choose2  ; gout12      ; 8.177  ;    ;    ; 8.617  ;
+; n_choose2  ; gout13      ; 8.145  ;    ;    ; 8.579  ;
+; n_choose2  ; gout14      ; 9.246  ;    ;    ; 9.736  ;
+; n_choose2  ; gout15      ; 7.904  ;    ;    ; 8.332  ;
+; n_choose2  ; gout16      ; 8.931  ;    ;    ; 9.408  ;
+; n_choose2  ; gout99      ; 8.965  ;    ;    ; 9.442  ;
+; y1         ; gout1       ; 10.999 ;    ;    ; 11.491 ;
+; y2         ; gout2       ; 7.852  ;    ;    ; 8.210  ;
+; y3         ; gout3       ; 9.036  ;    ;    ; 9.419  ;
+; y4         ; gout4       ; 8.777  ;    ;    ; 9.198  ;
+; y5         ; gout5       ; 8.733  ;    ;    ; 9.178  ;
+; y6         ; gout6       ; 8.231  ;    ;    ; 8.550  ;
+; y7         ; gout7       ; 8.789  ;    ;    ; 9.196  ;
+; y8         ; g88         ; 8.114  ;    ;    ; 8.430  ;
+; y9         ; gout99      ; 8.412  ;    ;    ; 8.782  ;
+; y10        ; gout10      ; 7.628  ;    ;    ; 8.019  ;
+; y11        ; gout11      ; 8.712  ;    ;    ; 9.113  ;
+; y12        ; gout12      ; 6.567  ;    ;    ; 6.607  ;
+; y13        ; gout13      ; 7.904  ;    ;    ; 8.297  ;
+; y14        ; gout14      ; 8.824  ;    ;    ; 9.239  ;
+; y15        ; gout15      ; 7.936  ;    ;    ; 8.328  ;
+; y16        ; gout16      ; 8.371  ;    ;    ; 8.744  ;
+; y_choose   ; g88         ; 8.426  ;    ;    ; 8.847  ;
+; y_choose   ; gout1       ; 11.852 ;    ;    ; 12.452 ;
+; y_choose   ; gout2       ; 8.328  ;    ;    ; 8.773  ;
+; y_choose   ; gout3       ; 9.581  ;    ;    ; 10.044 ;
+; y_choose   ; gout4       ; 9.230  ;    ;    ; 9.776  ;
+; y_choose   ; gout5       ; 8.322  ;    ;    ; 8.771  ;
+; y_choose   ; gout6       ; 8.564  ;    ;    ; 9.006  ;
+; y_choose   ; gout7       ; 9.281  ;    ;    ; 9.728  ;
+; y_choose   ; gout10      ; 9.005  ;    ;    ; 9.482  ;
+; y_choose   ; gout11      ; 9.899  ;    ;    ; 10.475 ;
+; y_choose   ; gout12      ; 9.146  ;    ;    ; 9.615  ;
+; y_choose   ; gout13      ; 8.747  ;    ;    ; 9.190  ;
+; y_choose   ; gout14      ; 9.858  ;    ;    ; 10.427 ;
+; y_choose   ; gout15      ; 9.015  ;    ;    ; 9.472  ;
+; y_choose   ; gout16      ; 9.443  ;    ;    ; 9.992  ;
+; y_choose   ; gout99      ; 9.477  ;    ;    ; 10.028 ;
+; z1         ; gout1       ; 10.424 ;    ;    ; 10.806 ;
+; z2         ; gout2       ; 7.571  ;    ;    ; 7.903  ;
+; z3         ; gout3       ; 8.845  ;    ;    ; 9.193  ;
+; z4         ; gout4       ; 8.497  ;    ;    ; 8.951  ;
+; z5         ; gout5       ; 7.876  ;    ;    ; 8.225  ;
+; z6         ; gout6       ; 8.748  ;    ;    ; 9.100  ;
+; z7         ; gout7       ; 7.925  ;    ;    ; 8.280  ;
+; z8         ; g88         ; 7.953  ;    ;    ; 8.317  ;
+; z9         ; gout99      ; 8.196  ;    ;    ; 8.547  ;
+; z10        ; gout10      ; 8.738  ;    ;    ; 9.196  ;
+; z11        ; gout11      ; 8.231  ;    ;    ; 8.591  ;
+; z12        ; gout12      ; 8.141  ;    ;    ; 8.545  ;
+; z13        ; gout13      ; 7.423  ;    ;    ; 7.781  ;
+; z14        ; gout14      ; 8.894  ;    ;    ; 9.280  ;
+; z15        ; gout15      ; 8.005  ;    ;    ; 8.384  ;
+; z16        ; gout16      ; 7.908  ;    ;    ; 8.263  ;
+; z_choose   ; g88         ; 8.567  ;    ;    ; 8.999  ;
+; z_choose   ; gout1       ; 11.636 ;    ;    ; 12.174 ;
+; z_choose   ; gout2       ; 8.433  ;    ;    ; 8.867  ;
+; z_choose   ; gout3       ; 9.685  ;    ;    ; 10.138 ;
+; z_choose   ; gout4       ; 9.274  ;    ;    ; 9.812  ;
+; z_choose   ; gout5       ; 8.426  ;    ;    ; 8.864  ;
+; z_choose   ; gout6       ; 8.707  ;    ;    ; 9.160  ;
+; z_choose   ; gout7       ; 9.447  ;    ;    ; 9.908  ;
+; z_choose   ; gout10      ; 9.210  ;    ;    ; 9.725  ;
+; z_choose   ; gout11      ; 9.673  ;    ;    ; 10.186 ;
+; z_choose   ; gout12      ; 9.314  ;    ;    ; 9.797  ;
+; z_choose   ; gout13      ; 8.919  ;    ;    ; 9.376  ;
+; z_choose   ; gout14      ; 9.674  ;    ;    ; 10.197 ;
+; z_choose   ; gout15      ; 9.188  ;    ;    ; 9.660  ;
+; z_choose   ; gout16      ; 9.455  ;    ;    ; 9.974  ;
+; z_choose   ; gout99      ; 9.491  ;    ;    ; 10.013 ;
++------------+-------------+--------+----+----+--------+
+
+
++----------------------------------------------------+
+; Minimum Progagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; h1         ; gout1       ; 7.108 ;    ;    ; 8.083 ;
+; h2         ; gout2       ; 5.511 ;    ;    ; 6.337 ;
+; h3         ; gout3       ; 7.051 ;    ;    ; 7.950 ;
+; h4         ; gout4       ; 5.252 ;    ;    ; 6.012 ;
+; h5         ; gout5       ; 6.253 ;    ;    ; 7.147 ;
+; h6         ; gout6       ; 5.466 ;    ;    ; 6.268 ;
+; h7         ; gout7       ; 5.560 ;    ;    ; 6.259 ;
+; h8         ; g88         ; 4.682 ;    ;    ; 5.297 ;
+; h9         ; gout99      ; 5.454 ;    ;    ; 6.210 ;
+; h10        ; gout10      ; 5.066 ;    ;    ; 5.710 ;
+; h11        ; gout11      ; 5.530 ;    ;    ; 6.305 ;
+; h12        ; gout12      ; 5.581 ;    ;    ; 6.276 ;
+; h13        ; gout13      ; 5.207 ;    ;    ; 5.874 ;
+; h14        ; gout14      ; 5.809 ;    ;    ; 6.622 ;
+; h15        ; gout15      ; 5.117 ;    ;    ; 5.775 ;
+; h16        ; gout16      ; 5.682 ;    ;    ; 6.484 ;
+; h_choose   ; g88         ; 3.250 ;    ;    ; 3.631 ;
+; h_choose   ; gout1       ; 6.329 ;    ;    ; 6.904 ;
+; h_choose   ; gout2       ; 4.851 ;    ;    ; 5.238 ;
+; h_choose   ; gout3       ; 6.490 ;    ;    ; 6.995 ;
+; h_choose   ; gout4       ; 4.814 ;    ;    ; 5.187 ;
+; h_choose   ; gout5       ; 5.592 ;    ;    ; 6.060 ;
+; h_choose   ; gout6       ; 4.901 ;    ;    ; 5.322 ;
+; h_choose   ; gout7       ; 4.992 ;    ;    ; 5.313 ;
+; h_choose   ; gout10      ; 4.576 ;    ;    ; 4.827 ;
+; h_choose   ; gout11      ; 4.906 ;    ;    ; 5.282 ;
+; h_choose   ; gout12      ; 4.805 ;    ;    ; 5.111 ;
+; h_choose   ; gout13      ; 4.704 ;    ;    ; 4.976 ;
+; h_choose   ; gout14      ; 5.158 ;    ;    ; 5.562 ;
+; h_choose   ; gout15      ; 4.701 ;    ;    ; 4.968 ;
+; h_choose   ; gout16      ; 4.909 ;    ;    ; 5.308 ;
+; h_choose   ; gout99      ; 4.972 ;    ;    ; 5.352 ;
+; l1         ; gout1       ; 6.897 ;    ;    ; 7.858 ;
+; l2         ; gout2       ; 5.275 ;    ;    ; 6.043 ;
+; l3         ; gout3       ; 6.999 ;    ;    ; 7.866 ;
+; l4         ; gout4       ; 5.562 ;    ;    ; 6.382 ;
+; l5         ; gout5       ; 5.988 ;    ;    ; 6.848 ;
+; l6         ; gout6       ; 5.739 ;    ;    ; 6.586 ;
+; l7         ; gout7       ; 5.568 ;    ;    ; 6.293 ;
+; l8         ; g88         ; 4.908 ;    ;    ; 5.597 ;
+; l9         ; gout99      ; 5.402 ;    ;    ; 6.173 ;
+; l10        ; gout10      ; 5.065 ;    ;    ; 5.702 ;
+; l11        ; gout11      ; 5.480 ;    ;    ; 6.279 ;
+; l12        ; gout12      ; 5.521 ;    ;    ; 6.242 ;
+; l13        ; gout13      ; 5.195 ;    ;    ; 5.864 ;
+; l14        ; gout14      ; 5.705 ;    ;    ; 6.501 ;
+; l15        ; gout15      ; 5.199 ;    ;    ; 5.852 ;
+; l16        ; gout16      ; 5.342 ;    ;    ; 6.106 ;
+; l_choose   ; g88         ; 3.359 ;    ;    ; 3.737 ;
+; l_choose   ; gout1       ; 6.553 ;    ;    ; 7.064 ;
+; l_choose   ; gout2       ; 5.012 ;    ;    ; 5.355 ;
+; l_choose   ; gout3       ; 6.535 ;    ;    ; 6.986 ;
+; l_choose   ; gout4       ; 4.981 ;    ;    ; 5.299 ;
+; l_choose   ; gout5       ; 5.743 ;    ;    ; 6.171 ;
+; l_choose   ; gout6       ; 5.116 ;    ;    ; 5.496 ;
+; l_choose   ; gout7       ; 5.212 ;    ;    ; 5.490 ;
+; l_choose   ; gout10      ; 4.726 ;    ;    ; 4.938 ;
+; l_choose   ; gout11      ; 5.061 ;    ;    ; 5.396 ;
+; l_choose   ; gout12      ; 5.018 ;    ;    ; 5.264 ;
+; l_choose   ; gout13      ; 4.869 ;    ;    ; 5.088 ;
+; l_choose   ; gout14      ; 5.317 ;    ;    ; 5.678 ;
+; l_choose   ; gout15      ; 4.874 ;    ;    ; 5.084 ;
+; l_choose   ; gout16      ; 5.129 ;    ;    ; 5.466 ;
+; l_choose   ; gout99      ; 5.131 ;    ;    ; 5.469 ;
+; n1         ; gout1       ; 5.707 ;    ;    ; 6.525 ;
+; n2         ; gout2       ; 4.219 ;    ;    ; 4.804 ;
+; n3         ; gout3       ; 5.149 ;    ;    ; 5.776 ;
+; n4         ; gout4       ; 4.436 ;    ;    ; 5.058 ;
+; n5         ; gout5       ; 4.271 ;    ;    ; 4.860 ;
+; n6         ; gout6       ; 4.176 ;    ;    ; 4.757 ;
+; n7         ; gout7       ; 4.685 ;    ;    ; 5.290 ;
+; n8         ; g88         ; 4.438 ;    ;    ; 5.045 ;
+; n9         ; gout99      ; 4.572 ;    ;    ; 5.242 ;
+; n10        ; gout10      ; 4.130 ;    ;    ; 4.676 ;
+; n11        ; gout11      ; 4.521 ;    ;    ; 5.153 ;
+; n12        ; gout12      ; 3.586 ;    ;    ; 3.832 ;
+; n13        ; gout13      ; 4.450 ;    ;    ; 5.047 ;
+; n14        ; gout14      ; 4.520 ;    ;    ; 5.152 ;
+; n15        ; gout15      ; 4.205 ;    ;    ; 4.751 ;
+; n16        ; gout16      ; 4.615 ;    ;    ; 5.278 ;
+; n_choose2  ; g88         ; 4.384 ;    ;    ; 5.036 ;
+; n_choose2  ; gout1       ; 6.278 ;    ;    ; 7.200 ;
+; n_choose2  ; gout2       ; 4.242 ;    ;    ; 4.886 ;
+; n_choose2  ; gout3       ; 5.072 ;    ;    ; 5.736 ;
+; n_choose2  ; gout4       ; 4.890 ;    ;    ; 5.636 ;
+; n_choose2  ; gout5       ; 4.239 ;    ;    ; 4.883 ;
+; n_choose2  ; gout6       ; 4.372 ;    ;    ; 5.028 ;
+; n_choose2  ; gout7       ; 4.931 ;    ;    ; 5.588 ;
+; n_choose2  ; gout10      ; 4.627 ;    ;    ; 5.246 ;
+; n_choose2  ; gout11      ; 5.180 ;    ;    ; 5.962 ;
+; n_choose2  ; gout12      ; 4.654 ;    ;    ; 5.296 ;
+; n_choose2  ; gout13      ; 4.625 ;    ;    ; 5.247 ;
+; n_choose2  ; gout14      ; 5.185 ;    ;    ; 5.970 ;
+; n_choose2  ; gout15      ; 4.500 ;    ;    ; 5.120 ;
+; n_choose2  ; gout16      ; 5.009 ;    ;    ; 5.769 ;
+; n_choose2  ; gout99      ; 5.031 ;    ;    ; 5.795 ;
+; y1         ; gout1       ; 6.075 ;    ;    ; 6.934 ;
+; y2         ; gout2       ; 4.325 ;    ;    ; 4.903 ;
+; y3         ; gout3       ; 5.109 ;    ;    ; 5.705 ;
+; y4         ; gout4       ; 4.856 ;    ;    ; 5.543 ;
+; y5         ; gout5       ; 4.815 ;    ;    ; 5.477 ;
+; y6         ; gout6       ; 4.542 ;    ;    ; 5.156 ;
+; y7         ; gout7       ; 4.960 ;    ;    ; 5.591 ;
+; y8         ; g88         ; 4.521 ;    ;    ; 5.140 ;
+; y9         ; gout99      ; 4.653 ;    ;    ; 5.272 ;
+; y10        ; gout10      ; 4.304 ;    ;    ; 4.852 ;
+; y11        ; gout11      ; 4.787 ;    ;    ; 5.457 ;
+; y12        ; gout12      ; 3.792 ;    ;    ; 4.064 ;
+; y13        ; gout13      ; 4.448 ;    ;    ; 5.018 ;
+; y14        ; gout14      ; 4.901 ;    ;    ; 5.588 ;
+; y15        ; gout15      ; 4.426 ;    ;    ; 4.982 ;
+; y16        ; gout16      ; 4.609 ;    ;    ; 5.229 ;
+; y_choose   ; g88         ; 4.718 ;    ;    ; 5.402 ;
+; y_choose   ; gout1       ; 6.574 ;    ;    ; 7.531 ;
+; y_choose   ; gout2       ; 4.623 ;    ;    ; 5.292 ;
+; y_choose   ; gout3       ; 5.456 ;    ;    ; 6.146 ;
+; y_choose   ; gout4       ; 5.146 ;    ;    ; 5.914 ;
+; y_choose   ; gout5       ; 4.621 ;    ;    ; 5.291 ;
+; y_choose   ; gout6       ; 4.758 ;    ;    ; 5.443 ;
+; y_choose   ; gout7       ; 5.243 ;    ;    ; 5.940 ;
+; y_choose   ; gout10      ; 5.067 ;    ;    ; 5.728 ;
+; y_choose   ; gout11      ; 5.483 ;    ;    ; 6.302 ;
+; y_choose   ; gout12      ; 5.156 ;    ;    ; 5.846 ;
+; y_choose   ; gout13      ; 4.932 ;    ;    ; 5.595 ;
+; y_choose   ; gout14      ; 5.486 ;    ;    ; 6.288 ;
+; y_choose   ; gout15      ; 5.052 ;    ;    ; 5.714 ;
+; y_choose   ; gout16      ; 5.262 ;    ;    ; 6.044 ;
+; y_choose   ; gout99      ; 5.284 ;    ;    ; 6.073 ;
+; z1         ; gout1       ; 5.785 ;    ;    ; 6.571 ;
+; z2         ; gout2       ; 4.175 ;    ;    ; 4.755 ;
+; z3         ; gout3       ; 5.043 ;    ;    ; 5.636 ;
+; z4         ; gout4       ; 4.678 ;    ;    ; 5.362 ;
+; z5         ; gout5       ; 4.370 ;    ;    ; 4.968 ;
+; z6         ; gout6       ; 4.770 ;    ;    ; 5.427 ;
+; z7         ; gout7       ; 4.489 ;    ;    ; 5.077 ;
+; z8         ; g88         ; 4.406 ;    ;    ; 5.029 ;
+; z9         ; gout99      ; 4.549 ;    ;    ; 5.177 ;
+; z10        ; gout10      ; 4.881 ;    ;    ; 5.518 ;
+; z11        ; gout11      ; 4.571 ;    ;    ; 5.201 ;
+; z12        ; gout12      ; 4.617 ;    ;    ; 5.223 ;
+; z13        ; gout13      ; 4.192 ;    ;    ; 4.749 ;
+; z14        ; gout14      ; 4.901 ;    ;    ; 5.553 ;
+; z15        ; gout15      ; 4.504 ;    ;    ; 5.080 ;
+; z16        ; gout16      ; 4.397 ;    ;    ; 5.001 ;
+; z_choose   ; g88         ; 4.745 ;    ;    ; 5.448 ;
+; z_choose   ; gout1       ; 6.494 ;    ;    ; 7.403 ;
+; z_choose   ; gout2       ; 4.652 ;    ;    ; 5.324 ;
+; z_choose   ; gout3       ; 5.484 ;    ;    ; 6.178 ;
+; z_choose   ; gout4       ; 5.146 ;    ;    ; 5.895 ;
+; z_choose   ; gout5       ; 4.649 ;    ;    ; 5.322 ;
+; z_choose   ; gout6       ; 4.787 ;    ;    ; 5.491 ;
+; z_choose   ; gout7       ; 5.323 ;    ;    ; 6.019 ;
+; z_choose   ; gout10      ; 5.149 ;    ;    ; 5.826 ;
+; z_choose   ; gout11      ; 5.393 ;    ;    ; 6.162 ;
+; z_choose   ; gout12      ; 5.238 ;    ;    ; 5.927 ;
+; z_choose   ; gout13      ; 5.018 ;    ;    ; 5.681 ;
+; z_choose   ; gout14      ; 5.398 ;    ;    ; 6.169 ;
+; z_choose   ; gout15      ; 5.138 ;    ;    ; 5.801 ;
+; z_choose   ; gout16      ; 5.266 ;    ;    ; 6.014 ;
+; z_choose   ; gout99      ; 5.291 ;    ;    ; 6.046 ;
++------------+-------------+-------+----+----+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; gout1         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout2         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout3         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout4         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout5         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout6         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout7         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout10        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout11        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout12        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout13        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout14        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout15        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout16        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gout99        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; g88           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++-------------------------------------------------------------------+
+; Input Transition Times                                            ;
++----------------+--------------+-----------------+-----------------+
+; Pin            ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++----------------+--------------+-----------------+-----------------+
+; h_choose       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l_choose       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l1             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h1             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y_choose       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z_choose       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z1             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y1             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n_choose2      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n1             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l2             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h2             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z2             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y2             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n2             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l3             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h3             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z3             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y3             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n3             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l4             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h4             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z4             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y4             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n4             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l5             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h5             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z5             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y5             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n5             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l6             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h6             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z6             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y6             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n6             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l7             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h7             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z7             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y7             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n7             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l10            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h10            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z10            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y10            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n10            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l11            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h11            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z11            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y11            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n11            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l12            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h12            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z12            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y12            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n12            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l13            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h13            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z13            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y13            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n13            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l14            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h14            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z14            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y14            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n14            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l15            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h15            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z15            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y15            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n15            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l16            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h16            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z16            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y16            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n16            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l9             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h9             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z9             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y9             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n9             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; l8             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; h8             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; z8             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; y8             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; n8             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_NCSO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++----------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; gout1         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; gout2         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; gout3         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.34 V              ; -0.00668 V          ; 0.218 V                              ; 0.076 V                              ; 1.92e-09 s                  ; 1.81e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.34 V             ; -0.00668 V         ; 0.218 V                             ; 0.076 V                             ; 1.92e-09 s                 ; 1.81e-09 s                 ; No                        ; Yes                       ;
+; gout4         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; gout5         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; gout6         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; gout7         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; gout10        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; gout11        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; gout12        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; gout13        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; gout14        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; gout15        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; gout16        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; gout99        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; g88           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.76e-09 V                   ; 2.4 V               ; -0.034 V            ; 0.102 V                              ; 0.065 V                              ; 2.49e-10 s                  ; 3.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.76e-09 V                  ; 2.4 V              ; -0.034 V           ; 0.102 V                             ; 0.065 V                             ; 2.49e-10 s                 ; 3.49e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.94e-09 V                   ; 2.39 V              ; -0.0344 V           ; 0.156 V                              ; 0.089 V                              ; 2.68e-10 s                  ; 2.6e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.94e-09 V                  ; 2.39 V             ; -0.0344 V          ; 0.156 V                             ; 0.089 V                             ; 2.68e-10 s                 ; 2.6e-10 s                  ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; gout1         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; gout2         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; gout3         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.33 V              ; -0.00286 V          ; 0.193 V                              ; 0.042 V                              ; 2.32e-09 s                  ; 2.21e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.33 V             ; -0.00286 V         ; 0.193 V                             ; 0.042 V                             ; 2.32e-09 s                 ; 2.21e-09 s                 ; Yes                       ; Yes                       ;
+; gout4         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; gout5         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; gout6         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; gout7         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; gout10        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; gout11        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; gout12        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; gout13        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; gout14        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; gout15        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; gout16        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; gout99        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; g88           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.93e-07 V                   ; 2.37 V              ; -0.0278 V           ; 0.106 V                              ; 0.115 V                              ; 2.69e-10 s                  ; 4.05e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.93e-07 V                  ; 2.37 V             ; -0.0278 V          ; 0.106 V                             ; 0.115 V                             ; 2.69e-10 s                 ; 4.05e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.76e-07 V                   ; 2.36 V              ; -0.00439 V          ; 0.088 V                              ; 0.007 V                              ; 4.05e-10 s                  ; 3.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.76e-07 V                  ; 2.36 V             ; -0.00439 V         ; 0.088 V                             ; 0.007 V                             ; 4.05e-10 s                 ; 3.35e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; gout1         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; gout2         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; gout3         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.65 V              ; -0.0115 V           ; 0.219 V                              ; 0.115 V                              ; 1.64e-09 s                  ; 1.57e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.65 V             ; -0.0115 V          ; 0.219 V                             ; 0.115 V                             ; 1.64e-09 s                 ; 1.57e-09 s                 ; No                        ; Yes                       ;
+; gout4         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; gout5         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; gout6         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; gout7         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; gout10        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; gout11        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; gout12        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; gout13        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; gout14        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; gout15        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; gout16        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; gout99        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; g88           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.06e-08 V                   ; 2.86 V              ; -0.0341 V           ; 0.364 V                              ; 0.046 V                              ; 1.17e-10 s                  ; 2.6e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 3.06e-08 V                  ; 2.86 V             ; -0.0341 V          ; 0.364 V                             ; 0.046 V                             ; 1.17e-10 s                 ; 2.6e-10 s                  ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.81e-08 V                   ; 2.72 V              ; -0.0542 V           ; 0.144 V                              ; 0.087 V                              ; 2.55e-10 s                  ; 2.14e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.81e-08 V                  ; 2.72 V             ; -0.0542 V          ; 0.144 V                             ; 0.087 V                             ; 2.55e-10 s                 ; 2.14e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 85    ; 85   ;
+; Unconstrained Input Port Paths  ; 160   ; 160  ;
+; Unconstrained Output Ports      ; 16    ; 16   ;
+; Unconstrained Output Port Paths ; 160   ; 160  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Sun Nov 17 19:53:49 2024
+Info: Command: quartus_sta select6 -c select6
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 10 of the 10 physical processors detected instead.
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'select6.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4675 megabytes
+    Info: Processing ended: Sun Nov 17 19:53:50 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

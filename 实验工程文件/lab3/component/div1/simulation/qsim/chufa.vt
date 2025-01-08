@@ -1,0 +1,1466 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/19/2024 11:44:24"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    chufa
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module chufa_vlg_sample_tst(
+	denom0,
+	denom1,
+	denom2,
+	denom3,
+	denom4,
+	denom5,
+	denom6,
+	denom7,
+	denom8,
+	denom9,
+	denom10,
+	denom11,
+	denom12,
+	denom13,
+	denom14,
+	denom15,
+	divclk,
+	numerator0,
+	numerator1,
+	numerator2,
+	numerator3,
+	numerator4,
+	numerator5,
+	numerator6,
+	numerator7,
+	numerator8,
+	numerator9,
+	numerator10,
+	numerator11,
+	numerator12,
+	numerator13,
+	numerator14,
+	numerator15,
+	sampler_tx
+);
+input  denom0;
+input  denom1;
+input  denom2;
+input  denom3;
+input  denom4;
+input  denom5;
+input  denom6;
+input  denom7;
+input  denom8;
+input  denom9;
+input  denom10;
+input  denom11;
+input  denom12;
+input  denom13;
+input  denom14;
+input  denom15;
+input  divclk;
+input  numerator0;
+input  numerator1;
+input  numerator2;
+input  numerator3;
+input  numerator4;
+input  numerator5;
+input  numerator6;
+input  numerator7;
+input  numerator8;
+input  numerator9;
+input  numerator10;
+input  numerator11;
+input  numerator12;
+input  numerator13;
+input  numerator14;
+input  numerator15;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(denom0 or denom1 or denom2 or denom3 or denom4 or denom5 or denom6 or denom7 or denom8 or denom9 or denom10 or denom11 or denom12 or denom13 or denom14 or denom15 or divclk or numerator0 or numerator1 or numerator2 or numerator3 or numerator4 or numerator5 or numerator6 or numerator7 or numerator8 or numerator9 or numerator10 or numerator11 or numerator12 or numerator13 or numerator14 or numerator15)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module chufa_vlg_check_tst (
+	business0,
+	business1,
+	business2,
+	business3,
+	business4,
+	business5,
+	business6,
+	business7,
+	business8,
+	business9,
+	business10,
+	business11,
+	business12,
+	business13,
+	business14,
+	business15,
+	remain0,
+	remain1,
+	remain2,
+	remain3,
+	remain4,
+	remain5,
+	remain6,
+	remain7,
+	remain8,
+	remain9,
+	remain10,
+	remain11,
+	remain12,
+	remain13,
+	remain14,
+	remain15,
+	sampler_rx
+);
+input  business0;
+input  business1;
+input  business2;
+input  business3;
+input  business4;
+input  business5;
+input  business6;
+input  business7;
+input  business8;
+input  business9;
+input  business10;
+input  business11;
+input  business12;
+input  business13;
+input  business14;
+input  business15;
+input  remain0;
+input  remain1;
+input  remain2;
+input  remain3;
+input  remain4;
+input  remain5;
+input  remain6;
+input  remain7;
+input  remain8;
+input  remain9;
+input  remain10;
+input  remain11;
+input  remain12;
+input  remain13;
+input  remain14;
+input  remain15;
+input sampler_rx;
+
+reg  business0_expected;
+reg  business1_expected;
+reg  business2_expected;
+reg  business3_expected;
+reg  business4_expected;
+reg  business5_expected;
+reg  business6_expected;
+reg  business7_expected;
+reg  business8_expected;
+reg  business9_expected;
+reg  business10_expected;
+reg  business11_expected;
+reg  business12_expected;
+reg  business13_expected;
+reg  business14_expected;
+reg  business15_expected;
+reg  remain0_expected;
+reg  remain1_expected;
+reg  remain2_expected;
+reg  remain3_expected;
+reg  remain4_expected;
+reg  remain5_expected;
+reg  remain6_expected;
+reg  remain7_expected;
+reg  remain8_expected;
+reg  remain9_expected;
+reg  remain10_expected;
+reg  remain11_expected;
+reg  remain12_expected;
+reg  remain13_expected;
+reg  remain14_expected;
+reg  remain15_expected;
+
+reg  business0_prev;
+reg  business1_prev;
+reg  business2_prev;
+reg  business3_prev;
+reg  business4_prev;
+reg  business5_prev;
+reg  business6_prev;
+reg  business7_prev;
+reg  business8_prev;
+reg  business9_prev;
+reg  business10_prev;
+reg  business11_prev;
+reg  business12_prev;
+reg  business13_prev;
+reg  business14_prev;
+reg  business15_prev;
+reg  remain0_prev;
+reg  remain1_prev;
+reg  remain2_prev;
+reg  remain3_prev;
+reg  remain4_prev;
+reg  remain5_prev;
+reg  remain6_prev;
+reg  remain7_prev;
+reg  remain8_prev;
+reg  remain9_prev;
+reg  remain10_prev;
+reg  remain11_prev;
+reg  remain12_prev;
+reg  remain13_prev;
+reg  remain14_prev;
+reg  remain15_prev;
+
+reg  business0_expected_prev;
+reg  business1_expected_prev;
+reg  business2_expected_prev;
+reg  business3_expected_prev;
+reg  business4_expected_prev;
+reg  business5_expected_prev;
+reg  business6_expected_prev;
+reg  business7_expected_prev;
+reg  business8_expected_prev;
+reg  business9_expected_prev;
+reg  business10_expected_prev;
+reg  business11_expected_prev;
+reg  business12_expected_prev;
+reg  business13_expected_prev;
+reg  business14_expected_prev;
+reg  business15_expected_prev;
+reg  remain0_expected_prev;
+reg  remain1_expected_prev;
+reg  remain2_expected_prev;
+reg  remain3_expected_prev;
+reg  remain4_expected_prev;
+reg  remain5_expected_prev;
+reg  remain6_expected_prev;
+reg  remain7_expected_prev;
+reg  remain8_expected_prev;
+reg  remain9_expected_prev;
+reg  remain10_expected_prev;
+reg  remain11_expected_prev;
+reg  remain12_expected_prev;
+reg  remain13_expected_prev;
+reg  remain14_expected_prev;
+reg  remain15_expected_prev;
+
+reg  last_business0_exp;
+reg  last_business1_exp;
+reg  last_business2_exp;
+reg  last_business3_exp;
+reg  last_business4_exp;
+reg  last_business5_exp;
+reg  last_business6_exp;
+reg  last_business7_exp;
+reg  last_business8_exp;
+reg  last_business9_exp;
+reg  last_business10_exp;
+reg  last_business11_exp;
+reg  last_business12_exp;
+reg  last_business13_exp;
+reg  last_business14_exp;
+reg  last_business15_exp;
+reg  last_remain0_exp;
+reg  last_remain1_exp;
+reg  last_remain2_exp;
+reg  last_remain3_exp;
+reg  last_remain4_exp;
+reg  last_remain5_exp;
+reg  last_remain6_exp;
+reg  last_remain7_exp;
+reg  last_remain8_exp;
+reg  last_remain9_exp;
+reg  last_remain10_exp;
+reg  last_remain11_exp;
+reg  last_remain12_exp;
+reg  last_remain13_exp;
+reg  last_remain14_exp;
+reg  last_remain15_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:32] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 32'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	business0_prev = business0;
+	business1_prev = business1;
+	business2_prev = business2;
+	business3_prev = business3;
+	business4_prev = business4;
+	business5_prev = business5;
+	business6_prev = business6;
+	business7_prev = business7;
+	business8_prev = business8;
+	business9_prev = business9;
+	business10_prev = business10;
+	business11_prev = business11;
+	business12_prev = business12;
+	business13_prev = business13;
+	business14_prev = business14;
+	business15_prev = business15;
+	remain0_prev = remain0;
+	remain1_prev = remain1;
+	remain2_prev = remain2;
+	remain3_prev = remain3;
+	remain4_prev = remain4;
+	remain5_prev = remain5;
+	remain6_prev = remain6;
+	remain7_prev = remain7;
+	remain8_prev = remain8;
+	remain9_prev = remain9;
+	remain10_prev = remain10;
+	remain11_prev = remain11;
+	remain12_prev = remain12;
+	remain13_prev = remain13;
+	remain14_prev = remain14;
+	remain15_prev = remain15;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	business0_expected_prev = business0_expected;
+	business1_expected_prev = business1_expected;
+	business2_expected_prev = business2_expected;
+	business3_expected_prev = business3_expected;
+	business4_expected_prev = business4_expected;
+	business5_expected_prev = business5_expected;
+	business6_expected_prev = business6_expected;
+	business7_expected_prev = business7_expected;
+	business8_expected_prev = business8_expected;
+	business9_expected_prev = business9_expected;
+	business10_expected_prev = business10_expected;
+	business11_expected_prev = business11_expected;
+	business12_expected_prev = business12_expected;
+	business13_expected_prev = business13_expected;
+	business14_expected_prev = business14_expected;
+	business15_expected_prev = business15_expected;
+	remain0_expected_prev = remain0_expected;
+	remain1_expected_prev = remain1_expected;
+	remain2_expected_prev = remain2_expected;
+	remain3_expected_prev = remain3_expected;
+	remain4_expected_prev = remain4_expected;
+	remain5_expected_prev = remain5_expected;
+	remain6_expected_prev = remain6_expected;
+	remain7_expected_prev = remain7_expected;
+	remain8_expected_prev = remain8_expected;
+	remain9_expected_prev = remain9_expected;
+	remain10_expected_prev = remain10_expected;
+	remain11_expected_prev = remain11_expected;
+	remain12_expected_prev = remain12_expected;
+	remain13_expected_prev = remain13_expected;
+	remain14_expected_prev = remain14_expected;
+	remain15_expected_prev = remain15_expected;
+end
+
+
+
+// expected business0
+initial
+begin
+	business0_expected = 1'bX;
+end 
+
+// expected business1
+initial
+begin
+	business1_expected = 1'bX;
+end 
+
+// expected business2
+initial
+begin
+	business2_expected = 1'bX;
+end 
+
+// expected business3
+initial
+begin
+	business3_expected = 1'bX;
+end 
+
+// expected business4
+initial
+begin
+	business4_expected = 1'bX;
+end 
+
+// expected business5
+initial
+begin
+	business5_expected = 1'bX;
+end 
+
+// expected business6
+initial
+begin
+	business6_expected = 1'bX;
+end 
+
+// expected business7
+initial
+begin
+	business7_expected = 1'bX;
+end 
+
+// expected business8
+initial
+begin
+	business8_expected = 1'bX;
+end 
+
+// expected business9
+initial
+begin
+	business9_expected = 1'bX;
+end 
+
+// expected business10
+initial
+begin
+	business10_expected = 1'bX;
+end 
+
+// expected business11
+initial
+begin
+	business11_expected = 1'bX;
+end 
+
+// expected business12
+initial
+begin
+	business12_expected = 1'bX;
+end 
+
+// expected business13
+initial
+begin
+	business13_expected = 1'bX;
+end 
+
+// expected business14
+initial
+begin
+	business14_expected = 1'bX;
+end 
+
+// expected business15
+initial
+begin
+	business15_expected = 1'bX;
+end 
+
+// expected remain0
+initial
+begin
+	remain0_expected = 1'bX;
+end 
+
+// expected remain1
+initial
+begin
+	remain1_expected = 1'bX;
+end 
+
+// expected remain2
+initial
+begin
+	remain2_expected = 1'bX;
+end 
+
+// expected remain3
+initial
+begin
+	remain3_expected = 1'bX;
+end 
+
+// expected remain4
+initial
+begin
+	remain4_expected = 1'bX;
+end 
+
+// expected remain5
+initial
+begin
+	remain5_expected = 1'bX;
+end 
+
+// expected remain6
+initial
+begin
+	remain6_expected = 1'bX;
+end 
+
+// expected remain7
+initial
+begin
+	remain7_expected = 1'bX;
+end 
+
+// expected remain8
+initial
+begin
+	remain8_expected = 1'bX;
+end 
+
+// expected remain9
+initial
+begin
+	remain9_expected = 1'bX;
+end 
+
+// expected remain10
+initial
+begin
+	remain10_expected = 1'bX;
+end 
+
+// expected remain11
+initial
+begin
+	remain11_expected = 1'bX;
+end 
+
+// expected remain12
+initial
+begin
+	remain12_expected = 1'bX;
+end 
+
+// expected remain13
+initial
+begin
+	remain13_expected = 1'bX;
+end 
+
+// expected remain14
+initial
+begin
+	remain14_expected = 1'bX;
+end 
+
+// expected remain15
+initial
+begin
+	remain15_expected = 1'bX;
+end 
+// generate trigger
+always @(business0_expected or business0 or business1_expected or business1 or business2_expected or business2 or business3_expected or business3 or business4_expected or business4 or business5_expected or business5 or business6_expected or business6 or business7_expected or business7 or business8_expected or business8 or business9_expected or business9 or business10_expected or business10 or business11_expected or business11 or business12_expected or business12 or business13_expected or business13 or business14_expected or business14 or business15_expected or business15 or remain0_expected or remain0 or remain1_expected or remain1 or remain2_expected or remain2 or remain3_expected or remain3 or remain4_expected or remain4 or remain5_expected or remain5 or remain6_expected or remain6 or remain7_expected or remain7 or remain8_expected or remain8 or remain9_expected or remain9 or remain10_expected or remain10 or remain11_expected or remain11 or remain12_expected or remain12 or remain13_expected or remain13 or remain14_expected or remain14 or remain15_expected or remain15)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected business0 = %b | expected business1 = %b | expected business2 = %b | expected business3 = %b | expected business4 = %b | expected business5 = %b | expected business6 = %b | expected business7 = %b | expected business8 = %b | expected business9 = %b | expected business10 = %b | expected business11 = %b | expected business12 = %b | expected business13 = %b | expected business14 = %b | expected business15 = %b | expected remain0 = %b | expected remain1 = %b | expected remain2 = %b | expected remain3 = %b | expected remain4 = %b | expected remain5 = %b | expected remain6 = %b | expected remain7 = %b | expected remain8 = %b | expected remain9 = %b | expected remain10 = %b | expected remain11 = %b | expected remain12 = %b | expected remain13 = %b | expected remain14 = %b | expected remain15 = %b | ",business0_expected_prev,business1_expected_prev,business2_expected_prev,business3_expected_prev,business4_expected_prev,business5_expected_prev,business6_expected_prev,business7_expected_prev,business8_expected_prev,business9_expected_prev,business10_expected_prev,business11_expected_prev,business12_expected_prev,business13_expected_prev,business14_expected_prev,business15_expected_prev,remain0_expected_prev,remain1_expected_prev,remain2_expected_prev,remain3_expected_prev,remain4_expected_prev,remain5_expected_prev,remain6_expected_prev,remain7_expected_prev,remain8_expected_prev,remain9_expected_prev,remain10_expected_prev,remain11_expected_prev,remain12_expected_prev,remain13_expected_prev,remain14_expected_prev,remain15_expected_prev);
+	$display("| real business0 = %b | real business1 = %b | real business2 = %b | real business3 = %b | real business4 = %b | real business5 = %b | real business6 = %b | real business7 = %b | real business8 = %b | real business9 = %b | real business10 = %b | real business11 = %b | real business12 = %b | real business13 = %b | real business14 = %b | real business15 = %b | real remain0 = %b | real remain1 = %b | real remain2 = %b | real remain3 = %b | real remain4 = %b | real remain5 = %b | real remain6 = %b | real remain7 = %b | real remain8 = %b | real remain9 = %b | real remain10 = %b | real remain11 = %b | real remain12 = %b | real remain13 = %b | real remain14 = %b | real remain15 = %b | ",business0_prev,business1_prev,business2_prev,business3_prev,business4_prev,business5_prev,business6_prev,business7_prev,business8_prev,business9_prev,business10_prev,business11_prev,business12_prev,business13_prev,business14_prev,business15_prev,remain0_prev,remain1_prev,remain2_prev,remain3_prev,remain4_prev,remain5_prev,remain6_prev,remain7_prev,remain8_prev,remain9_prev,remain10_prev,remain11_prev,remain12_prev,remain13_prev,remain14_prev,remain15_prev);
+`endif
+	if (
+		( business0_expected_prev !== 1'bx ) && ( business0_prev !== business0_expected_prev )
+		&& ((business0_expected_prev !== last_business0_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business0_expected_prev);
+		$display ("     Real value = %b", business0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_business0_exp = business0_expected_prev;
+	end
+	if (
+		( business1_expected_prev !== 1'bx ) && ( business1_prev !== business1_expected_prev )
+		&& ((business1_expected_prev !== last_business1_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business1_expected_prev);
+		$display ("     Real value = %b", business1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_business1_exp = business1_expected_prev;
+	end
+	if (
+		( business2_expected_prev !== 1'bx ) && ( business2_prev !== business2_expected_prev )
+		&& ((business2_expected_prev !== last_business2_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business2_expected_prev);
+		$display ("     Real value = %b", business2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_business2_exp = business2_expected_prev;
+	end
+	if (
+		( business3_expected_prev !== 1'bx ) && ( business3_prev !== business3_expected_prev )
+		&& ((business3_expected_prev !== last_business3_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business3_expected_prev);
+		$display ("     Real value = %b", business3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_business3_exp = business3_expected_prev;
+	end
+	if (
+		( business4_expected_prev !== 1'bx ) && ( business4_prev !== business4_expected_prev )
+		&& ((business4_expected_prev !== last_business4_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business4 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business4_expected_prev);
+		$display ("     Real value = %b", business4_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_business4_exp = business4_expected_prev;
+	end
+	if (
+		( business5_expected_prev !== 1'bx ) && ( business5_prev !== business5_expected_prev )
+		&& ((business5_expected_prev !== last_business5_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business5 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business5_expected_prev);
+		$display ("     Real value = %b", business5_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_business5_exp = business5_expected_prev;
+	end
+	if (
+		( business6_expected_prev !== 1'bx ) && ( business6_prev !== business6_expected_prev )
+		&& ((business6_expected_prev !== last_business6_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business6 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business6_expected_prev);
+		$display ("     Real value = %b", business6_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_business6_exp = business6_expected_prev;
+	end
+	if (
+		( business7_expected_prev !== 1'bx ) && ( business7_prev !== business7_expected_prev )
+		&& ((business7_expected_prev !== last_business7_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business7 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business7_expected_prev);
+		$display ("     Real value = %b", business7_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_business7_exp = business7_expected_prev;
+	end
+	if (
+		( business8_expected_prev !== 1'bx ) && ( business8_prev !== business8_expected_prev )
+		&& ((business8_expected_prev !== last_business8_exp) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business8 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business8_expected_prev);
+		$display ("     Real value = %b", business8_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_business8_exp = business8_expected_prev;
+	end
+	if (
+		( business9_expected_prev !== 1'bx ) && ( business9_prev !== business9_expected_prev )
+		&& ((business9_expected_prev !== last_business9_exp) ||
+			on_first_change[10])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business9 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business9_expected_prev);
+		$display ("     Real value = %b", business9_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[10] = 1'b0;
+		last_business9_exp = business9_expected_prev;
+	end
+	if (
+		( business10_expected_prev !== 1'bx ) && ( business10_prev !== business10_expected_prev )
+		&& ((business10_expected_prev !== last_business10_exp) ||
+			on_first_change[11])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business10 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business10_expected_prev);
+		$display ("     Real value = %b", business10_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[11] = 1'b0;
+		last_business10_exp = business10_expected_prev;
+	end
+	if (
+		( business11_expected_prev !== 1'bx ) && ( business11_prev !== business11_expected_prev )
+		&& ((business11_expected_prev !== last_business11_exp) ||
+			on_first_change[12])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business11 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business11_expected_prev);
+		$display ("     Real value = %b", business11_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[12] = 1'b0;
+		last_business11_exp = business11_expected_prev;
+	end
+	if (
+		( business12_expected_prev !== 1'bx ) && ( business12_prev !== business12_expected_prev )
+		&& ((business12_expected_prev !== last_business12_exp) ||
+			on_first_change[13])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business12 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business12_expected_prev);
+		$display ("     Real value = %b", business12_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[13] = 1'b0;
+		last_business12_exp = business12_expected_prev;
+	end
+	if (
+		( business13_expected_prev !== 1'bx ) && ( business13_prev !== business13_expected_prev )
+		&& ((business13_expected_prev !== last_business13_exp) ||
+			on_first_change[14])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business13 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business13_expected_prev);
+		$display ("     Real value = %b", business13_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[14] = 1'b0;
+		last_business13_exp = business13_expected_prev;
+	end
+	if (
+		( business14_expected_prev !== 1'bx ) && ( business14_prev !== business14_expected_prev )
+		&& ((business14_expected_prev !== last_business14_exp) ||
+			on_first_change[15])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business14 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business14_expected_prev);
+		$display ("     Real value = %b", business14_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[15] = 1'b0;
+		last_business14_exp = business14_expected_prev;
+	end
+	if (
+		( business15_expected_prev !== 1'bx ) && ( business15_prev !== business15_expected_prev )
+		&& ((business15_expected_prev !== last_business15_exp) ||
+			on_first_change[16])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port business15 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", business15_expected_prev);
+		$display ("     Real value = %b", business15_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[16] = 1'b0;
+		last_business15_exp = business15_expected_prev;
+	end
+	if (
+		( remain0_expected_prev !== 1'bx ) && ( remain0_prev !== remain0_expected_prev )
+		&& ((remain0_expected_prev !== last_remain0_exp) ||
+			on_first_change[17])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain0_expected_prev);
+		$display ("     Real value = %b", remain0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[17] = 1'b0;
+		last_remain0_exp = remain0_expected_prev;
+	end
+	if (
+		( remain1_expected_prev !== 1'bx ) && ( remain1_prev !== remain1_expected_prev )
+		&& ((remain1_expected_prev !== last_remain1_exp) ||
+			on_first_change[18])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain1_expected_prev);
+		$display ("     Real value = %b", remain1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[18] = 1'b0;
+		last_remain1_exp = remain1_expected_prev;
+	end
+	if (
+		( remain2_expected_prev !== 1'bx ) && ( remain2_prev !== remain2_expected_prev )
+		&& ((remain2_expected_prev !== last_remain2_exp) ||
+			on_first_change[19])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain2_expected_prev);
+		$display ("     Real value = %b", remain2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[19] = 1'b0;
+		last_remain2_exp = remain2_expected_prev;
+	end
+	if (
+		( remain3_expected_prev !== 1'bx ) && ( remain3_prev !== remain3_expected_prev )
+		&& ((remain3_expected_prev !== last_remain3_exp) ||
+			on_first_change[20])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain3_expected_prev);
+		$display ("     Real value = %b", remain3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[20] = 1'b0;
+		last_remain3_exp = remain3_expected_prev;
+	end
+	if (
+		( remain4_expected_prev !== 1'bx ) && ( remain4_prev !== remain4_expected_prev )
+		&& ((remain4_expected_prev !== last_remain4_exp) ||
+			on_first_change[21])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain4 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain4_expected_prev);
+		$display ("     Real value = %b", remain4_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[21] = 1'b0;
+		last_remain4_exp = remain4_expected_prev;
+	end
+	if (
+		( remain5_expected_prev !== 1'bx ) && ( remain5_prev !== remain5_expected_prev )
+		&& ((remain5_expected_prev !== last_remain5_exp) ||
+			on_first_change[22])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain5 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain5_expected_prev);
+		$display ("     Real value = %b", remain5_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[22] = 1'b0;
+		last_remain5_exp = remain5_expected_prev;
+	end
+	if (
+		( remain6_expected_prev !== 1'bx ) && ( remain6_prev !== remain6_expected_prev )
+		&& ((remain6_expected_prev !== last_remain6_exp) ||
+			on_first_change[23])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain6 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain6_expected_prev);
+		$display ("     Real value = %b", remain6_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[23] = 1'b0;
+		last_remain6_exp = remain6_expected_prev;
+	end
+	if (
+		( remain7_expected_prev !== 1'bx ) && ( remain7_prev !== remain7_expected_prev )
+		&& ((remain7_expected_prev !== last_remain7_exp) ||
+			on_first_change[24])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain7 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain7_expected_prev);
+		$display ("     Real value = %b", remain7_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[24] = 1'b0;
+		last_remain7_exp = remain7_expected_prev;
+	end
+	if (
+		( remain8_expected_prev !== 1'bx ) && ( remain8_prev !== remain8_expected_prev )
+		&& ((remain8_expected_prev !== last_remain8_exp) ||
+			on_first_change[25])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain8 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain8_expected_prev);
+		$display ("     Real value = %b", remain8_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[25] = 1'b0;
+		last_remain8_exp = remain8_expected_prev;
+	end
+	if (
+		( remain9_expected_prev !== 1'bx ) && ( remain9_prev !== remain9_expected_prev )
+		&& ((remain9_expected_prev !== last_remain9_exp) ||
+			on_first_change[26])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain9 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain9_expected_prev);
+		$display ("     Real value = %b", remain9_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[26] = 1'b0;
+		last_remain9_exp = remain9_expected_prev;
+	end
+	if (
+		( remain10_expected_prev !== 1'bx ) && ( remain10_prev !== remain10_expected_prev )
+		&& ((remain10_expected_prev !== last_remain10_exp) ||
+			on_first_change[27])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain10 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain10_expected_prev);
+		$display ("     Real value = %b", remain10_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[27] = 1'b0;
+		last_remain10_exp = remain10_expected_prev;
+	end
+	if (
+		( remain11_expected_prev !== 1'bx ) && ( remain11_prev !== remain11_expected_prev )
+		&& ((remain11_expected_prev !== last_remain11_exp) ||
+			on_first_change[28])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain11 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain11_expected_prev);
+		$display ("     Real value = %b", remain11_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[28] = 1'b0;
+		last_remain11_exp = remain11_expected_prev;
+	end
+	if (
+		( remain12_expected_prev !== 1'bx ) && ( remain12_prev !== remain12_expected_prev )
+		&& ((remain12_expected_prev !== last_remain12_exp) ||
+			on_first_change[29])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain12 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain12_expected_prev);
+		$display ("     Real value = %b", remain12_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[29] = 1'b0;
+		last_remain12_exp = remain12_expected_prev;
+	end
+	if (
+		( remain13_expected_prev !== 1'bx ) && ( remain13_prev !== remain13_expected_prev )
+		&& ((remain13_expected_prev !== last_remain13_exp) ||
+			on_first_change[30])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain13 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain13_expected_prev);
+		$display ("     Real value = %b", remain13_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[30] = 1'b0;
+		last_remain13_exp = remain13_expected_prev;
+	end
+	if (
+		( remain14_expected_prev !== 1'bx ) && ( remain14_prev !== remain14_expected_prev )
+		&& ((remain14_expected_prev !== last_remain14_exp) ||
+			on_first_change[31])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain14 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain14_expected_prev);
+		$display ("     Real value = %b", remain14_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[31] = 1'b0;
+		last_remain14_exp = remain14_expected_prev;
+	end
+	if (
+		( remain15_expected_prev !== 1'bx ) && ( remain15_prev !== remain15_expected_prev )
+		&& ((remain15_expected_prev !== last_remain15_exp) ||
+			on_first_change[32])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port remain15 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", remain15_expected_prev);
+		$display ("     Real value = %b", remain15_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[32] = 1'b0;
+		last_remain15_exp = remain15_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module chufa_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg denom0;
+reg denom1;
+reg denom2;
+reg denom3;
+reg denom4;
+reg denom5;
+reg denom6;
+reg denom7;
+reg denom8;
+reg denom9;
+reg denom10;
+reg denom11;
+reg denom12;
+reg denom13;
+reg denom14;
+reg denom15;
+reg divclk;
+reg numerator0;
+reg numerator1;
+reg numerator2;
+reg numerator3;
+reg numerator4;
+reg numerator5;
+reg numerator6;
+reg numerator7;
+reg numerator8;
+reg numerator9;
+reg numerator10;
+reg numerator11;
+reg numerator12;
+reg numerator13;
+reg numerator14;
+reg numerator15;
+// wires                                               
+wire business0;
+wire business1;
+wire business2;
+wire business3;
+wire business4;
+wire business5;
+wire business6;
+wire business7;
+wire business8;
+wire business9;
+wire business10;
+wire business11;
+wire business12;
+wire business13;
+wire business14;
+wire business15;
+wire remain0;
+wire remain1;
+wire remain2;
+wire remain3;
+wire remain4;
+wire remain5;
+wire remain6;
+wire remain7;
+wire remain8;
+wire remain9;
+wire remain10;
+wire remain11;
+wire remain12;
+wire remain13;
+wire remain14;
+wire remain15;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+chufa i1 (
+// port map - connection between master ports and signals/registers   
+	.business0(business0),
+	.business1(business1),
+	.business2(business2),
+	.business3(business3),
+	.business4(business4),
+	.business5(business5),
+	.business6(business6),
+	.business7(business7),
+	.business8(business8),
+	.business9(business9),
+	.business10(business10),
+	.business11(business11),
+	.business12(business12),
+	.business13(business13),
+	.business14(business14),
+	.business15(business15),
+	.denom0(denom0),
+	.denom1(denom1),
+	.denom2(denom2),
+	.denom3(denom3),
+	.denom4(denom4),
+	.denom5(denom5),
+	.denom6(denom6),
+	.denom7(denom7),
+	.denom8(denom8),
+	.denom9(denom9),
+	.denom10(denom10),
+	.denom11(denom11),
+	.denom12(denom12),
+	.denom13(denom13),
+	.denom14(denom14),
+	.denom15(denom15),
+	.divclk(divclk),
+	.numerator0(numerator0),
+	.numerator1(numerator1),
+	.numerator2(numerator2),
+	.numerator3(numerator3),
+	.numerator4(numerator4),
+	.numerator5(numerator5),
+	.numerator6(numerator6),
+	.numerator7(numerator7),
+	.numerator8(numerator8),
+	.numerator9(numerator9),
+	.numerator10(numerator10),
+	.numerator11(numerator11),
+	.numerator12(numerator12),
+	.numerator13(numerator13),
+	.numerator14(numerator14),
+	.numerator15(numerator15),
+	.remain0(remain0),
+	.remain1(remain1),
+	.remain2(remain2),
+	.remain3(remain3),
+	.remain4(remain4),
+	.remain5(remain5),
+	.remain6(remain6),
+	.remain7(remain7),
+	.remain8(remain8),
+	.remain9(remain9),
+	.remain10(remain10),
+	.remain11(remain11),
+	.remain12(remain12),
+	.remain13(remain13),
+	.remain14(remain14),
+	.remain15(remain15)
+);
+
+// denom0
+initial
+begin
+	denom0 = 1'b1;
+end 
+
+// denom1
+initial
+begin
+	denom1 = 1'b0;
+end 
+
+// denom2
+initial
+begin
+	denom2 = 1'b0;
+end 
+
+// denom3
+initial
+begin
+	denom3 = 1'b0;
+end 
+
+// denom4
+initial
+begin
+	denom4 = 1'b0;
+end 
+
+// denom5
+initial
+begin
+	denom5 = 1'b0;
+end 
+
+// denom6
+initial
+begin
+	denom6 = 1'b0;
+end 
+
+// denom7
+initial
+begin
+	denom7 = 1'b0;
+end 
+
+// denom8
+initial
+begin
+	denom8 = 1'b0;
+end 
+
+// denom9
+initial
+begin
+	denom9 = 1'b0;
+end 
+
+// denom10
+initial
+begin
+	denom10 = 1'b0;
+end 
+
+// denom11
+initial
+begin
+	denom11 = 1'b0;
+end 
+
+// denom12
+initial
+begin
+	denom12 = 1'b0;
+end 
+
+// denom13
+initial
+begin
+	denom13 = 1'b0;
+end 
+
+// denom14
+initial
+begin
+	denom14 = 1'b0;
+end 
+
+// denom15
+initial
+begin
+	denom15 = 1'b0;
+end 
+
+// divclk
+initial
+begin
+	divclk = 1'b0;
+end 
+
+// numerator0
+initial
+begin
+	numerator0 = 1'b1;
+end 
+
+// numerator1
+initial
+begin
+	numerator1 = 1'b0;
+end 
+
+// numerator2
+initial
+begin
+	numerator2 = 1'b0;
+end 
+
+// numerator3
+initial
+begin
+	numerator3 = 1'b0;
+end 
+
+// numerator4
+initial
+begin
+	numerator4 = 1'b0;
+end 
+
+// numerator5
+initial
+begin
+	numerator5 = 1'b0;
+end 
+
+// numerator6
+initial
+begin
+	numerator6 = 1'b0;
+end 
+
+// numerator7
+initial
+begin
+	numerator7 = 1'b0;
+end 
+
+// numerator8
+initial
+begin
+	numerator8 = 1'b0;
+end 
+
+// numerator9
+initial
+begin
+	numerator9 = 1'b0;
+end 
+
+// numerator10
+initial
+begin
+	numerator10 = 1'b0;
+end 
+
+// numerator11
+initial
+begin
+	numerator11 = 1'b0;
+end 
+
+// numerator12
+initial
+begin
+	numerator12 = 1'b0;
+end 
+
+// numerator13
+initial
+begin
+	numerator13 = 1'b0;
+end 
+
+// numerator14
+initial
+begin
+	numerator14 = 1'b0;
+end 
+
+// numerator15
+initial
+begin
+	numerator15 = 1'b0;
+end 
+
+chufa_vlg_sample_tst tb_sample (
+	.denom0(denom0),
+	.denom1(denom1),
+	.denom2(denom2),
+	.denom3(denom3),
+	.denom4(denom4),
+	.denom5(denom5),
+	.denom6(denom6),
+	.denom7(denom7),
+	.denom8(denom8),
+	.denom9(denom9),
+	.denom10(denom10),
+	.denom11(denom11),
+	.denom12(denom12),
+	.denom13(denom13),
+	.denom14(denom14),
+	.denom15(denom15),
+	.divclk(divclk),
+	.numerator0(numerator0),
+	.numerator1(numerator1),
+	.numerator2(numerator2),
+	.numerator3(numerator3),
+	.numerator4(numerator4),
+	.numerator5(numerator5),
+	.numerator6(numerator6),
+	.numerator7(numerator7),
+	.numerator8(numerator8),
+	.numerator9(numerator9),
+	.numerator10(numerator10),
+	.numerator11(numerator11),
+	.numerator12(numerator12),
+	.numerator13(numerator13),
+	.numerator14(numerator14),
+	.numerator15(numerator15),
+	.sampler_tx(sampler)
+);
+
+chufa_vlg_check_tst tb_out(
+	.business0(business0),
+	.business1(business1),
+	.business2(business2),
+	.business3(business3),
+	.business4(business4),
+	.business5(business5),
+	.business6(business6),
+	.business7(business7),
+	.business8(business8),
+	.business9(business9),
+	.business10(business10),
+	.business11(business11),
+	.business12(business12),
+	.business13(business13),
+	.business14(business14),
+	.business15(business15),
+	.remain0(remain0),
+	.remain1(remain1),
+	.remain2(remain2),
+	.remain3(remain3),
+	.remain4(remain4),
+	.remain5(remain5),
+	.remain6(remain6),
+	.remain7(remain7),
+	.remain8(remain8),
+	.remain9(remain9),
+	.remain10(remain10),
+	.remain11(remain11),
+	.remain12(remain12),
+	.remain13(remain13),
+	.remain14(remain14),
+	.remain15(remain15),
+	.sampler_rx(sampler)
+);
+endmodule
+

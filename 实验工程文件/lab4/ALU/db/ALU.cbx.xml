@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ALU">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|div:inst32|ddd:inst|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_60q.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
